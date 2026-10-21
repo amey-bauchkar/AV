@@ -1,0 +1,77 @@
+/**
+ * AV Corporate giftings & events Design Tokens — Phase 5
+ * Refined, editorial corporate gifting aesthetic based on the official brand identity.
+ */
+
+:root {
+  /* Brand Core Palette */
+  --color-primary: #153D25;        /* Deep Forest Green */
+  --color-primary-light: #1E4E32;  /* Medium Forest Green */
+  --color-primary-dark: #0E2A1A;   /* Darkest Forest Green */
+
+  --color-accent: #F12D18;         /* Vivid Vermilion Red Accent */
+  --color-accent-light: #FF4532;   /* Bright Coral Red */
+  --color-accent-soft: rgba(241, 45, 24, 0.12);
+
+  --color-leaf: #A9C875;           /* Fresh Leaf / Sage Green */
+  --color-leaf-soft: rgba(169, 200, 117, 0.22);
+
+  --color-warm-ivory: #F4F5EB;     /* Editorial Warm Cream / Ivory */
+  --color-warm-ivory-dark: #E8EAD9;
+
+  /* Surface & Background */
+  --color-surface: #FFFFFF;        /* Pure White */
+  --color-surface-2: #F4F5EB;      /* Warm Ivory Canvas */
+  --color-surface-3: #ECEEDF;      /* Secondary Warm Neutral */
+  --color-surface-dark: #153D25;   /* Deep Forest Surface */
+
+  /* Typography Colors */
+  --color-text-main: #153D25;      /* Deep Forest Green Headings */
+  --color-text-body: #2B382D;      /* High-readability Dark Body Copy */
+  --color-text-muted: #667064;     /* Muted Earthy Green-Gray */
+  --color-text-inverse: #FFFFFF;   /* Text on dark surfaces */
+
+  /* Borders & Dividers */
+  --color-border: #DCE0CE;
+  --color-border-dark: rgba(255, 255, 255, 0.16);
+  --color-focus: #153D25;
+
+  /* Typography Tokens */
+  --font-display: 'Impact', 'Anton', 'Oswald', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: 'Brush Script MT', 'Caveat', 'Segoe Script', cursive;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Spacing Scale */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 1px 3px rgba(21, 61, 37, 0.05), 0 1px 2px rgba(21, 61, 37, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(21, 61, 37, 0.08), 0 2px 4px -2px rgba(21, 61, 37, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(21, 61, 37, 0.1), 0 4px 6px -4px rgba(21, 61, 37, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(21, 61, 37, 0.12), 0 8px 10px -6px rgba(21, 61, 37, 0.04);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container-max: 1320px;
+}

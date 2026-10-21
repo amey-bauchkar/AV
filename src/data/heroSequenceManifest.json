@@ -1,0 +1,3210 @@
+{
+  "project": "AV Corporate Giftings & Events",
+  "version": "1.0.0",
+  "updatedAt": "2026-10-20T02:26:00Z",
+  "totalMasterFrames": 360,
+  "resolution": {
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": "16:9"
+  },
+  "scrollPinnedHeight": "750vh",
+  "totalPayloadBytes": 14817662,
+  "totalPayloadMB": 14.13,
+  "poster": {
+    "webp": "/hero-frames/hero-poster.webp",
+    "jpg": "/hero-frames/hero-poster.jpg"
+  },
+  "clips": {
+    "canonical-clip-01": {
+      "clipNumber": 1,
+      "clipId": "canonical-clip-01",
+      "sourceVideo": "/videos/canonical-clip-01.mp4",
+      "sourceTotalFrames": 240,
+      "sourceDurationSeconds": 10.0,
+      "sourceFps": 24,
+      "sampledFrameCount": 72,
+      "sourceFrameRange": [
+        1,
+        236
+      ],
+      "masterFrameRange": [
+        1,
+        72
+      ],
+      "totalSizeBytes": 2350662
+    },
+    "canonical-clip-02": {
+      "clipNumber": 2,
+      "clipId": "canonical-clip-02",
+      "sourceVideo": "/videos/canonical-clip-02.mp4",
+      "sourceTotalFrames": 240,
+      "sourceDurationSeconds": 10.0,
+      "sourceFps": 24,
+      "sampledFrameCount": 72,
+      "sourceFrameRange": [
+        1,
+        235
+      ],
+      "masterFrameRange": [
+        73,
+        144
+      ],
+      "totalSizeBytes": 3369262
+    },
+    "canonical-clip-03": {
+      "clipNumber": 3,
+      "clipId": "canonical-clip-03",
+      "sourceVideo": "/videos/canonical-clip-03.mp4",
+      "sourceTotalFrames": 240,
+      "sourceDurationSeconds": 10.0,
+      "sourceFps": 24,
+      "sampledFrameCount": 72,
+      "sourceFrameRange": [
+        1,
+        235
+      ],
+      "masterFrameRange": [
+        145,
+        216
+      ],
+      "totalSizeBytes": 2288738
+    },
+    "canonical-clip-04": {
+      "clipNumber": 4,
+      "clipId": "canonical-clip-04",
+      "sourceVideo": "/videos/canonical-clip-04.mp4",
+      "sourceTotalFrames": 240,
+      "sourceDurationSeconds": 10.0,
+      "sourceFps": 24,
+      "sampledFrameCount": 72,
+      "sourceFrameRange": [
+        1,
+        236
+      ],
+      "masterFrameRange": [
+        217,
+        288
+      ],
+      "totalSizeBytes": 2810552
+    },
+    "canonical-clip-05": {
+      "clipNumber": 5,
+      "clipId": "canonical-clip-05",
+      "sourceVideo": "/videos/canonical-clip-05.mp4",
+      "sourceTotalFrames": 240,
+      "sourceDurationSeconds": 10.0,
+      "sourceFps": 24,
+      "sampledFrameCount": 72,
+      "sourceFrameRange": [
+        1,
+        236
+      ],
+      "masterFrameRange": [
+        289,
+        360
+      ],
+      "totalSizeBytes": 3998448
+    }
+  },
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "id": "scene-01-the-studio-hero",
+      "title": "The Studio Hero",
+      "clipId": "canonical-clip-01",
+      "masterFrameRange": [
+        1,
+        32
+      ],
+      "progressRange": [
+        0.0,
+        0.15
+      ],
+      "primaryProduct": "PIX-033 Thermos Vacuum Bottle (SUS 304)",
+      "overlay": {
+        "badge": "Master Catalog 2024\u20132025",
+        "headlineLine1": "GIFTS THAT",
+        "headlineLine2": "MAKE AN IMPACT",
+        "subtitle": "Bespoke corporate gifts for clients, teams & executive events.",
+        "ctaPrimary": {
+          "label": "Explore Catalog",
+          "href": "/products"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.0,
+          0.0,
+          0.12,
+          0.16
+        ],
+        "alignment": "left"
+      }
+    },
+    {
+      "sceneNumber": 2,
+      "id": "scene-02-tactile-lift",
+      "title": "Tactile Lift & Hand Presentation",
+      "clipId": "canonical-clip-01",
+      "masterFrameRange": [
+        33,
+        72
+      ],
+      "progressRange": [
+        0.15,
+        0.32
+      ],
+      "primaryProduct": "PIX-033 Thermos Vacuum Bottle",
+      "overlay": {
+        "badge": "Ergonomic Craftsmanship",
+        "headlineLine1": "TACTILE",
+        "headlineLine2": "PERFECTION",
+        "subtitle": "Matte powder-coated SUS 304 steel with balanced ergonomic grip.",
+        "ctaPrimary": {
+          "label": "Explore Drinkware",
+          "href": "/category/thermos-bottles"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.15,
+          0.18,
+          0.28,
+          0.32
+        ],
+        "alignment": "left"
+      }
+    },
+    {
+      "sceneNumber": 3,
+      "id": "scene-03-corporate-model",
+      "title": "Corporate Model Presentation",
+      "clipId": "canonical-clip-02",
+      "masterFrameRange": [
+        73,
+        144
+      ],
+      "progressRange": [
+        0.32,
+        0.52
+      ],
+      "primaryProduct": "PIX-033 Executive Presentation",
+      "overlay": {
+        "badge": "Executive Gifting",
+        "headlineLine1": "CRAFTED TO",
+        "headlineLine2": "IMPRESS",
+        "subtitle": "Double-wall thermal insulation presented with poise for executive recipients.",
+        "ctaPrimary": {
+          "label": "Explore Catalog",
+          "href": "/products"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.32,
+          0.36,
+          0.48,
+          0.52
+        ],
+        "alignment": "left"
+      }
+    },
+    {
+      "sceneNumber": 4,
+      "id": "scene-04-precision-macro",
+      "title": "Precision Macro Details",
+      "clipId": "canonical-clip-03",
+      "masterFrameRange": [
+        145,
+        216
+      ],
+      "progressRange": [
+        0.52,
+        0.7
+      ],
+      "primaryProduct": "PIX-033 Cap, Collar & Finish",
+      "overlay": {
+        "badge": "Material Integrity",
+        "headlineLine1": "PRECISION IN",
+        "headlineLine2": "EVERY DETAIL",
+        "subtitle": "Brushed steel cap, flush silicone collar with pivoting loop, and fine micro-texture.",
+        "ctaPrimary": {
+          "label": "Explore Drinkware",
+          "href": "/category/thermos-bottles"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.52,
+          0.56,
+          0.66,
+          0.7
+        ],
+        "alignment": "left"
+      }
+    },
+    {
+      "sceneNumber": 5,
+      "id": "scene-05-ensemble-reveal",
+      "title": "The Ensemble Reveal",
+      "clipId": "canonical-clip-04",
+      "masterFrameRange": [
+        217,
+        288
+      ],
+      "progressRange": [
+        0.7,
+        0.86
+      ],
+      "primaryProduct": "Executive Suite (PIX-033, PIX-NB-102, PIX-PN-1003, PIX-CH-1001)",
+      "overlay": {
+        "badge": "Curated Collections",
+        "headlineLine1": "CURATED FOR",
+        "headlineLine2": "TEAMS & EVENTS",
+        "subtitle": "Hardbound executive notebooks, precision pens, card holders & thermal drinkware.",
+        "ctaPrimary": {
+          "label": "Build a Custom Kit",
+          "href": "/products?action=kit"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.7,
+          0.74,
+          0.83,
+          0.86
+        ],
+        "alignment": "left"
+      }
+    },
+    {
+      "sceneNumber": 6,
+      "id": "scene-06-curated-collection",
+      "title": "The Master Gifting Collection",
+      "clipId": "canonical-clip-05",
+      "masterFrameRange": [
+        289,
+        360
+      ],
+      "progressRange": [
+        0.86,
+        1.0
+      ],
+      "primaryProduct": "Complete 7-Piece Gifting Suite",
+      "overlay": {
+        "badge": "Complete Corporate Suites",
+        "headlineLine1": "GIFTS THAT",
+        "headlineLine2": "MAKE AN IMPACT",
+        "subtitle": "Complete bespoke gifting suites for client appreciation, employee onboarding & annual milestones.",
+        "ctaPrimary": {
+          "label": "Explore Catalog",
+          "href": "/products"
+        },
+        "ctaSecondary": {
+          "label": "Request a Quote",
+          "action": "openRfqModal"
+        },
+        "opacityRange": [
+          0.86,
+          0.9,
+          1.0,
+          1.0
+        ],
+        "alignment": "left"
+      }
+    }
+  ],
+  "frames": [
+    {
+      "masterIndex": 1,
+      "filename": "frame-001.webp",
+      "path": "/hero-frames/master/frame-001.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 1,
+      "sizeBytes": 22150
+    },
+    {
+      "masterIndex": 2,
+      "filename": "frame-002.webp",
+      "path": "/hero-frames/master/frame-002.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 5,
+      "sizeBytes": 21986
+    },
+    {
+      "masterIndex": 3,
+      "filename": "frame-003.webp",
+      "path": "/hero-frames/master/frame-003.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 10,
+      "sizeBytes": 21950
+    },
+    {
+      "masterIndex": 4,
+      "filename": "frame-004.webp",
+      "path": "/hero-frames/master/frame-004.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 15,
+      "sizeBytes": 21690
+    },
+    {
+      "masterIndex": 5,
+      "filename": "frame-005.webp",
+      "path": "/hero-frames/master/frame-005.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 20,
+      "sizeBytes": 21932
+    },
+    {
+      "masterIndex": 6,
+      "filename": "frame-006.webp",
+      "path": "/hero-frames/master/frame-006.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 25,
+      "sizeBytes": 21884
+    },
+    {
+      "masterIndex": 7,
+      "filename": "frame-007.webp",
+      "path": "/hero-frames/master/frame-007.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 30,
+      "sizeBytes": 21802
+    },
+    {
+      "masterIndex": 8,
+      "filename": "frame-008.webp",
+      "path": "/hero-frames/master/frame-008.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 35,
+      "sizeBytes": 21764
+    },
+    {
+      "masterIndex": 9,
+      "filename": "frame-009.webp",
+      "path": "/hero-frames/master/frame-009.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 40,
+      "sizeBytes": 21990
+    },
+    {
+      "masterIndex": 10,
+      "filename": "frame-010.webp",
+      "path": "/hero-frames/master/frame-010.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 42,
+      "sizeBytes": 21764
+    },
+    {
+      "masterIndex": 11,
+      "filename": "frame-011.webp",
+      "path": "/hero-frames/master/frame-011.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 45,
+      "sizeBytes": 21956
+    },
+    {
+      "masterIndex": 12,
+      "filename": "frame-012.webp",
+      "path": "/hero-frames/master/frame-012.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 48,
+      "sizeBytes": 21664
+    },
+    {
+      "masterIndex": 13,
+      "filename": "frame-013.webp",
+      "path": "/hero-frames/master/frame-013.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 51,
+      "sizeBytes": 21746
+    },
+    {
+      "masterIndex": 14,
+      "filename": "frame-014.webp",
+      "path": "/hero-frames/master/frame-014.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 54,
+      "sizeBytes": 21662
+    },
+    {
+      "masterIndex": 15,
+      "filename": "frame-015.webp",
+      "path": "/hero-frames/master/frame-015.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 57,
+      "sizeBytes": 21876
+    },
+    {
+      "masterIndex": 16,
+      "filename": "frame-016.webp",
+      "path": "/hero-frames/master/frame-016.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 60,
+      "sizeBytes": 21892
+    },
+    {
+      "masterIndex": 17,
+      "filename": "frame-017.webp",
+      "path": "/hero-frames/master/frame-017.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 63,
+      "sizeBytes": 24980
+    },
+    {
+      "masterIndex": 18,
+      "filename": "frame-018.webp",
+      "path": "/hero-frames/master/frame-018.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 66,
+      "sizeBytes": 26938
+    },
+    {
+      "masterIndex": 19,
+      "filename": "frame-019.webp",
+      "path": "/hero-frames/master/frame-019.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 69,
+      "sizeBytes": 28844
+    },
+    {
+      "masterIndex": 20,
+      "filename": "frame-020.webp",
+      "path": "/hero-frames/master/frame-020.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 72,
+      "sizeBytes": 30604
+    },
+    {
+      "masterIndex": 21,
+      "filename": "frame-021.webp",
+      "path": "/hero-frames/master/frame-021.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 75,
+      "sizeBytes": 30546
+    },
+    {
+      "masterIndex": 22,
+      "filename": "frame-022.webp",
+      "path": "/hero-frames/master/frame-022.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 77,
+      "sizeBytes": 30722
+    },
+    {
+      "masterIndex": 23,
+      "filename": "frame-023.webp",
+      "path": "/hero-frames/master/frame-023.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 80,
+      "sizeBytes": 30322
+    },
+    {
+      "masterIndex": 24,
+      "filename": "frame-024.webp",
+      "path": "/hero-frames/master/frame-024.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 83,
+      "sizeBytes": 31310
+    },
+    {
+      "masterIndex": 25,
+      "filename": "frame-025.webp",
+      "path": "/hero-frames/master/frame-025.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 86,
+      "sizeBytes": 33058
+    },
+    {
+      "masterIndex": 26,
+      "filename": "frame-026.webp",
+      "path": "/hero-frames/master/frame-026.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 89,
+      "sizeBytes": 34406
+    },
+    {
+      "masterIndex": 27,
+      "filename": "frame-027.webp",
+      "path": "/hero-frames/master/frame-027.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 92,
+      "sizeBytes": 34618
+    },
+    {
+      "masterIndex": 28,
+      "filename": "frame-028.webp",
+      "path": "/hero-frames/master/frame-028.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 95,
+      "sizeBytes": 34798
+    },
+    {
+      "masterIndex": 29,
+      "filename": "frame-029.webp",
+      "path": "/hero-frames/master/frame-029.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 98,
+      "sizeBytes": 35296
+    },
+    {
+      "masterIndex": 30,
+      "filename": "frame-030.webp",
+      "path": "/hero-frames/master/frame-030.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 101,
+      "sizeBytes": 35842
+    },
+    {
+      "masterIndex": 31,
+      "filename": "frame-031.webp",
+      "path": "/hero-frames/master/frame-031.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 104,
+      "sizeBytes": 35506
+    },
+    {
+      "masterIndex": 32,
+      "filename": "frame-032.webp",
+      "path": "/hero-frames/master/frame-032.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 107,
+      "sizeBytes": 35106
+    },
+    {
+      "masterIndex": 33,
+      "filename": "frame-033.webp",
+      "path": "/hero-frames/master/frame-033.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 110,
+      "sizeBytes": 35298
+    },
+    {
+      "masterIndex": 34,
+      "filename": "frame-034.webp",
+      "path": "/hero-frames/master/frame-034.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 112,
+      "sizeBytes": 35884
+    },
+    {
+      "masterIndex": 35,
+      "filename": "frame-035.webp",
+      "path": "/hero-frames/master/frame-035.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 115,
+      "sizeBytes": 35964
+    },
+    {
+      "masterIndex": 36,
+      "filename": "frame-036.webp",
+      "path": "/hero-frames/master/frame-036.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 118,
+      "sizeBytes": 35586
+    },
+    {
+      "masterIndex": 37,
+      "filename": "frame-037.webp",
+      "path": "/hero-frames/master/frame-037.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 121,
+      "sizeBytes": 35112
+    },
+    {
+      "masterIndex": 38,
+      "filename": "frame-038.webp",
+      "path": "/hero-frames/master/frame-038.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 124,
+      "sizeBytes": 33408
+    },
+    {
+      "masterIndex": 39,
+      "filename": "frame-039.webp",
+      "path": "/hero-frames/master/frame-039.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 127,
+      "sizeBytes": 33704
+    },
+    {
+      "masterIndex": 40,
+      "filename": "frame-040.webp",
+      "path": "/hero-frames/master/frame-040.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 130,
+      "sizeBytes": 33922
+    },
+    {
+      "masterIndex": 41,
+      "filename": "frame-041.webp",
+      "path": "/hero-frames/master/frame-041.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 133,
+      "sizeBytes": 35252
+    },
+    {
+      "masterIndex": 42,
+      "filename": "frame-042.webp",
+      "path": "/hero-frames/master/frame-042.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 136,
+      "sizeBytes": 35316
+    },
+    {
+      "masterIndex": 43,
+      "filename": "frame-043.webp",
+      "path": "/hero-frames/master/frame-043.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 139,
+      "sizeBytes": 35676
+    },
+    {
+      "masterIndex": 44,
+      "filename": "frame-044.webp",
+      "path": "/hero-frames/master/frame-044.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 142,
+      "sizeBytes": 35314
+    },
+    {
+      "masterIndex": 45,
+      "filename": "frame-045.webp",
+      "path": "/hero-frames/master/frame-045.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 145,
+      "sizeBytes": 36072
+    },
+    {
+      "masterIndex": 46,
+      "filename": "frame-046.webp",
+      "path": "/hero-frames/master/frame-046.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 147,
+      "sizeBytes": 35324
+    },
+    {
+      "masterIndex": 47,
+      "filename": "frame-047.webp",
+      "path": "/hero-frames/master/frame-047.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 150,
+      "sizeBytes": 34810
+    },
+    {
+      "masterIndex": 48,
+      "filename": "frame-048.webp",
+      "path": "/hero-frames/master/frame-048.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 153,
+      "sizeBytes": 36338
+    },
+    {
+      "masterIndex": 49,
+      "filename": "frame-049.webp",
+      "path": "/hero-frames/master/frame-049.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 156,
+      "sizeBytes": 36906
+    },
+    {
+      "masterIndex": 50,
+      "filename": "frame-050.webp",
+      "path": "/hero-frames/master/frame-050.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 159,
+      "sizeBytes": 37964
+    },
+    {
+      "masterIndex": 51,
+      "filename": "frame-051.webp",
+      "path": "/hero-frames/master/frame-051.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 162,
+      "sizeBytes": 38494
+    },
+    {
+      "masterIndex": 52,
+      "filename": "frame-052.webp",
+      "path": "/hero-frames/master/frame-052.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 165,
+      "sizeBytes": 38548
+    },
+    {
+      "masterIndex": 53,
+      "filename": "frame-053.webp",
+      "path": "/hero-frames/master/frame-053.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 168,
+      "sizeBytes": 37694
+    },
+    {
+      "masterIndex": 54,
+      "filename": "frame-054.webp",
+      "path": "/hero-frames/master/frame-054.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 171,
+      "sizeBytes": 37750
+    },
+    {
+      "masterIndex": 55,
+      "filename": "frame-055.webp",
+      "path": "/hero-frames/master/frame-055.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 174,
+      "sizeBytes": 37792
+    },
+    {
+      "masterIndex": 56,
+      "filename": "frame-056.webp",
+      "path": "/hero-frames/master/frame-056.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 177,
+      "sizeBytes": 38824
+    },
+    {
+      "masterIndex": 57,
+      "filename": "frame-057.webp",
+      "path": "/hero-frames/master/frame-057.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 180,
+      "sizeBytes": 37976
+    },
+    {
+      "masterIndex": 58,
+      "filename": "frame-058.webp",
+      "path": "/hero-frames/master/frame-058.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 183,
+      "sizeBytes": 37922
+    },
+    {
+      "masterIndex": 59,
+      "filename": "frame-059.webp",
+      "path": "/hero-frames/master/frame-059.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 187,
+      "sizeBytes": 37688
+    },
+    {
+      "masterIndex": 60,
+      "filename": "frame-060.webp",
+      "path": "/hero-frames/master/frame-060.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 191,
+      "sizeBytes": 37422
+    },
+    {
+      "masterIndex": 61,
+      "filename": "frame-061.webp",
+      "path": "/hero-frames/master/frame-061.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 194,
+      "sizeBytes": 38100
+    },
+    {
+      "masterIndex": 62,
+      "filename": "frame-062.webp",
+      "path": "/hero-frames/master/frame-062.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 198,
+      "sizeBytes": 38736
+    },
+    {
+      "masterIndex": 63,
+      "filename": "frame-063.webp",
+      "path": "/hero-frames/master/frame-063.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 202,
+      "sizeBytes": 38396
+    },
+    {
+      "masterIndex": 64,
+      "filename": "frame-064.webp",
+      "path": "/hero-frames/master/frame-064.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 206,
+      "sizeBytes": 39164
+    },
+    {
+      "masterIndex": 65,
+      "filename": "frame-065.webp",
+      "path": "/hero-frames/master/frame-065.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 209,
+      "sizeBytes": 39526
+    },
+    {
+      "masterIndex": 66,
+      "filename": "frame-066.webp",
+      "path": "/hero-frames/master/frame-066.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 213,
+      "sizeBytes": 39726
+    },
+    {
+      "masterIndex": 67,
+      "filename": "frame-067.webp",
+      "path": "/hero-frames/master/frame-067.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 217,
+      "sizeBytes": 39616
+    },
+    {
+      "masterIndex": 68,
+      "filename": "frame-068.webp",
+      "path": "/hero-frames/master/frame-068.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 221,
+      "sizeBytes": 39686
+    },
+    {
+      "masterIndex": 69,
+      "filename": "frame-069.webp",
+      "path": "/hero-frames/master/frame-069.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 224,
+      "sizeBytes": 39930
+    },
+    {
+      "masterIndex": 70,
+      "filename": "frame-070.webp",
+      "path": "/hero-frames/master/frame-070.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 228,
+      "sizeBytes": 39662
+    },
+    {
+      "masterIndex": 71,
+      "filename": "frame-071.webp",
+      "path": "/hero-frames/master/frame-071.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 232,
+      "sizeBytes": 38864
+    },
+    {
+      "masterIndex": 72,
+      "filename": "frame-072.webp",
+      "path": "/hero-frames/master/frame-072.webp",
+      "clipId": "canonical-clip-01",
+      "sourceFrameNumber": 236,
+      "sizeBytes": 38692
+    },
+    {
+      "masterIndex": 73,
+      "filename": "frame-073.webp",
+      "path": "/hero-frames/master/frame-073.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 1,
+      "sizeBytes": 41126
+    },
+    {
+      "masterIndex": 74,
+      "filename": "frame-074.webp",
+      "path": "/hero-frames/master/frame-074.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 4,
+      "sizeBytes": 41558
+    },
+    {
+      "masterIndex": 75,
+      "filename": "frame-075.webp",
+      "path": "/hero-frames/master/frame-075.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 8,
+      "sizeBytes": 40912
+    },
+    {
+      "masterIndex": 76,
+      "filename": "frame-076.webp",
+      "path": "/hero-frames/master/frame-076.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 11,
+      "sizeBytes": 41532
+    },
+    {
+      "masterIndex": 77,
+      "filename": "frame-077.webp",
+      "path": "/hero-frames/master/frame-077.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 15,
+      "sizeBytes": 42022
+    },
+    {
+      "masterIndex": 78,
+      "filename": "frame-078.webp",
+      "path": "/hero-frames/master/frame-078.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 19,
+      "sizeBytes": 42652
+    },
+    {
+      "masterIndex": 79,
+      "filename": "frame-079.webp",
+      "path": "/hero-frames/master/frame-079.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 22,
+      "sizeBytes": 42828
+    },
+    {
+      "masterIndex": 80,
+      "filename": "frame-080.webp",
+      "path": "/hero-frames/master/frame-080.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 26,
+      "sizeBytes": 42780
+    },
+    {
+      "masterIndex": 81,
+      "filename": "frame-081.webp",
+      "path": "/hero-frames/master/frame-081.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 30,
+      "sizeBytes": 43340
+    },
+    {
+      "masterIndex": 82,
+      "filename": "frame-082.webp",
+      "path": "/hero-frames/master/frame-082.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 33,
+      "sizeBytes": 43456
+    },
+    {
+      "masterIndex": 83,
+      "filename": "frame-083.webp",
+      "path": "/hero-frames/master/frame-083.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 36,
+      "sizeBytes": 42976
+    },
+    {
+      "masterIndex": 84,
+      "filename": "frame-084.webp",
+      "path": "/hero-frames/master/frame-084.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 39,
+      "sizeBytes": 41820
+    },
+    {
+      "masterIndex": 85,
+      "filename": "frame-085.webp",
+      "path": "/hero-frames/master/frame-085.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 42,
+      "sizeBytes": 41170
+    },
+    {
+      "masterIndex": 86,
+      "filename": "frame-086.webp",
+      "path": "/hero-frames/master/frame-086.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 45,
+      "sizeBytes": 41128
+    },
+    {
+      "masterIndex": 87,
+      "filename": "frame-087.webp",
+      "path": "/hero-frames/master/frame-087.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 49,
+      "sizeBytes": 38450
+    },
+    {
+      "masterIndex": 88,
+      "filename": "frame-088.webp",
+      "path": "/hero-frames/master/frame-088.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 52,
+      "sizeBytes": 37430
+    },
+    {
+      "masterIndex": 89,
+      "filename": "frame-089.webp",
+      "path": "/hero-frames/master/frame-089.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 55,
+      "sizeBytes": 36866
+    },
+    {
+      "masterIndex": 90,
+      "filename": "frame-090.webp",
+      "path": "/hero-frames/master/frame-090.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 58,
+      "sizeBytes": 36832
+    },
+    {
+      "masterIndex": 91,
+      "filename": "frame-091.webp",
+      "path": "/hero-frames/master/frame-091.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 61,
+      "sizeBytes": 38022
+    },
+    {
+      "masterIndex": 92,
+      "filename": "frame-092.webp",
+      "path": "/hero-frames/master/frame-092.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 65,
+      "sizeBytes": 38470
+    },
+    {
+      "masterIndex": 93,
+      "filename": "frame-093.webp",
+      "path": "/hero-frames/master/frame-093.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 68,
+      "sizeBytes": 37792
+    },
+    {
+      "masterIndex": 94,
+      "filename": "frame-094.webp",
+      "path": "/hero-frames/master/frame-094.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 71,
+      "sizeBytes": 37458
+    },
+    {
+      "masterIndex": 95,
+      "filename": "frame-095.webp",
+      "path": "/hero-frames/master/frame-095.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 74,
+      "sizeBytes": 37598
+    },
+    {
+      "masterIndex": 96,
+      "filename": "frame-096.webp",
+      "path": "/hero-frames/master/frame-096.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 77,
+      "sizeBytes": 38982
+    },
+    {
+      "masterIndex": 97,
+      "filename": "frame-097.webp",
+      "path": "/hero-frames/master/frame-097.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 80,
+      "sizeBytes": 38012
+    },
+    {
+      "masterIndex": 98,
+      "filename": "frame-098.webp",
+      "path": "/hero-frames/master/frame-098.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 84,
+      "sizeBytes": 37558
+    },
+    {
+      "masterIndex": 99,
+      "filename": "frame-099.webp",
+      "path": "/hero-frames/master/frame-099.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 87,
+      "sizeBytes": 37664
+    },
+    {
+      "masterIndex": 100,
+      "filename": "frame-100.webp",
+      "path": "/hero-frames/master/frame-100.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 90,
+      "sizeBytes": 36704
+    },
+    {
+      "masterIndex": 101,
+      "filename": "frame-101.webp",
+      "path": "/hero-frames/master/frame-101.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 93,
+      "sizeBytes": 37096
+    },
+    {
+      "masterIndex": 102,
+      "filename": "frame-102.webp",
+      "path": "/hero-frames/master/frame-102.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 96,
+      "sizeBytes": 38106
+    },
+    {
+      "masterIndex": 103,
+      "filename": "frame-103.webp",
+      "path": "/hero-frames/master/frame-103.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 100,
+      "sizeBytes": 38908
+    },
+    {
+      "masterIndex": 104,
+      "filename": "frame-104.webp",
+      "path": "/hero-frames/master/frame-104.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 103,
+      "sizeBytes": 39812
+    },
+    {
+      "masterIndex": 105,
+      "filename": "frame-105.webp",
+      "path": "/hero-frames/master/frame-105.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 106,
+      "sizeBytes": 40988
+    },
+    {
+      "masterIndex": 106,
+      "filename": "frame-106.webp",
+      "path": "/hero-frames/master/frame-106.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 109,
+      "sizeBytes": 42502
+    },
+    {
+      "masterIndex": 107,
+      "filename": "frame-107.webp",
+      "path": "/hero-frames/master/frame-107.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 112,
+      "sizeBytes": 41304
+    },
+    {
+      "masterIndex": 108,
+      "filename": "frame-108.webp",
+      "path": "/hero-frames/master/frame-108.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 115,
+      "sizeBytes": 41838
+    },
+    {
+      "masterIndex": 109,
+      "filename": "frame-109.webp",
+      "path": "/hero-frames/master/frame-109.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 119,
+      "sizeBytes": 42040
+    },
+    {
+      "masterIndex": 110,
+      "filename": "frame-110.webp",
+      "path": "/hero-frames/master/frame-110.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 122,
+      "sizeBytes": 42182
+    },
+    {
+      "masterIndex": 111,
+      "filename": "frame-111.webp",
+      "path": "/hero-frames/master/frame-111.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 125,
+      "sizeBytes": 42780
+    },
+    {
+      "masterIndex": 112,
+      "filename": "frame-112.webp",
+      "path": "/hero-frames/master/frame-112.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 128,
+      "sizeBytes": 42664
+    },
+    {
+      "masterIndex": 113,
+      "filename": "frame-113.webp",
+      "path": "/hero-frames/master/frame-113.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 131,
+      "sizeBytes": 47932
+    },
+    {
+      "masterIndex": 114,
+      "filename": "frame-114.webp",
+      "path": "/hero-frames/master/frame-114.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 135,
+      "sizeBytes": 48038
+    },
+    {
+      "masterIndex": 115,
+      "filename": "frame-115.webp",
+      "path": "/hero-frames/master/frame-115.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 138,
+      "sizeBytes": 47874
+    },
+    {
+      "masterIndex": 116,
+      "filename": "frame-116.webp",
+      "path": "/hero-frames/master/frame-116.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 141,
+      "sizeBytes": 51096
+    },
+    {
+      "masterIndex": 117,
+      "filename": "frame-117.webp",
+      "path": "/hero-frames/master/frame-117.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 144,
+      "sizeBytes": 48192
+    },
+    {
+      "masterIndex": 118,
+      "filename": "frame-118.webp",
+      "path": "/hero-frames/master/frame-118.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 147,
+      "sizeBytes": 50330
+    },
+    {
+      "masterIndex": 119,
+      "filename": "frame-119.webp",
+      "path": "/hero-frames/master/frame-119.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 150,
+      "sizeBytes": 49838
+    },
+    {
+      "masterIndex": 120,
+      "filename": "frame-120.webp",
+      "path": "/hero-frames/master/frame-120.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 154,
+      "sizeBytes": 52206
+    },
+    {
+      "masterIndex": 121,
+      "filename": "frame-121.webp",
+      "path": "/hero-frames/master/frame-121.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 157,
+      "sizeBytes": 52662
+    },
+    {
+      "masterIndex": 122,
+      "filename": "frame-122.webp",
+      "path": "/hero-frames/master/frame-122.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 160,
+      "sizeBytes": 53570
+    },
+    {
+      "masterIndex": 123,
+      "filename": "frame-123.webp",
+      "path": "/hero-frames/master/frame-123.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 163,
+      "sizeBytes": 54894
+    },
+    {
+      "masterIndex": 124,
+      "filename": "frame-124.webp",
+      "path": "/hero-frames/master/frame-124.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 166,
+      "sizeBytes": 54792
+    },
+    {
+      "masterIndex": 125,
+      "filename": "frame-125.webp",
+      "path": "/hero-frames/master/frame-125.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 170,
+      "sizeBytes": 55236
+    },
+    {
+      "masterIndex": 126,
+      "filename": "frame-126.webp",
+      "path": "/hero-frames/master/frame-126.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 173,
+      "sizeBytes": 56180
+    },
+    {
+      "masterIndex": 127,
+      "filename": "frame-127.webp",
+      "path": "/hero-frames/master/frame-127.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 176,
+      "sizeBytes": 55420
+    },
+    {
+      "masterIndex": 128,
+      "filename": "frame-128.webp",
+      "path": "/hero-frames/master/frame-128.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 180,
+      "sizeBytes": 55566
+    },
+    {
+      "masterIndex": 129,
+      "filename": "frame-129.webp",
+      "path": "/hero-frames/master/frame-129.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 183,
+      "sizeBytes": 55178
+    },
+    {
+      "masterIndex": 130,
+      "filename": "frame-130.webp",
+      "path": "/hero-frames/master/frame-130.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 187,
+      "sizeBytes": 56446
+    },
+    {
+      "masterIndex": 131,
+      "filename": "frame-131.webp",
+      "path": "/hero-frames/master/frame-131.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 190,
+      "sizeBytes": 57602
+    },
+    {
+      "masterIndex": 132,
+      "filename": "frame-132.webp",
+      "path": "/hero-frames/master/frame-132.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 193,
+      "sizeBytes": 57426
+    },
+    {
+      "masterIndex": 133,
+      "filename": "frame-133.webp",
+      "path": "/hero-frames/master/frame-133.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 197,
+      "sizeBytes": 59092
+    },
+    {
+      "masterIndex": 134,
+      "filename": "frame-134.webp",
+      "path": "/hero-frames/master/frame-134.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 200,
+      "sizeBytes": 56026
+    },
+    {
+      "masterIndex": 135,
+      "filename": "frame-135.webp",
+      "path": "/hero-frames/master/frame-135.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 204,
+      "sizeBytes": 57202
+    },
+    {
+      "masterIndex": 136,
+      "filename": "frame-136.webp",
+      "path": "/hero-frames/master/frame-136.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 207,
+      "sizeBytes": 58314
+    },
+    {
+      "masterIndex": 137,
+      "filename": "frame-137.webp",
+      "path": "/hero-frames/master/frame-137.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 211,
+      "sizeBytes": 58620
+    },
+    {
+      "masterIndex": 138,
+      "filename": "frame-138.webp",
+      "path": "/hero-frames/master/frame-138.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 214,
+      "sizeBytes": 58536
+    },
+    {
+      "masterIndex": 139,
+      "filename": "frame-139.webp",
+      "path": "/hero-frames/master/frame-139.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 217,
+      "sizeBytes": 59094
+    },
+    {
+      "masterIndex": 140,
+      "filename": "frame-140.webp",
+      "path": "/hero-frames/master/frame-140.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 221,
+      "sizeBytes": 59676
+    },
+    {
+      "masterIndex": 141,
+      "filename": "frame-141.webp",
+      "path": "/hero-frames/master/frame-141.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 224,
+      "sizeBytes": 58906
+    },
+    {
+      "masterIndex": 142,
+      "filename": "frame-142.webp",
+      "path": "/hero-frames/master/frame-142.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 228,
+      "sizeBytes": 58768
+    },
+    {
+      "masterIndex": 143,
+      "filename": "frame-143.webp",
+      "path": "/hero-frames/master/frame-143.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 231,
+      "sizeBytes": 59060
+    },
+    {
+      "masterIndex": 144,
+      "filename": "frame-144.webp",
+      "path": "/hero-frames/master/frame-144.webp",
+      "clipId": "canonical-clip-02",
+      "sourceFrameNumber": 235,
+      "sizeBytes": 58132
+    },
+    {
+      "masterIndex": 145,
+      "filename": "frame-145.webp",
+      "path": "/hero-frames/master/frame-145.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 1,
+      "sizeBytes": 30412
+    },
+    {
+      "masterIndex": 146,
+      "filename": "frame-146.webp",
+      "path": "/hero-frames/master/frame-146.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 4,
+      "sizeBytes": 30856
+    },
+    {
+      "masterIndex": 147,
+      "filename": "frame-147.webp",
+      "path": "/hero-frames/master/frame-147.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 7,
+      "sizeBytes": 30186
+    },
+    {
+      "masterIndex": 148,
+      "filename": "frame-148.webp",
+      "path": "/hero-frames/master/frame-148.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 10,
+      "sizeBytes": 29210
+    },
+    {
+      "masterIndex": 149,
+      "filename": "frame-149.webp",
+      "path": "/hero-frames/master/frame-149.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 13,
+      "sizeBytes": 30028
+    },
+    {
+      "masterIndex": 150,
+      "filename": "frame-150.webp",
+      "path": "/hero-frames/master/frame-150.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 16,
+      "sizeBytes": 29438
+    },
+    {
+      "masterIndex": 151,
+      "filename": "frame-151.webp",
+      "path": "/hero-frames/master/frame-151.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 20,
+      "sizeBytes": 29738
+    },
+    {
+      "masterIndex": 152,
+      "filename": "frame-152.webp",
+      "path": "/hero-frames/master/frame-152.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 23,
+      "sizeBytes": 29452
+    },
+    {
+      "masterIndex": 153,
+      "filename": "frame-153.webp",
+      "path": "/hero-frames/master/frame-153.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 26,
+      "sizeBytes": 28708
+    },
+    {
+      "masterIndex": 154,
+      "filename": "frame-154.webp",
+      "path": "/hero-frames/master/frame-154.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 30,
+      "sizeBytes": 28082
+    },
+    {
+      "masterIndex": 155,
+      "filename": "frame-155.webp",
+      "path": "/hero-frames/master/frame-155.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 33,
+      "sizeBytes": 26934
+    },
+    {
+      "masterIndex": 156,
+      "filename": "frame-156.webp",
+      "path": "/hero-frames/master/frame-156.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 37,
+      "sizeBytes": 27732
+    },
+    {
+      "masterIndex": 157,
+      "filename": "frame-157.webp",
+      "path": "/hero-frames/master/frame-157.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 40,
+      "sizeBytes": 28506
+    },
+    {
+      "masterIndex": 158,
+      "filename": "frame-158.webp",
+      "path": "/hero-frames/master/frame-158.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 43,
+      "sizeBytes": 29156
+    },
+    {
+      "masterIndex": 159,
+      "filename": "frame-159.webp",
+      "path": "/hero-frames/master/frame-159.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 47,
+      "sizeBytes": 30078
+    },
+    {
+      "masterIndex": 160,
+      "filename": "frame-160.webp",
+      "path": "/hero-frames/master/frame-160.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 50,
+      "sizeBytes": 30984
+    },
+    {
+      "masterIndex": 161,
+      "filename": "frame-161.webp",
+      "path": "/hero-frames/master/frame-161.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 54,
+      "sizeBytes": 32150
+    },
+    {
+      "masterIndex": 162,
+      "filename": "frame-162.webp",
+      "path": "/hero-frames/master/frame-162.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 57,
+      "sizeBytes": 33760
+    },
+    {
+      "masterIndex": 163,
+      "filename": "frame-163.webp",
+      "path": "/hero-frames/master/frame-163.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 60,
+      "sizeBytes": 34430
+    },
+    {
+      "masterIndex": 164,
+      "filename": "frame-164.webp",
+      "path": "/hero-frames/master/frame-164.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 64,
+      "sizeBytes": 35102
+    },
+    {
+      "masterIndex": 165,
+      "filename": "frame-165.webp",
+      "path": "/hero-frames/master/frame-165.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 67,
+      "sizeBytes": 36938
+    },
+    {
+      "masterIndex": 166,
+      "filename": "frame-166.webp",
+      "path": "/hero-frames/master/frame-166.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 71,
+      "sizeBytes": 36778
+    },
+    {
+      "masterIndex": 167,
+      "filename": "frame-167.webp",
+      "path": "/hero-frames/master/frame-167.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 74,
+      "sizeBytes": 36636
+    },
+    {
+      "masterIndex": 168,
+      "filename": "frame-168.webp",
+      "path": "/hero-frames/master/frame-168.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 77,
+      "sizeBytes": 38182
+    },
+    {
+      "masterIndex": 169,
+      "filename": "frame-169.webp",
+      "path": "/hero-frames/master/frame-169.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 81,
+      "sizeBytes": 37284
+    },
+    {
+      "masterIndex": 170,
+      "filename": "frame-170.webp",
+      "path": "/hero-frames/master/frame-170.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 84,
+      "sizeBytes": 36768
+    },
+    {
+      "masterIndex": 171,
+      "filename": "frame-171.webp",
+      "path": "/hero-frames/master/frame-171.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 88,
+      "sizeBytes": 36040
+    },
+    {
+      "masterIndex": 172,
+      "filename": "frame-172.webp",
+      "path": "/hero-frames/master/frame-172.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 91,
+      "sizeBytes": 36324
+    },
+    {
+      "masterIndex": 173,
+      "filename": "frame-173.webp",
+      "path": "/hero-frames/master/frame-173.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 94,
+      "sizeBytes": 36832
+    },
+    {
+      "masterIndex": 174,
+      "filename": "frame-174.webp",
+      "path": "/hero-frames/master/frame-174.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 98,
+      "sizeBytes": 37068
+    },
+    {
+      "masterIndex": 175,
+      "filename": "frame-175.webp",
+      "path": "/hero-frames/master/frame-175.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 101,
+      "sizeBytes": 39448
+    },
+    {
+      "masterIndex": 176,
+      "filename": "frame-176.webp",
+      "path": "/hero-frames/master/frame-176.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 105,
+      "sizeBytes": 39790
+    },
+    {
+      "masterIndex": 177,
+      "filename": "frame-177.webp",
+      "path": "/hero-frames/master/frame-177.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 108,
+      "sizeBytes": 39182
+    },
+    {
+      "masterIndex": 178,
+      "filename": "frame-178.webp",
+      "path": "/hero-frames/master/frame-178.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 111,
+      "sizeBytes": 38074
+    },
+    {
+      "masterIndex": 179,
+      "filename": "frame-179.webp",
+      "path": "/hero-frames/master/frame-179.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 115,
+      "sizeBytes": 37862
+    },
+    {
+      "masterIndex": 180,
+      "filename": "frame-180.webp",
+      "path": "/hero-frames/master/frame-180.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 118,
+      "sizeBytes": 37476
+    },
+    {
+      "masterIndex": 181,
+      "filename": "frame-181.webp",
+      "path": "/hero-frames/master/frame-181.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 122,
+      "sizeBytes": 37378
+    },
+    {
+      "masterIndex": 182,
+      "filename": "frame-182.webp",
+      "path": "/hero-frames/master/frame-182.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 125,
+      "sizeBytes": 38964
+    },
+    {
+      "masterIndex": 183,
+      "filename": "frame-183.webp",
+      "path": "/hero-frames/master/frame-183.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 128,
+      "sizeBytes": 37564
+    },
+    {
+      "masterIndex": 184,
+      "filename": "frame-184.webp",
+      "path": "/hero-frames/master/frame-184.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 132,
+      "sizeBytes": 27338
+    },
+    {
+      "masterIndex": 185,
+      "filename": "frame-185.webp",
+      "path": "/hero-frames/master/frame-185.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 135,
+      "sizeBytes": 26642
+    },
+    {
+      "masterIndex": 186,
+      "filename": "frame-186.webp",
+      "path": "/hero-frames/master/frame-186.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 139,
+      "sizeBytes": 24964
+    },
+    {
+      "masterIndex": 187,
+      "filename": "frame-187.webp",
+      "path": "/hero-frames/master/frame-187.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 142,
+      "sizeBytes": 25222
+    },
+    {
+      "masterIndex": 188,
+      "filename": "frame-188.webp",
+      "path": "/hero-frames/master/frame-188.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 145,
+      "sizeBytes": 23112
+    },
+    {
+      "masterIndex": 189,
+      "filename": "frame-189.webp",
+      "path": "/hero-frames/master/frame-189.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 149,
+      "sizeBytes": 22350
+    },
+    {
+      "masterIndex": 190,
+      "filename": "frame-190.webp",
+      "path": "/hero-frames/master/frame-190.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 152,
+      "sizeBytes": 24972
+    },
+    {
+      "masterIndex": 191,
+      "filename": "frame-191.webp",
+      "path": "/hero-frames/master/frame-191.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 156,
+      "sizeBytes": 34938
+    },
+    {
+      "masterIndex": 192,
+      "filename": "frame-192.webp",
+      "path": "/hero-frames/master/frame-192.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 159,
+      "sizeBytes": 40574
+    },
+    {
+      "masterIndex": 193,
+      "filename": "frame-193.webp",
+      "path": "/hero-frames/master/frame-193.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 162,
+      "sizeBytes": 39924
+    },
+    {
+      "masterIndex": 194,
+      "filename": "frame-194.webp",
+      "path": "/hero-frames/master/frame-194.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 166,
+      "sizeBytes": 38654
+    },
+    {
+      "masterIndex": 195,
+      "filename": "frame-195.webp",
+      "path": "/hero-frames/master/frame-195.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 169,
+      "sizeBytes": 38238
+    },
+    {
+      "masterIndex": 196,
+      "filename": "frame-196.webp",
+      "path": "/hero-frames/master/frame-196.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 173,
+      "sizeBytes": 35160
+    },
+    {
+      "masterIndex": 197,
+      "filename": "frame-197.webp",
+      "path": "/hero-frames/master/frame-197.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 176,
+      "sizeBytes": 33826
+    },
+    {
+      "masterIndex": 198,
+      "filename": "frame-198.webp",
+      "path": "/hero-frames/master/frame-198.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 179,
+      "sizeBytes": 31910
+    },
+    {
+      "masterIndex": 199,
+      "filename": "frame-199.webp",
+      "path": "/hero-frames/master/frame-199.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 183,
+      "sizeBytes": 31496
+    },
+    {
+      "masterIndex": 200,
+      "filename": "frame-200.webp",
+      "path": "/hero-frames/master/frame-200.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 186,
+      "sizeBytes": 30276
+    },
+    {
+      "masterIndex": 201,
+      "filename": "frame-201.webp",
+      "path": "/hero-frames/master/frame-201.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 190,
+      "sizeBytes": 27066
+    },
+    {
+      "masterIndex": 202,
+      "filename": "frame-202.webp",
+      "path": "/hero-frames/master/frame-202.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 193,
+      "sizeBytes": 28066
+    },
+    {
+      "masterIndex": 203,
+      "filename": "frame-203.webp",
+      "path": "/hero-frames/master/frame-203.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 196,
+      "sizeBytes": 25004
+    },
+    {
+      "masterIndex": 204,
+      "filename": "frame-204.webp",
+      "path": "/hero-frames/master/frame-204.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 199,
+      "sizeBytes": 24810
+    },
+    {
+      "masterIndex": 205,
+      "filename": "frame-205.webp",
+      "path": "/hero-frames/master/frame-205.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 202,
+      "sizeBytes": 24612
+    },
+    {
+      "masterIndex": 206,
+      "filename": "frame-206.webp",
+      "path": "/hero-frames/master/frame-206.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 205,
+      "sizeBytes": 25388
+    },
+    {
+      "masterIndex": 207,
+      "filename": "frame-207.webp",
+      "path": "/hero-frames/master/frame-207.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 208,
+      "sizeBytes": 25050
+    },
+    {
+      "masterIndex": 208,
+      "filename": "frame-208.webp",
+      "path": "/hero-frames/master/frame-208.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 211,
+      "sizeBytes": 25554
+    },
+    {
+      "masterIndex": 209,
+      "filename": "frame-209.webp",
+      "path": "/hero-frames/master/frame-209.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 214,
+      "sizeBytes": 26132
+    },
+    {
+      "masterIndex": 210,
+      "filename": "frame-210.webp",
+      "path": "/hero-frames/master/frame-210.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 217,
+      "sizeBytes": 27634
+    },
+    {
+      "masterIndex": 211,
+      "filename": "frame-211.webp",
+      "path": "/hero-frames/master/frame-211.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 220,
+      "sizeBytes": 28502
+    },
+    {
+      "masterIndex": 212,
+      "filename": "frame-212.webp",
+      "path": "/hero-frames/master/frame-212.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 223,
+      "sizeBytes": 29204
+    },
+    {
+      "masterIndex": 213,
+      "filename": "frame-213.webp",
+      "path": "/hero-frames/master/frame-213.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 226,
+      "sizeBytes": 30370
+    },
+    {
+      "masterIndex": 214,
+      "filename": "frame-214.webp",
+      "path": "/hero-frames/master/frame-214.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 229,
+      "sizeBytes": 31432
+    },
+    {
+      "masterIndex": 215,
+      "filename": "frame-215.webp",
+      "path": "/hero-frames/master/frame-215.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 232,
+      "sizeBytes": 30320
+    },
+    {
+      "masterIndex": 216,
+      "filename": "frame-216.webp",
+      "path": "/hero-frames/master/frame-216.webp",
+      "clipId": "canonical-clip-03",
+      "sourceFrameNumber": 235,
+      "sizeBytes": 30468
+    },
+    {
+      "masterIndex": 217,
+      "filename": "frame-217.webp",
+      "path": "/hero-frames/master/frame-217.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 1,
+      "sizeBytes": 33798
+    },
+    {
+      "masterIndex": 218,
+      "filename": "frame-218.webp",
+      "path": "/hero-frames/master/frame-218.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 4,
+      "sizeBytes": 32448
+    },
+    {
+      "masterIndex": 219,
+      "filename": "frame-219.webp",
+      "path": "/hero-frames/master/frame-219.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 7,
+      "sizeBytes": 32570
+    },
+    {
+      "masterIndex": 220,
+      "filename": "frame-220.webp",
+      "path": "/hero-frames/master/frame-220.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 11,
+      "sizeBytes": 32038
+    },
+    {
+      "masterIndex": 221,
+      "filename": "frame-221.webp",
+      "path": "/hero-frames/master/frame-221.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 14,
+      "sizeBytes": 31536
+    },
+    {
+      "masterIndex": 222,
+      "filename": "frame-222.webp",
+      "path": "/hero-frames/master/frame-222.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 18,
+      "sizeBytes": 29570
+    },
+    {
+      "masterIndex": 223,
+      "filename": "frame-223.webp",
+      "path": "/hero-frames/master/frame-223.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 21,
+      "sizeBytes": 29978
+    },
+    {
+      "masterIndex": 224,
+      "filename": "frame-224.webp",
+      "path": "/hero-frames/master/frame-224.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 25,
+      "sizeBytes": 28242
+    },
+    {
+      "masterIndex": 225,
+      "filename": "frame-225.webp",
+      "path": "/hero-frames/master/frame-225.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 28,
+      "sizeBytes": 27946
+    },
+    {
+      "masterIndex": 226,
+      "filename": "frame-226.webp",
+      "path": "/hero-frames/master/frame-226.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 31,
+      "sizeBytes": 28050
+    },
+    {
+      "masterIndex": 227,
+      "filename": "frame-227.webp",
+      "path": "/hero-frames/master/frame-227.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 34,
+      "sizeBytes": 27570
+    },
+    {
+      "masterIndex": 228,
+      "filename": "frame-228.webp",
+      "path": "/hero-frames/master/frame-228.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 38,
+      "sizeBytes": 27826
+    },
+    {
+      "masterIndex": 229,
+      "filename": "frame-229.webp",
+      "path": "/hero-frames/master/frame-229.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 41,
+      "sizeBytes": 27940
+    },
+    {
+      "masterIndex": 230,
+      "filename": "frame-230.webp",
+      "path": "/hero-frames/master/frame-230.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 44,
+      "sizeBytes": 27722
+    },
+    {
+      "masterIndex": 231,
+      "filename": "frame-231.webp",
+      "path": "/hero-frames/master/frame-231.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 48,
+      "sizeBytes": 26538
+    },
+    {
+      "masterIndex": 232,
+      "filename": "frame-232.webp",
+      "path": "/hero-frames/master/frame-232.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 51,
+      "sizeBytes": 26110
+    },
+    {
+      "masterIndex": 233,
+      "filename": "frame-233.webp",
+      "path": "/hero-frames/master/frame-233.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 54,
+      "sizeBytes": 25406
+    },
+    {
+      "masterIndex": 234,
+      "filename": "frame-234.webp",
+      "path": "/hero-frames/master/frame-234.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 57,
+      "sizeBytes": 24764
+    },
+    {
+      "masterIndex": 235,
+      "filename": "frame-235.webp",
+      "path": "/hero-frames/master/frame-235.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 61,
+      "sizeBytes": 24426
+    },
+    {
+      "masterIndex": 236,
+      "filename": "frame-236.webp",
+      "path": "/hero-frames/master/frame-236.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 64,
+      "sizeBytes": 24102
+    },
+    {
+      "masterIndex": 237,
+      "filename": "frame-237.webp",
+      "path": "/hero-frames/master/frame-237.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 67,
+      "sizeBytes": 25186
+    },
+    {
+      "masterIndex": 238,
+      "filename": "frame-238.webp",
+      "path": "/hero-frames/master/frame-238.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 71,
+      "sizeBytes": 24950
+    },
+    {
+      "masterIndex": 239,
+      "filename": "frame-239.webp",
+      "path": "/hero-frames/master/frame-239.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 74,
+      "sizeBytes": 24332
+    },
+    {
+      "masterIndex": 240,
+      "filename": "frame-240.webp",
+      "path": "/hero-frames/master/frame-240.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 77,
+      "sizeBytes": 24556
+    },
+    {
+      "masterIndex": 241,
+      "filename": "frame-241.webp",
+      "path": "/hero-frames/master/frame-241.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 81,
+      "sizeBytes": 24058
+    },
+    {
+      "masterIndex": 242,
+      "filename": "frame-242.webp",
+      "path": "/hero-frames/master/frame-242.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 84,
+      "sizeBytes": 23636
+    },
+    {
+      "masterIndex": 243,
+      "filename": "frame-243.webp",
+      "path": "/hero-frames/master/frame-243.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 87,
+      "sizeBytes": 23816
+    },
+    {
+      "masterIndex": 244,
+      "filename": "frame-244.webp",
+      "path": "/hero-frames/master/frame-244.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 90,
+      "sizeBytes": 23416
+    },
+    {
+      "masterIndex": 245,
+      "filename": "frame-245.webp",
+      "path": "/hero-frames/master/frame-245.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 94,
+      "sizeBytes": 23942
+    },
+    {
+      "masterIndex": 246,
+      "filename": "frame-246.webp",
+      "path": "/hero-frames/master/frame-246.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 97,
+      "sizeBytes": 24780
+    },
+    {
+      "masterIndex": 247,
+      "filename": "frame-247.webp",
+      "path": "/hero-frames/master/frame-247.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 100,
+      "sizeBytes": 24894
+    },
+    {
+      "masterIndex": 248,
+      "filename": "frame-248.webp",
+      "path": "/hero-frames/master/frame-248.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 104,
+      "sizeBytes": 26612
+    },
+    {
+      "masterIndex": 249,
+      "filename": "frame-249.webp",
+      "path": "/hero-frames/master/frame-249.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 107,
+      "sizeBytes": 27722
+    },
+    {
+      "masterIndex": 250,
+      "filename": "frame-250.webp",
+      "path": "/hero-frames/master/frame-250.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 110,
+      "sizeBytes": 29064
+    },
+    {
+      "masterIndex": 251,
+      "filename": "frame-251.webp",
+      "path": "/hero-frames/master/frame-251.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 114,
+      "sizeBytes": 31678
+    },
+    {
+      "masterIndex": 252,
+      "filename": "frame-252.webp",
+      "path": "/hero-frames/master/frame-252.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 117,
+      "sizeBytes": 35086
+    },
+    {
+      "masterIndex": 253,
+      "filename": "frame-253.webp",
+      "path": "/hero-frames/master/frame-253.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 120,
+      "sizeBytes": 37314
+    },
+    {
+      "masterIndex": 254,
+      "filename": "frame-254.webp",
+      "path": "/hero-frames/master/frame-254.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 123,
+      "sizeBytes": 39826
+    },
+    {
+      "masterIndex": 255,
+      "filename": "frame-255.webp",
+      "path": "/hero-frames/master/frame-255.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 127,
+      "sizeBytes": 42146
+    },
+    {
+      "masterIndex": 256,
+      "filename": "frame-256.webp",
+      "path": "/hero-frames/master/frame-256.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 130,
+      "sizeBytes": 46222
+    },
+    {
+      "masterIndex": 257,
+      "filename": "frame-257.webp",
+      "path": "/hero-frames/master/frame-257.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 133,
+      "sizeBytes": 51370
+    },
+    {
+      "masterIndex": 258,
+      "filename": "frame-258.webp",
+      "path": "/hero-frames/master/frame-258.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 137,
+      "sizeBytes": 48308
+    },
+    {
+      "masterIndex": 259,
+      "filename": "frame-259.webp",
+      "path": "/hero-frames/master/frame-259.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 140,
+      "sizeBytes": 49060
+    },
+    {
+      "masterIndex": 260,
+      "filename": "frame-260.webp",
+      "path": "/hero-frames/master/frame-260.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 143,
+      "sizeBytes": 51742
+    },
+    {
+      "masterIndex": 261,
+      "filename": "frame-261.webp",
+      "path": "/hero-frames/master/frame-261.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 147,
+      "sizeBytes": 53452
+    },
+    {
+      "masterIndex": 262,
+      "filename": "frame-262.webp",
+      "path": "/hero-frames/master/frame-262.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 150,
+      "sizeBytes": 54076
+    },
+    {
+      "masterIndex": 263,
+      "filename": "frame-263.webp",
+      "path": "/hero-frames/master/frame-263.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 153,
+      "sizeBytes": 54556
+    },
+    {
+      "masterIndex": 264,
+      "filename": "frame-264.webp",
+      "path": "/hero-frames/master/frame-264.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 156,
+      "sizeBytes": 53394
+    },
+    {
+      "masterIndex": 265,
+      "filename": "frame-265.webp",
+      "path": "/hero-frames/master/frame-265.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 160,
+      "sizeBytes": 52664
+    },
+    {
+      "masterIndex": 266,
+      "filename": "frame-266.webp",
+      "path": "/hero-frames/master/frame-266.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 163,
+      "sizeBytes": 53364
+    },
+    {
+      "masterIndex": 267,
+      "filename": "frame-267.webp",
+      "path": "/hero-frames/master/frame-267.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 166,
+      "sizeBytes": 52840
+    },
+    {
+      "masterIndex": 268,
+      "filename": "frame-268.webp",
+      "path": "/hero-frames/master/frame-268.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 170,
+      "sizeBytes": 51800
+    },
+    {
+      "masterIndex": 269,
+      "filename": "frame-269.webp",
+      "path": "/hero-frames/master/frame-269.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 173,
+      "sizeBytes": 52898
+    },
+    {
+      "masterIndex": 270,
+      "filename": "frame-270.webp",
+      "path": "/hero-frames/master/frame-270.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 176,
+      "sizeBytes": 51304
+    },
+    {
+      "masterIndex": 271,
+      "filename": "frame-271.webp",
+      "path": "/hero-frames/master/frame-271.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 180,
+      "sizeBytes": 51210
+    },
+    {
+      "masterIndex": 272,
+      "filename": "frame-272.webp",
+      "path": "/hero-frames/master/frame-272.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 183,
+      "sizeBytes": 51350
+    },
+    {
+      "masterIndex": 273,
+      "filename": "frame-273.webp",
+      "path": "/hero-frames/master/frame-273.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 186,
+      "sizeBytes": 51830
+    },
+    {
+      "masterIndex": 274,
+      "filename": "frame-274.webp",
+      "path": "/hero-frames/master/frame-274.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 189,
+      "sizeBytes": 52974
+    },
+    {
+      "masterIndex": 275,
+      "filename": "frame-275.webp",
+      "path": "/hero-frames/master/frame-275.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 193,
+      "sizeBytes": 52394
+    },
+    {
+      "masterIndex": 276,
+      "filename": "frame-276.webp",
+      "path": "/hero-frames/master/frame-276.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 196,
+      "sizeBytes": 51578
+    },
+    {
+      "masterIndex": 277,
+      "filename": "frame-277.webp",
+      "path": "/hero-frames/master/frame-277.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 199,
+      "sizeBytes": 50738
+    },
+    {
+      "masterIndex": 278,
+      "filename": "frame-278.webp",
+      "path": "/hero-frames/master/frame-278.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 203,
+      "sizeBytes": 51104
+    },
+    {
+      "masterIndex": 279,
+      "filename": "frame-279.webp",
+      "path": "/hero-frames/master/frame-279.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 206,
+      "sizeBytes": 51190
+    },
+    {
+      "masterIndex": 280,
+      "filename": "frame-280.webp",
+      "path": "/hero-frames/master/frame-280.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 209,
+      "sizeBytes": 51792
+    },
+    {
+      "masterIndex": 281,
+      "filename": "frame-281.webp",
+      "path": "/hero-frames/master/frame-281.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 212,
+      "sizeBytes": 51370
+    },
+    {
+      "masterIndex": 282,
+      "filename": "frame-282.webp",
+      "path": "/hero-frames/master/frame-282.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 216,
+      "sizeBytes": 51032
+    },
+    {
+      "masterIndex": 283,
+      "filename": "frame-283.webp",
+      "path": "/hero-frames/master/frame-283.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 219,
+      "sizeBytes": 51272
+    },
+    {
+      "masterIndex": 284,
+      "filename": "frame-284.webp",
+      "path": "/hero-frames/master/frame-284.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 222,
+      "sizeBytes": 51250
+    },
+    {
+      "masterIndex": 285,
+      "filename": "frame-285.webp",
+      "path": "/hero-frames/master/frame-285.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 226,
+      "sizeBytes": 51462
+    },
+    {
+      "masterIndex": 286,
+      "filename": "frame-286.webp",
+      "path": "/hero-frames/master/frame-286.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 229,
+      "sizeBytes": 51850
+    },
+    {
+      "masterIndex": 287,
+      "filename": "frame-287.webp",
+      "path": "/hero-frames/master/frame-287.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 232,
+      "sizeBytes": 51714
+    },
+    {
+      "masterIndex": 288,
+      "filename": "frame-288.webp",
+      "path": "/hero-frames/master/frame-288.webp",
+      "clipId": "canonical-clip-04",
+      "sourceFrameNumber": 236,
+      "sizeBytes": 51798
+    },
+    {
+      "masterIndex": 289,
+      "filename": "frame-289.webp",
+      "path": "/hero-frames/master/frame-289.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 1,
+      "sizeBytes": 57066
+    },
+    {
+      "masterIndex": 290,
+      "filename": "frame-290.webp",
+      "path": "/hero-frames/master/frame-290.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 4,
+      "sizeBytes": 56582
+    },
+    {
+      "masterIndex": 291,
+      "filename": "frame-291.webp",
+      "path": "/hero-frames/master/frame-291.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 7,
+      "sizeBytes": 56568
+    },
+    {
+      "masterIndex": 292,
+      "filename": "frame-292.webp",
+      "path": "/hero-frames/master/frame-292.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 11,
+      "sizeBytes": 56850
+    },
+    {
+      "masterIndex": 293,
+      "filename": "frame-293.webp",
+      "path": "/hero-frames/master/frame-293.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 14,
+      "sizeBytes": 56240
+    },
+    {
+      "masterIndex": 294,
+      "filename": "frame-294.webp",
+      "path": "/hero-frames/master/frame-294.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 18,
+      "sizeBytes": 56208
+    },
+    {
+      "masterIndex": 295,
+      "filename": "frame-295.webp",
+      "path": "/hero-frames/master/frame-295.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 21,
+      "sizeBytes": 57574
+    },
+    {
+      "masterIndex": 296,
+      "filename": "frame-296.webp",
+      "path": "/hero-frames/master/frame-296.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 25,
+      "sizeBytes": 56916
+    },
+    {
+      "masterIndex": 297,
+      "filename": "frame-297.webp",
+      "path": "/hero-frames/master/frame-297.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 28,
+      "sizeBytes": 56510
+    },
+    {
+      "masterIndex": 298,
+      "filename": "frame-298.webp",
+      "path": "/hero-frames/master/frame-298.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 32,
+      "sizeBytes": 56188
+    },
+    {
+      "masterIndex": 299,
+      "filename": "frame-299.webp",
+      "path": "/hero-frames/master/frame-299.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 36,
+      "sizeBytes": 55846
+    },
+    {
+      "masterIndex": 300,
+      "filename": "frame-300.webp",
+      "path": "/hero-frames/master/frame-300.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 39,
+      "sizeBytes": 55844
+    },
+    {
+      "masterIndex": 301,
+      "filename": "frame-301.webp",
+      "path": "/hero-frames/master/frame-301.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 43,
+      "sizeBytes": 56180
+    },
+    {
+      "masterIndex": 302,
+      "filename": "frame-302.webp",
+      "path": "/hero-frames/master/frame-302.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 47,
+      "sizeBytes": 55938
+    },
+    {
+      "masterIndex": 303,
+      "filename": "frame-303.webp",
+      "path": "/hero-frames/master/frame-303.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 50,
+      "sizeBytes": 55924
+    },
+    {
+      "masterIndex": 304,
+      "filename": "frame-304.webp",
+      "path": "/hero-frames/master/frame-304.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 54,
+      "sizeBytes": 55928
+    },
+    {
+      "masterIndex": 305,
+      "filename": "frame-305.webp",
+      "path": "/hero-frames/master/frame-305.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 58,
+      "sizeBytes": 55064
+    },
+    {
+      "masterIndex": 306,
+      "filename": "frame-306.webp",
+      "path": "/hero-frames/master/frame-306.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 61,
+      "sizeBytes": 56150
+    },
+    {
+      "masterIndex": 307,
+      "filename": "frame-307.webp",
+      "path": "/hero-frames/master/frame-307.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 65,
+      "sizeBytes": 56362
+    },
+    {
+      "masterIndex": 308,
+      "filename": "frame-308.webp",
+      "path": "/hero-frames/master/frame-308.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 69,
+      "sizeBytes": 56612
+    },
+    {
+      "masterIndex": 309,
+      "filename": "frame-309.webp",
+      "path": "/hero-frames/master/frame-309.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 72,
+      "sizeBytes": 55472
+    },
+    {
+      "masterIndex": 310,
+      "filename": "frame-310.webp",
+      "path": "/hero-frames/master/frame-310.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 76,
+      "sizeBytes": 55198
+    },
+    {
+      "masterIndex": 311,
+      "filename": "frame-311.webp",
+      "path": "/hero-frames/master/frame-311.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 80,
+      "sizeBytes": 54246
+    },
+    {
+      "masterIndex": 312,
+      "filename": "frame-312.webp",
+      "path": "/hero-frames/master/frame-312.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 83,
+      "sizeBytes": 54746
+    },
+    {
+      "masterIndex": 313,
+      "filename": "frame-313.webp",
+      "path": "/hero-frames/master/frame-313.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 87,
+      "sizeBytes": 54188
+    },
+    {
+      "masterIndex": 314,
+      "filename": "frame-314.webp",
+      "path": "/hero-frames/master/frame-314.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 91,
+      "sizeBytes": 54432
+    },
+    {
+      "masterIndex": 315,
+      "filename": "frame-315.webp",
+      "path": "/hero-frames/master/frame-315.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 94,
+      "sizeBytes": 53982
+    },
+    {
+      "masterIndex": 316,
+      "filename": "frame-316.webp",
+      "path": "/hero-frames/master/frame-316.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 98,
+      "sizeBytes": 54562
+    },
+    {
+      "masterIndex": 317,
+      "filename": "frame-317.webp",
+      "path": "/hero-frames/master/frame-317.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 102,
+      "sizeBytes": 54560
+    },
+    {
+      "masterIndex": 318,
+      "filename": "frame-318.webp",
+      "path": "/hero-frames/master/frame-318.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 105,
+      "sizeBytes": 55696
+    },
+    {
+      "masterIndex": 319,
+      "filename": "frame-319.webp",
+      "path": "/hero-frames/master/frame-319.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 109,
+      "sizeBytes": 56398
+    },
+    {
+      "masterIndex": 320,
+      "filename": "frame-320.webp",
+      "path": "/hero-frames/master/frame-320.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 113,
+      "sizeBytes": 55880
+    },
+    {
+      "masterIndex": 321,
+      "filename": "frame-321.webp",
+      "path": "/hero-frames/master/frame-321.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 116,
+      "sizeBytes": 55904
+    },
+    {
+      "masterIndex": 322,
+      "filename": "frame-322.webp",
+      "path": "/hero-frames/master/frame-322.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 120,
+      "sizeBytes": 57316
+    },
+    {
+      "masterIndex": 323,
+      "filename": "frame-323.webp",
+      "path": "/hero-frames/master/frame-323.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 124,
+      "sizeBytes": 59090
+    },
+    {
+      "masterIndex": 324,
+      "filename": "frame-324.webp",
+      "path": "/hero-frames/master/frame-324.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 127,
+      "sizeBytes": 60102
+    },
+    {
+      "masterIndex": 325,
+      "filename": "frame-325.webp",
+      "path": "/hero-frames/master/frame-325.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 131,
+      "sizeBytes": 56542
+    },
+    {
+      "masterIndex": 326,
+      "filename": "frame-326.webp",
+      "path": "/hero-frames/master/frame-326.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 135,
+      "sizeBytes": 55720
+    },
+    {
+      "masterIndex": 327,
+      "filename": "frame-327.webp",
+      "path": "/hero-frames/master/frame-327.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 138,
+      "sizeBytes": 55248
+    },
+    {
+      "masterIndex": 328,
+      "filename": "frame-328.webp",
+      "path": "/hero-frames/master/frame-328.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 142,
+      "sizeBytes": 55260
+    },
+    {
+      "masterIndex": 329,
+      "filename": "frame-329.webp",
+      "path": "/hero-frames/master/frame-329.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 146,
+      "sizeBytes": 55256
+    },
+    {
+      "masterIndex": 330,
+      "filename": "frame-330.webp",
+      "path": "/hero-frames/master/frame-330.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 149,
+      "sizeBytes": 55742
+    },
+    {
+      "masterIndex": 331,
+      "filename": "frame-331.webp",
+      "path": "/hero-frames/master/frame-331.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 153,
+      "sizeBytes": 55376
+    },
+    {
+      "masterIndex": 332,
+      "filename": "frame-332.webp",
+      "path": "/hero-frames/master/frame-332.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 157,
+      "sizeBytes": 55608
+    },
+    {
+      "masterIndex": 333,
+      "filename": "frame-333.webp",
+      "path": "/hero-frames/master/frame-333.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 160,
+      "sizeBytes": 55492
+    },
+    {
+      "masterIndex": 334,
+      "filename": "frame-334.webp",
+      "path": "/hero-frames/master/frame-334.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 164,
+      "sizeBytes": 55722
+    },
+    {
+      "masterIndex": 335,
+      "filename": "frame-335.webp",
+      "path": "/hero-frames/master/frame-335.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 168,
+      "sizeBytes": 55192
+    },
+    {
+      "masterIndex": 336,
+      "filename": "frame-336.webp",
+      "path": "/hero-frames/master/frame-336.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 171,
+      "sizeBytes": 55094
+    },
+    {
+      "masterIndex": 337,
+      "filename": "frame-337.webp",
+      "path": "/hero-frames/master/frame-337.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 175,
+      "sizeBytes": 55340
+    },
+    {
+      "masterIndex": 338,
+      "filename": "frame-338.webp",
+      "path": "/hero-frames/master/frame-338.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 179,
+      "sizeBytes": 55332
+    },
+    {
+      "masterIndex": 339,
+      "filename": "frame-339.webp",
+      "path": "/hero-frames/master/frame-339.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 182,
+      "sizeBytes": 55090
+    },
+    {
+      "masterIndex": 340,
+      "filename": "frame-340.webp",
+      "path": "/hero-frames/master/frame-340.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 186,
+      "sizeBytes": 54694
+    },
+    {
+      "masterIndex": 341,
+      "filename": "frame-341.webp",
+      "path": "/hero-frames/master/frame-341.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 190,
+      "sizeBytes": 54880
+    },
+    {
+      "masterIndex": 342,
+      "filename": "frame-342.webp",
+      "path": "/hero-frames/master/frame-342.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 192,
+      "sizeBytes": 54192
+    },
+    {
+      "masterIndex": 343,
+      "filename": "frame-343.webp",
+      "path": "/hero-frames/master/frame-343.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 194,
+      "sizeBytes": 54162
+    },
+    {
+      "masterIndex": 344,
+      "filename": "frame-344.webp",
+      "path": "/hero-frames/master/frame-344.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 197,
+      "sizeBytes": 55192
+    },
+    {
+      "masterIndex": 345,
+      "filename": "frame-345.webp",
+      "path": "/hero-frames/master/frame-345.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 199,
+      "sizeBytes": 54810
+    },
+    {
+      "masterIndex": 346,
+      "filename": "frame-346.webp",
+      "path": "/hero-frames/master/frame-346.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 202,
+      "sizeBytes": 54796
+    },
+    {
+      "masterIndex": 347,
+      "filename": "frame-347.webp",
+      "path": "/hero-frames/master/frame-347.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 204,
+      "sizeBytes": 54818
+    },
+    {
+      "masterIndex": 348,
+      "filename": "frame-348.webp",
+      "path": "/hero-frames/master/frame-348.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 206,
+      "sizeBytes": 54734
+    },
+    {
+      "masterIndex": 349,
+      "filename": "frame-349.webp",
+      "path": "/hero-frames/master/frame-349.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 209,
+      "sizeBytes": 55120
+    },
+    {
+      "masterIndex": 350,
+      "filename": "frame-350.webp",
+      "path": "/hero-frames/master/frame-350.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 211,
+      "sizeBytes": 55156
+    },
+    {
+      "masterIndex": 351,
+      "filename": "frame-351.webp",
+      "path": "/hero-frames/master/frame-351.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 214,
+      "sizeBytes": 54620
+    },
+    {
+      "masterIndex": 352,
+      "filename": "frame-352.webp",
+      "path": "/hero-frames/master/frame-352.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 216,
+      "sizeBytes": 54554
+    },
+    {
+      "masterIndex": 353,
+      "filename": "frame-353.webp",
+      "path": "/hero-frames/master/frame-353.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 219,
+      "sizeBytes": 54586
+    },
+    {
+      "masterIndex": 354,
+      "filename": "frame-354.webp",
+      "path": "/hero-frames/master/frame-354.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 221,
+      "sizeBytes": 55068
+    },
+    {
+      "masterIndex": 355,
+      "filename": "frame-355.webp",
+      "path": "/hero-frames/master/frame-355.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 223,
+      "sizeBytes": 54418
+    },
+    {
+      "masterIndex": 356,
+      "filename": "frame-356.webp",
+      "path": "/hero-frames/master/frame-356.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 226,
+      "sizeBytes": 55042
+    },
+    {
+      "masterIndex": 357,
+      "filename": "frame-357.webp",
+      "path": "/hero-frames/master/frame-357.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 228,
+      "sizeBytes": 55276
+    },
+    {
+      "masterIndex": 358,
+      "filename": "frame-358.webp",
+      "path": "/hero-frames/master/frame-358.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 231,
+      "sizeBytes": 54028
+    },
+    {
+      "masterIndex": 359,
+      "filename": "frame-359.webp",
+      "path": "/hero-frames/master/frame-359.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 233,
+      "sizeBytes": 54208
+    },
+    {
+      "masterIndex": 360,
+      "filename": "frame-360.webp",
+      "path": "/hero-frames/master/frame-360.webp",
+      "clipId": "canonical-clip-05",
+      "sourceFrameNumber": 236,
+      "sizeBytes": 53758
+    }
+  ]
+}

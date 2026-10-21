@@ -1,0 +1,83 @@
+[
+  {
+    "id": "cat-thermos-bottles",
+    "name": "Thermos Bottles",
+    "slug": "thermos-bottles",
+    "startPage": 3,
+    "endPage": 10,
+    "itemCount": 21,
+    "description": "Double-wall vacuum insulated SUS 304 food-grade stainless steel bottles retaining beverage temperatures up to 12 hours."
+  },
+  {
+    "id": "cat-steel-bottles",
+    "name": "Steel Bottles",
+    "slug": "steel-bottles",
+    "startPage": 11,
+    "endPage": 16,
+    "itemCount": 14,
+    "description": "Single-wall food-grade 201 and 304 stainless steel bottles with multiple lid styles and UV sterilization options."
+  },
+  {
+    "id": "cat-thermos-mugs",
+    "name": "Thermos Mugs",
+    "slug": "thermos-mugs",
+    "startPage": 17,
+    "endPage": 24,
+    "itemCount": 21,
+    "description": "Double-wall thermal insulated desk mugs featuring sliding lids, real bamboo exteriors, suction anti-fall bases, and LED displays."
+  },
+  {
+    "id": "cat-travel-mugs",
+    "name": "Travel Mugs",
+    "slug": "travel-mugs",
+    "startPage": 25,
+    "endPage": 29,
+    "itemCount": 10,
+    "description": "Ergonomic portable travel mugs in single-wall stainless steel, borosilicate glass with cork/PU wraps, and ceramic finishes."
+  },
+  {
+    "id": "cat-notebooks",
+    "name": "Notebooks",
+    "slug": "notebooks",
+    "startPage": 30,
+    "endPage": 39,
+    "itemCount": 25,
+    "description": "Premium 80 GSM undated executive notebooks and organizers in thermal PU, real cork, real bamboo, and integrated 10,000 mAh powerbank models."
+  },
+  {
+    "id": "cat-pens",
+    "name": "Pens",
+    "slug": "pens",
+    "startPage": 40,
+    "endPage": 45,
+    "itemCount": 26,
+    "description": "Precision executive metal writing instruments in matte, gloss, and dual-tone finishes engineered for laser engraving."
+  },
+  {
+    "id": "cat-metal-keychains",
+    "name": "Metal Keychains",
+    "slug": "metal-keychains",
+    "startPage": 46,
+    "endPage": 48,
+    "itemCount": 15,
+    "description": "Heavy-duty metal, bamboo, and leatherette hybrid keychains featuring laser-engravable plates."
+  },
+  {
+    "id": "cat-card-holders",
+    "name": "Card Holders",
+    "slug": "card-holders",
+    "startPage": 49,
+    "endPage": 50,
+    "itemCount": 5,
+    "description": "Executive pocket visiting card holders in textured thermal PU and natural cork with magnetic closures."
+  },
+  {
+    "id": "cat-bamboo-desk-utility",
+    "name": "Bamboo Desk Utility Products",
+    "slug": "bamboo-desk-utility",
+    "startPage": 51,
+    "endPage": 59,
+    "itemCount": 22,
+    "description": "100% natural bamboo desktop acoustic sound amplifiers, multi-pen tumblers, mobile docking stands, and desk clocks."
+  }
+]

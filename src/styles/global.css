@@ -1,0 +1,312 @@
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--color-text-body);
+  background-color: var(--color-warm-ivory);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: auto;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-warm-ivory);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-main);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--space-xl);
+  }
+}
+
+/* Editorial Overline / Eyebrow Utilities (Clean, Background-Free) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: none !important;
+}
+
+.badge::before {
+  content: "●";
+  font-size: 0.55rem;
+  opacity: 0.9;
+}
+
+.badge-primary {
+  color: var(--color-primary);
+}
+
+.badge-primary::before {
+  color: var(--color-primary);
+}
+
+.badge-accent {
+  color: var(--color-accent);
+}
+
+.badge-accent::before {
+  color: var(--color-accent);
+}
+
+.badge-eco {
+  color: var(--color-leaf);
+}
+
+.badge-eco::before {
+  color: var(--color-leaf);
+}
+
+/* Button Foundation */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-light);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-main);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-warm-ivory);
+}
+
+/* Pill CTA matching reference design */
+.btn-pill-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  padding: 10px 14px 10px 22px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-pill-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-pill-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.btn-pill-primary:hover .btn-pill-circle {
+  transform: translateX(2px);
+}
+
+/* Editorial Typography */
+.display-headline {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  line-height: 0.98;
+  font-size: clamp(3.2rem, 7.8vw, 6.8rem);
+}
+
+.editorial-script {
+  font-family: var(--font-script);
+  color: var(--color-accent);
+  font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+  display: inline-block;
+  transform: rotate(-3deg);
+  line-height: 1.2;
+}
+
+/* Responsive Navigation Utilities */
+.desktop-nav {
+  display: none !important;
+}
+.mobile-menu-trigger {
+  display: inline-flex !important;
+}
+.search-text-label {
+  display: none !important;
+}
+.search-kbd-shortcut {
+  display: none !important;
+}
+.quote-basket-label {
+  display: none !important;
+}
+
+@media (min-width: 900px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  .mobile-menu-trigger {
+    display: none !important;
+  }
+  .search-text-label {
+    display: inline !important;
+  }
+  .search-kbd-shortcut {
+    display: inline !important;
+  }
+  .quote-basket-label {
+    display: inline !important;
+  }
+}
+
+/* Catalog Grid & Filters Responsive Rules */
+.desktop-filters-sidebar {
+  display: none;
+}
+.mobile-filter-btn {
+  display: inline-flex;
+}
+
+@media (min-width: 900px) {
+  .catalog-grid-wrapper {
+    grid-template-columns: minmax(260px, 280px) 1fr !important;
+  }
+  .desktop-filters-sidebar {
+    display: block !important;
+  }
+  .mobile-filter-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .catalog-grid-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Gifting Kit Builder Responsive Rules */
+@media (max-width: 1024px) {
+  .kit-builder-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
