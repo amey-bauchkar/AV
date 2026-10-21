@@ -396,21 +396,11 @@ export function HomePage() {
       >
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '700px', marginInline: 'auto', marginBottom: 'var(--space-3xl)' }}>
-            <span
-              style={{
-                backgroundColor: 'rgba(21, 61, 37, 0.08)',
-                color: 'var(--color-primary)',
-                padding: '4px 12px',
-                borderRadius: 'var(--radius-full)',
-                fontSize: '0.78rem',
-                fontWeight: 800,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase'
-              }}
-            >
-              INDUSTRIAL PRECISION
-            </span>
-            <h2 style={{ marginTop: 'var(--space-xs)', marginBottom: 'var(--space-sm)' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-2xs)' }}>
+              <span className="badge badge-accent">INDUSTRIAL PRECISION</span>
+              <span className="badge badge-primary">CUSTOM IMPRINT MASTERY</span>
+            </div>
+            <h2 style={{ marginTop: 'var(--space-2xs)', marginBottom: 'var(--space-sm)', letterSpacing: '-0.02em' }}>
               Commercial Branding & Logo Customization
             </h2>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', lineHeight: 1.55 }}>
@@ -596,31 +586,24 @@ export function HomePage() {
       >
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
           <div style={{ maxWidth: '780px', marginInline: 'auto' }}>
-            <span
-              style={{
-                color: 'var(--color-accent-light)',
-                fontSize: '0.82rem',
-                fontWeight: 800,
-                letterSpacing: '0.14em',
-                textTransform: 'uppercase',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                marginBottom: 'var(--space-md)'
-              }}
-            >
-              <span style={{ color: 'var(--color-accent)' }}>●</span> COMMERCIAL INQUIRY DESK
-            </span>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-md)' }}>
+              <span className="badge badge-accent" style={{ color: 'var(--color-accent-light)' }}>
+                COMMERCIAL INQUIRY DESK
+              </span>
+            </div>
 
             <h2
-              className="display-headline"
               style={{
                 color: '#FFFFFF',
-                fontSize: 'clamp(2.5rem, 6vw, 4.8rem)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(2.2rem, 5vw, 3.8rem)',
+                fontWeight: 800,
+                letterSpacing: '-0.025em',
+                lineHeight: 1.15,
                 marginBottom: 'var(--space-md)'
               }}
             >
-              LET&apos;S MAKE YOUR NEXT GIFT MEMORABLE.
+              Let&apos;s Make Your Next Gift Memorable.
             </h2>
 
             <p

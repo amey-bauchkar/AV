@@ -2,55 +2,40 @@ import { Link } from 'react-router-dom';
 
 export function AboutPage() {
   return (
-    <div style={{ backgroundColor: 'var(--color-warm-ivory)', minHeight: '100vh', paddingBottom: 'var(--space-3xl)' }}>
-      {/* Editorial Header */}
-      <section
+    <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
+        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none' }}>
+          <li>
+            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
+          </li>
+          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
+          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>About Us</li>
+        </ol>
+      </nav>
+
+      {/* Header Banner - Matching Product Section Style */}
+      <div
         style={{
-          padding: 'clamp(56px, 8vw, 88px) 0 clamp(32px, 5vw, 48px)',
-          borderBottom: '1px solid var(--color-border)',
-          backgroundColor: '#FFFFFF'
+          backgroundColor: 'var(--color-surface-2)',
+          border: '1px solid var(--color-border)',
+          borderRadius: 'var(--radius-xl)',
+          padding: 'clamp(var(--space-xl), 3vw, var(--space-2xl))',
+          marginBottom: 'var(--space-xl)'
         }}
       >
-        <div className="container">
-          <div style={{ maxWidth: '840px' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-sm)' }}>
-              <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                ● CORPORATE PROFILE
-              </span>
-              <span style={{ color: 'var(--color-border)' }}>|</span>
-              <span style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                MASTER CATALOG 2024–2025
-              </span>
-            </div>
-
-            <h1
-              className="display-headline"
-              style={{
-                fontSize: 'clamp(2.4rem, 5vw, 4.2rem)',
-                lineHeight: 1.05,
-                color: 'var(--color-primary)',
-                marginBottom: 'var(--space-md)'
-              }}
-            >
-              ABOUT AV CORPORATE GIFTINGS & EVENTS
-            </h1>
-
-            <p
-              style={{
-                fontSize: 'clamp(1rem, 1.3vw, 1.18rem)',
-                color: 'var(--color-text-muted)',
-                lineHeight: 1.6,
-                fontWeight: 500
-              }}
-            >
-              AV Corporate giftings & events is a dedicated business-to-business manufacturer and direct enterprise supplier specializing in certified SUS 304 thermal drinkware, 80 GSM executive stationery, precision-engineered metal pens, and curated corporate gift sets.
-            </p>
-          </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
+          <span className="badge badge-accent">CORPORATE PROFILE</span>
+          <span className="badge badge-primary">MASTER CATALOG 2024–2025</span>
         </div>
-      </section>
+        <h1 style={{ marginBottom: 'var(--space-2xs)' }}>About AV Corporate giftings & events</h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '1.02rem', maxWidth: '780px', lineHeight: 1.5 }}>
+          AV Corporate giftings & events is a dedicated business-to-business manufacturer and direct enterprise supplier specializing in certified SUS 304 thermal drinkware, 80 GSM executive stationery, precision-engineered metal pens, and curated corporate gift sets.
+        </p>
+      </div>
 
       {/* Core Principles Grid */}
-      <section className="container" style={{ paddingTop: 'var(--space-2xl)' }}>
+      <section style={{ paddingTop: 'var(--space-md)' }}>
         <div
           style={{
             display: 'grid',
@@ -68,7 +53,7 @@ export function AboutPage() {
               boxShadow: 'var(--shadow-sm)'
             }}
           >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-accent)', fontFamily: 'var(--font-display)' }}>
+            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-accent)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
               159
             </div>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
@@ -88,7 +73,7 @@ export function AboutPage() {
               boxShadow: 'var(--shadow-sm)'
             }}
           >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-display)' }}>
+            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
               SUS 304
             </div>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
@@ -108,7 +93,7 @@ export function AboutPage() {
               boxShadow: 'var(--shadow-sm)'
             }}
           >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-display)' }}>
+            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
               DIRECT B2B
             </div>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
@@ -190,8 +175,8 @@ export function AboutPage() {
 
         {/* CTA Section */}
         <div style={{ textAlign: 'center', padding: 'var(--space-2xl) 0' }}>
-          <h2 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', color: 'var(--color-primary)', fontWeight: 900, marginBottom: '12px' }}>
-            READY TO ASSEMBLE YOUR CORPORATE ORDER?
+          <h2 style={{ fontSize: 'clamp(1.75rem, 3.2vw, 2.75rem)', color: 'var(--color-primary)', fontWeight: 800, letterSpacing: '-0.025em', marginBottom: '12px' }}>
+            Ready to Assemble Your Corporate Order?
           </h2>
           <p style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', maxWidth: '620px', marginInline: 'auto', marginBottom: '24px' }}>
             Explore our complete 159-product master catalog and build your custom Quotation Request online in minutes.

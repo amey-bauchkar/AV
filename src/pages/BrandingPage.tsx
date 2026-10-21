@@ -53,55 +53,40 @@ export function BrandingPage() {
   ];
 
   return (
-    <div style={{ backgroundColor: 'var(--color-warm-ivory)', minHeight: '100vh', paddingBottom: 'var(--space-3xl)' }}>
-      {/* Editorial Luxury Header */}
-      <section
+    <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
+        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none' }}>
+          <li>
+            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
+          </li>
+          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
+          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>Branding & Imprint Mastery</li>
+        </ol>
+      </nav>
+
+      {/* Header Banner - Matching Product Section Style */}
+      <div
         style={{
-          padding: 'clamp(56px, 8vw, 88px) 0 clamp(32px, 5vw, 48px)',
-          borderBottom: '1px solid var(--color-border)',
-          backgroundColor: '#FFFFFF'
+          backgroundColor: 'var(--color-surface-2)',
+          border: '1px solid var(--color-border)',
+          borderRadius: 'var(--radius-xl)',
+          padding: 'clamp(var(--space-xl), 3vw, var(--space-2xl))',
+          marginBottom: 'var(--space-xl)'
         }}
       >
-        <div className="container">
-          <div style={{ maxWidth: '820px' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-sm)' }}>
-              <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                ● CUSTOMIZATION EXCELLENCE
-              </span>
-              <span style={{ color: 'var(--color-border)' }}>|</span>
-              <span style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
-                TECHNICAL SPECIFICATIONS
-              </span>
-            </div>
-
-            <h1
-              className="display-headline"
-              style={{
-                fontSize: 'clamp(2.4rem, 5vw, 4.2rem)',
-                lineHeight: 1.05,
-                color: 'var(--color-primary)',
-                marginBottom: 'var(--space-md)'
-              }}
-            >
-              COMMERCIAL BRANDING & IMPRINT MASTERY
-            </h1>
-
-            <p
-              style={{
-                fontSize: 'clamp(1rem, 1.3vw, 1.18rem)',
-                color: 'var(--color-text-muted)',
-                lineHeight: 1.6,
-                fontWeight: 500
-              }}
-            >
-              Every corporate gift in our 159-model catalog is engineered with flat, unobstructed imprint zones. Discover our four benchmark branding processes, substrate compatibility standards, and digital proofing workflows.
-            </p>
-          </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
+          <span className="badge badge-accent">CUSTOMIZATION EXCELLENCE</span>
+          <span className="badge badge-primary">TECHNICAL SPECIFICATIONS</span>
         </div>
-      </section>
+        <h1 style={{ marginBottom: 'var(--space-2xs)' }}>Commercial Branding & Imprint Mastery</h1>
+        <p style={{ color: 'var(--color-text-muted)', fontSize: '1.02rem', maxWidth: '780px', lineHeight: 1.5 }}>
+          Every corporate gift in our 159-model catalog is engineered with flat, unobstructed imprint zones. Discover our four benchmark branding processes, substrate compatibility standards, and digital proofing workflows.
+        </p>
+      </div>
 
       {/* Methods Showcase */}
-      <section className="container" style={{ paddingTop: 'var(--space-2xl)' }}>
+      <section style={{ paddingTop: 'var(--space-md)' }}>
         <div
           style={{
             display: 'grid',
