@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETED",
+  "source_file": "C:\\Users\\SEBIN\\Desktop\\AV\\PIX-CATALOG 24-25 - 2.pdf",
+  "total_catalog_pages": 60,
+  "total_image_placements": 426,
+  "total_unique_binary_assets": 339,
+  "classifications": {
+    "cover_artwork": 2,
+    "product_photograph": 335,
+    "general_graphic": 77,
+    "index_thumbnail": 9,
+    "decorative_or_swatch": 3
+  },
+  "raw_assets_directory": "public/catalog-assets/raw",
+  "contact_sheets_directory": "public/catalog-assets/contact-sheets",
+  "contact_sheets": [
+    "/catalog-assets/contact-sheets/contact_sheet_cover.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_index.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_thermos_bottles.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_steel_bottles.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_thermos_mugs.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_travel_mugs.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_notebooks.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_pens.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_metal_keychains.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_card_holders.jpg",
+    "/catalog-assets/contact-sheets/contact_sheet_bamboo_desk_utility.jpg"
+  ],
+  "manifest_path": "public/catalog-assets/manifest.json"
+}

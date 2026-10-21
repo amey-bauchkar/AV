@@ -1,0 +1,363 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "project": "AV Corporate Giftings & Events",
+  "document": "Scroll-Controlled Cinematic Homepage Storyboard",
+  "version": "6.0.0",
+  "status": "ALL 5 CLIPS APPROVED & LOCKED | MASTER SEQUENCE COMPLETE",
+  "scrollContainerHeight": "600vh",
+  "masterResolution": "1920x1080",
+  "canonicalClip01": {
+    "status": "APPROVED & LOCKED",
+    "sourceFile": "C:\\Users\\SEBIN\\Downloads\\Hand_lifting_thermos_bottle_1080p_20261020004431.mp4",
+    "projectMirror": "/videos/canonical-clip-01.mp4",
+    "durationSeconds": 10.0,
+    "totalFrames": 240,
+    "fps": 24,
+    "composition": "Center-framed thermos bottle; natural uncropped 16:9 framing",
+    "watermark": "Accepted existing Veo watermark in bottom-right corner",
+    "extractedWebpDir": "/hero-frames/canonical-clip-01/",
+    "finalStableFrame": "/hero-frames/clip-02-reference-start.png",
+    "finalStableFrameIndex": 236
+  },
+  "canonicalClip02": {
+    "status": "APPROVED & LOCKED",
+    "sourceFile": "C:\\Users\\SEBIN\\Downloads\\Executive_presenting_sage_green_…_20261020012128.mp4",
+    "projectMirror": "/videos/canonical-clip-02.mp4",
+    "durationSeconds": 10.0,
+    "totalFrames": 240,
+    "fps": 24,
+    "composition": "Medium close-up; corporate model in dark forest-green blazer holding bottle with two hands; face secondary",
+    "watermark": "Accepted existing Veo watermark in bottom-right corner",
+    "extractedWebpDir": "/hero-frames/canonical-clip-02/",
+    "finalStableFrame": "/hero-frames/clip-03-reference-start.png",
+    "finalStableFrameIndex": 235
+  },
+  "canonicalClip03": {
+    "status": "APPROVED & LOCKED",
+    "sourceFile": "C:\\Users\\SEBIN\\Downloads\\Thermos_bottle_close-up_showcase_1080p_20261020014019.mp4",
+    "projectMirror": "/videos/canonical-clip-03.mp4",
+    "durationSeconds": 10.0,
+    "totalFrames": 240,
+    "fps": 24,
+    "composition": "Macro product showcase across brushed steel cap, black silicone collar with pivoting loop, and textured matte sage-green powder-coated shoulder",
+    "watermark": "Accepted existing Veo watermark in bottom-right corner",
+    "extractedWebpDir": "/hero-frames/canonical-clip-03/",
+    "finalStableFrame": "/hero-frames/clip-04-reference-start.png",
+    "finalStableFrameIndex": 235
+  },
+  "canonicalClip04": {
+    "status": "APPROVED & LOCKED",
+    "sourceFile": "C:\\Users\\SEBIN\\Downloads\\Camera_filming_corporate_gift_set_20261020015325.mp4",
+    "projectMirror": "/videos/canonical-clip-04.mp4",
+    "durationSeconds": 10.0,
+    "totalFrames": 240,
+    "fps": 24,
+    "composition": "Tabletop pull-back and pedestal rise revealing upright sage-green bottle on right, dark-green notebook in center, metal pen, and card holder on travertine tray",
+    "watermark": "Accepted existing Veo watermark in bottom-right corner",
+    "extractedWebpDir": "/hero-frames/canonical-clip-04/",
+    "finalStableFrame": "/hero-frames/clip-05-reference-start.png",
+    "finalStableFrameIndex": 236
+  },
+  "canonicalClip05": {
+    "status": "APPROVED & LOCKED",
+    "sourceFile": "C:\\Users\\SEBIN\\Downloads\\Corporate_gift_collection_display_1080p_20261020021656.mp4",
+    "projectMirror": "/videos/canonical-clip-05.mp4",
+    "durationSeconds": 10.0,
+    "totalFrames": 240,
+    "fps": 24,
+    "composition": "Master corporate gift collection display with all 7 items presented on travertine tray and warm ivory surface",
+    "watermark": "Accepted existing Veo watermark in bottom-right corner",
+    "extractedWebpDir": "/hero-frames/canonical-clip-05/",
+    "finalStableFrame": "/hero-frames/clip-05-final-frame.png",
+    "finalStableFrameIndex": 236
+  },
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "id": "scene-01-the-studio-hero",
+      "name": "The Studio Hero & Hand Approach",
+      "clipId": "canonical-clip-01",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 0,
+        "endPercent": 15,
+        "startVh": 0,
+        "endVh": 65
+      },
+      "frameRange": {
+        "startFrame": 1,
+        "endFrame": 108
+      },
+      "timeSeconds": "0.0s – 4.5s",
+      "purpose": "Introduce the AV hero corporate gift (SKU PIX-033) poised at center frame with soft morning studio lighting, followed by an elegant hand in tailored forest green sleeve entering from the right.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle",
+        "category": "Thermos Bottles",
+        "sourcePage": 4,
+        "material": "SUS 304 Food Grade Stainless Steel",
+        "colorway": "Matte Sage / Forest Green with Brushed Steel Cap",
+        "brandingStatus": "100% clean, unbranded matte powder-coat surface",
+        "assetPath": "/products/pix-033-hero.jpeg"
+      },
+      "camera": {
+        "lens": "85mm prime",
+        "aperture": "f/2.0",
+        "motion": "Subtle motorized push-in toward centered bottle"
+      },
+      "action": "Unbranded sage-green bottle stands at center on warm ivory plaster (#F4F5EB); hand in tailored forest-green wool sleeve and white shirt cuff enters smoothly from the right and grasps the cylinder.",
+      "lightingMood": "Soft architectural daylight pouring from 45-degree upper-left, warm cream backdrop, delicate contact shadow.",
+      "htmlOverlays": {
+        "headline": "GIFTS THAT<br>MAKE AN IMPACT",
+        "subtitle": "Bespoke corporate gifts for clients, teams & executive events.",
+        "ctaPrimary": "Explore Catalog",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Fade in with translateY(0) at 0%"
+      },
+      "consistencyConstraints": "Center-framed bottle; pristine unbranded body; anatomically natural hand."
+    },
+    {
+      "sceneNumber": 2,
+      "id": "scene-02-tactile-lift-and-settle",
+      "name": "The Tactile Lift & Settling Hold",
+      "clipId": "canonical-clip-01",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 15,
+        "endPercent": 35,
+        "startVh": 65,
+        "endVh": 150
+      },
+      "frameRange": {
+        "startFrame": 109,
+        "endFrame": 240
+      },
+      "timeSeconds": "4.5s – 10.0s",
+      "purpose": "Showcase ergonomic lift, balanced mass, and tactile matte finish as the hand lifts the bottle 3-4 inches, tilts it slightly, and smoothly lowers it back to the table into a rock-steady stationary hold.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle",
+        "category": "Thermos Bottles"
+      },
+      "camera": {
+        "lens": "85mm prime",
+        "aperture": "f/2.0",
+        "motion": "Subtle tracking with bottle lift, settling into locked hold from t=9.0s to 10.0s"
+      },
+      "action": "Hand lifts bottle smoothly, rotates it 15 degrees toward camera catching soft steel highlights on lid, then gently lowers it back to table. Settles into a steady centered hold (Frames 216–240).",
+      "lightingMood": "Warm key light with gentle specular roll across brushed stainless steel lid.",
+      "htmlOverlays": {
+        "headline": "GIFTS THAT<br>MAKE AN IMPACT",
+        "subtitle": "Custom gifting for teams, clients & events.",
+        "ctaPrimary": "Explore Catalog",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Subtle fade to opacity 0.3 during lift; restores clarity at hold."
+      },
+      "consistencyConstraints": "Final frame (Frame 236) serves as exact visual bridge and conditioning input for Clip 02."
+    },
+    {
+      "sceneNumber": 3,
+      "id": "scene-03-corporate-model-presentation",
+      "name": "The Corporate Model Presentation",
+      "clipId": "canonical-clip-02",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 35,
+        "endPercent": 55,
+        "startVh": 150,
+        "endVh": 235
+      },
+      "frameRange": {
+        "startFrame": 241,
+        "endFrame": 480
+      },
+      "timeSeconds": "0.0s – 10.0s (Canonical Clip 02)",
+      "purpose": "Humanize corporate gifting through an understated, continuous camera pull-back that reveals the hand belonging to an executive model presenting the bottle with both hands.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle"
+      },
+      "camera": {
+        "lens": "85mm prime",
+        "aperture": "f/2.0",
+        "motion": "Smooth motorized dolly-out pull-back from close-up to medium close-up (waist-to-chest), settling into stationary hold"
+      },
+      "action": "Pulls back smoothly from Clip 01 end-frame. Hand connects to a tailored dark forest-green wool blazer over an ivory silk shirt. Model brings second hand in to cradle the bottle in a poised corporate gifting presentation. Model's face remains secondary above collar. Frame 235 settles into a locked hold.",
+      "lightingMood": "Soft architectural morning daylight, warm cream studio environment (#F4F5EB).",
+      "htmlOverlays": {
+        "headline": "CRAFTED TO ENDURE",
+        "subtitle": "Double-wall thermal vacuum insulation in food-grade SUS 304 steel.",
+        "ctaPrimary": "Explore Catalog",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Smooth cross-dissolve entry at 36%."
+      },
+      "consistencyConstraints": "Bottle appearance, matte sage hue, and brushed steel cap match Clip 01 identically. Model's face remains secondary; zero brand hallucination."
+    },
+    {
+      "sceneNumber": 4,
+      "id": "scene-04-precision-macro",
+      "name": "Precision Macro Product Showcase",
+      "clipId": "canonical-clip-03",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 55,
+        "endPercent": 72,
+        "startVh": 275,
+        "endVh": 360
+      },
+      "frameRange": {
+        "startFrame": 481,
+        "endFrame": 720
+      },
+      "timeSeconds": "0.0s – 10.0s (Canonical Clip 03)",
+      "purpose": "Showcase SUS 304 stainless steel circular brushed grain, flush silicone collar with pivoting loop, and tactile matte powder-coat micro-texture.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle",
+        "assetPath": "/hero-frames/clip-03-macro-start-1080p.png"
+      },
+      "camera": {
+        "lens": "100mm macro",
+        "aperture": "f/2.8",
+        "motion": "Horizontal micro-slider tracking smoothly across cap, collar, and shoulder"
+      },
+      "action": "Macro glide across circular brushed stainless steel cap, black silicone collar with pivoting loop hinge, and matte sage-green curved shoulder catching soft morning light. Settles into steady hold (Frame 235 as bridge to Scene 05).",
+      "lightingMood": "Directional micro-rim lighting highlighting metal grain and soft matte finish.",
+      "htmlOverlays": {
+        "headline": "PRECISION IN EVERY DETAIL",
+        "subtitle": "Engineered for longevity, daily performance, and lasting brand impression.",
+        "ctaPrimary": "Explore Drinkware",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Fade in at 56%."
+      },
+      "consistencyConstraints": "100% clean unbranded surface; verified closed lid only; no internal cutaways; zero text."
+    },
+    {
+      "sceneNumber": 5,
+      "id": "scene-05-ensemble-reveal",
+      "name": "The Ensemble Reveal",
+      "clipId": "canonical-clip-04",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 72,
+        "endPercent": 88,
+        "startVh": 395,
+        "endVh": 485
+      },
+      "frameRange": {
+        "startFrame": 721,
+        "endFrame": 960
+      },
+      "timeSeconds": "0.0s – 10.0s (Canonical Clip 04)",
+      "purpose": "Broaden narrative from the single bottle macro to a curated 4-product corporate gifting suite on a honed travertine tray and warm ivory surface.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle",
+        "assetPath": "/products/pix-033-hero.jpeg"
+      },
+      "supportingProducts": [
+        {
+          "sku": "PIX-NB-102",
+          "name": "Executive Hardbound Notebook (A5)",
+          "assetPath": "/products/pix-nb-102-hero.jpeg"
+        },
+        {
+          "sku": "PIX-PN-1003",
+          "name": "Executive Metal Rollerball Pen",
+          "assetPath": "/products/pix-pn-1003-hero.jpeg"
+        },
+        {
+          "sku": "PIX-CH-1001",
+          "name": "Executive Card Holder",
+          "assetPath": "/products/pix-ch-1001-hero.jpeg"
+        }
+      ],
+      "camera": {
+        "lens": "50mm prime",
+        "aperture": "f/2.8",
+        "motion": "Motorized pull-back and gentle rise from bottle macro to 35-45 degree high-angle tabletop view"
+      },
+      "action": "Camera draws smoothly backward and rises, revealing a warm ivory plaster surface and travertine tray. Upright thermos bottle stands on the right, flat dark-green A5 notebook in center, dark green & chrome pen parallel to notebook, and brushed metal card holder in foreground. Settles into stationary commercial hold (Frame 236 as bridge to Scene 06).",
+      "lightingMood": "Warm overhead morning architectural daylight with soft contact shadows.",
+      "htmlOverlays": {
+        "headline": "CURATED FOR TEAMS",
+        "subtitle": "Hardbound executive diaries, precision pens & tailored deskware.",
+        "ctaPrimary": "Build a Custom Kit",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Slide up 15px with fade-in at 73%."
+      },
+      "consistencyConstraints": "Real-world scale proportion across notebook, pen, card holder, and bottle. Zero logos or text on physical surfaces."
+    },
+    {
+      "sceneNumber": 6,
+      "id": "scene-06-curated-collection-and-handoff",
+      "name": "The Final Curated Gift Collection & Page Handoff",
+      "clipId": "canonical-clip-05",
+      "clipStatus": "LOCKED",
+      "scrollRange": {
+        "startPercent": 88,
+        "endPercent": 100,
+        "startVh": 485,
+        "endVh": 600
+      },
+      "frameRange": {
+        "startFrame": 961,
+        "endFrame": 1200
+      },
+      "timeSeconds": "0.0s – 10.0s (Canonical Clip 05)",
+      "purpose": "Climax editorial master composition presenting the complete 7-item corporate gifting suite, stabilizing into rock-steady hold, and smoothly unpinning into catalog browsing.",
+      "primaryProduct": {
+        "sku": "PIX-033",
+        "name": "500ml Thermos Vacuum Bottle",
+        "assetPath": "/products/pix-033-hero.jpeg"
+      },
+      "supportingProducts": [
+        {
+          "sku": "PIX-NB-102",
+          "name": "Executive Hardbound Notebook (A5)",
+          "assetPath": "/products/pix-nb-102-hero.jpeg"
+        },
+        {
+          "sku": "PIX-PN-1003",
+          "name": "Executive Metal Rollerball Pen",
+          "assetPath": "/products/pix-pn-1003-hero.jpeg"
+        },
+        {
+          "sku": "PIX-5002",
+          "name": "Thermal Desk Mug with Cork Base",
+          "assetPath": "/products/pix-5002-hero.jpeg"
+        },
+        {
+          "sku": "PIX-CH-1001",
+          "name": "Executive Card Holder",
+          "assetPath": "/products/pix-ch-1001-hero.jpeg"
+        },
+        {
+          "sku": "PIX-BMB-03",
+          "name": "Bamboo Desk Accessory",
+          "assetPath": "/products/pix-bmb-03-hero.jpeg"
+        },
+        {
+          "sku": "PIX-KC-1001",
+          "name": "Round Medallion Keyring",
+          "assetPath": "/products/pix-kc-1001-hero.jpeg"
+        }
+      ],
+      "camera": {
+        "lens": "50mm prime",
+        "aperture": "f/3.0",
+        "motion": "Slow motorized dolly pull-back and subtle rise, settling into locked hold for final 1.5s"
+      },
+      "action": "Camera draws backward across travertine tray revealing full 7-product gifting suite: bottle on right, clean unprinted dark-green notebook in center, pen alongside notebook, card holder in foreground, desk mug on mid-left, bamboo stand on left, and round keyring in front. Settles into rock-steady hold.",
+      "lightingMood": "Lush morning architectural daylight, warm cream background (#F4F5EB), delicate botanical bokeh in far distance.",
+      "htmlOverlays": {
+        "headline": "GIFTS THAT<br>MAKE AN IMPACT",
+        "subtitle": "Complete bespoke hampers for onboarding, milestones & clients.",
+        "ctaPrimary": "Explore Catalog",
+        "ctaSecondary": "Request a Quote",
+        "animation": "Full opacity lock on headline; unpins into document flow."
+      },
+      "consistencyConstraints": "Zero PIX or Plastico Impex text; zero notebook lettering; pristine editorial balance."
+    }
+  ]
+}

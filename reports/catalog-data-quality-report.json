@@ -1,0 +1,377 @@
+{
+  "status": "PASSED",
+  "summary": {
+    "total_catalog_entries": 159,
+    "unique_base_skus": 157,
+    "sku_collisions_handled": 2,
+    "total_categories": 9,
+    "category_distribution": {
+      "Thermos Bottles": 21,
+      "Steel Bottles": 14,
+      "Thermos Mugs": 21,
+      "Travel Mugs": 10,
+      "Notebooks": 25,
+      "Pens": 26,
+      "Metal Keychains": 15,
+      "Card Holders": 5,
+      "Bamboo Desk Utility Products": 22
+    },
+    "broken_image_paths_count": 0,
+    "products_with_warnings_count": 41,
+    "products_requiring_manual_review_count": 0,
+    "blocking_errors_count": 0,
+    "warnings_count": 0
+  },
+  "sku_collisions": [
+    {
+      "sku": "PIX-1019",
+      "internal_ids": [
+        "pix-1019-p13",
+        "pix-1019-p15"
+      ],
+      "count": 2
+    },
+    {
+      "sku": "PIX-8103",
+      "internal_ids": [
+        "pix-8103-p19",
+        "pix-8103-smart"
+      ],
+      "count": 2
+    }
+  ],
+  "broken_images": [],
+  "products_with_data_warnings": [
+    {
+      "id": "pix-3002-450ml",
+      "sku": "PIX-3002-450ML",
+      "page": 4,
+      "warnings": [
+        "Source catalog lists capacity as '450m' on Page 4; normalized to 450ml."
+      ]
+    },
+    {
+      "id": "pix-1019-p13",
+      "sku": "PIX-1019",
+      "page": 13,
+      "warnings": [
+        "Source catalog duplicates model code PIX-1019 on Page 13 and Page 15. Tracked internally as PIX-1019-P13."
+      ]
+    },
+    {
+      "id": "pix-alu-bottle",
+      "sku": "PIX-Alu bottle",
+      "page": 14,
+      "warnings": [
+        "Informal model naming 'PIX-Alu bottle' in catalog; preserved original catalog code."
+      ]
+    },
+    {
+      "id": "pix-1019-p15",
+      "sku": "PIX-1019",
+      "page": 15,
+      "warnings": [
+        "Source catalog duplicates model code PIX-1019 on Page 13 and Page 15. Tracked internally as PIX-1019-P15."
+      ]
+    },
+    {
+      "id": "pix-uv-sip",
+      "sku": "PIX-UV Sip",
+      "page": 16,
+      "warnings": [
+        "Source catalog states 'UV Light water Sterilization Upto 999.99%'; normalized typo to 99.99%."
+      ]
+    },
+    {
+      "id": "pix-8103-p19",
+      "sku": "PIX-8103",
+      "page": 19,
+      "warnings": [
+        "Catalog SKU collision: PIX-8103 represents two distinct models on Page 19 (400ml flip) and Page 24 (500ml smart LED). Tracked internally as PIX-8103-P19."
+      ]
+    },
+    {
+      "id": "pix-8103-smart",
+      "sku": "PIX-8103",
+      "page": 24,
+      "warnings": [
+        "Catalog SKU collision: PIX-8103 represents two distinct models on Page 19 (400ml flip) and Page 24 (500ml smart LED). Tracked internally as PIX-8103-SMART."
+      ]
+    },
+    {
+      "id": "pix-glass-cork-mug",
+      "sku": "PIX-Glass Cork Mug",
+      "page": 28,
+      "warnings": [
+        "Page 28 template retains '201 Steel' badge in header despite product being Borosilicate Glass/Ceramic; corrected material in data model."
+      ]
+    },
+    {
+      "id": "pix-glass-pu-mug",
+      "sku": "PIX-Glass PU Mug",
+      "page": 28,
+      "warnings": [
+        "Page 28 template retains '201 Steel' badge in header despite product being Borosilicate Glass/Ceramic; corrected material in data model."
+      ]
+    },
+    {
+      "id": "pix-ceramic-cork-mug",
+      "sku": "PIX-Ceramic Cork Mug",
+      "page": 28,
+      "warnings": [
+        "Page 28 template retains '201 Steel' badge in header despite product being Borosilicate Glass/Ceramic; corrected material in data model."
+      ]
+    },
+    {
+      "id": "pix-nb-105-pu",
+      "sku": "PIX-NB-105",
+      "page": 32,
+      "warnings": [
+        "Model series PIX-NB-105 includes PU, Marble, and Real Cork variant presentations; tracked under internal ID pix-nb-105-pu."
+      ]
+    },
+    {
+      "id": "pix-nb-105-marble",
+      "sku": "PIX-NB-105 Marble 70-30",
+      "page": 33,
+      "warnings": [
+        "Model series PIX-NB-105 includes PU, Marble, and Real Cork variant presentations; tracked under internal ID pix-nb-105-marble."
+      ]
+    },
+    {
+      "id": "pix-nb-105-cork",
+      "sku": "PIX-NB-105 Cork",
+      "page": 33,
+      "warnings": [
+        "Model series PIX-NB-105 includes PU, Marble, and Real Cork variant presentations; tracked under internal ID pix-nb-105-cork."
+      ]
+    },
+    {
+      "id": "pix-pn-1001",
+      "sku": "PIX-PN-1001",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1002",
+      "sku": "PIX-PN-1002",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1003",
+      "sku": "PIX-PN-1003",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1004",
+      "sku": "PIX-PN-1004",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1005",
+      "sku": "PIX-PN-1005",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1006",
+      "sku": "PIX-PN-1006",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1008",
+      "sku": "PIX-PN-1008",
+      "page": 41,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1010",
+      "sku": "PIX-PN-1010",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1011",
+      "sku": "PIX-PN-1011",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1012",
+      "sku": "PIX-PN-1012",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1013",
+      "sku": "PIX-PN-1013",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1014",
+      "sku": "PIX-PN-1014",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1015",
+      "sku": "PIX-PN-1015",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1016",
+      "sku": "PIX-PN-1016",
+      "page": 42,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1017",
+      "sku": "PIX-PN-1017",
+      "page": 43,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1018",
+      "sku": "PIX-PN-1018",
+      "page": 43,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1019",
+      "sku": "PIX-PN-1019",
+      "page": 43,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1020",
+      "sku": "PIX-PN-1020",
+      "page": 43,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1021",
+      "sku": "PIX-PN-1021",
+      "page": 44,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1022",
+      "sku": "PIX-PN-1022",
+      "page": 44,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1023",
+      "sku": "PIX-PN-1023",
+      "page": 44,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1025",
+      "sku": "PIX-PN-1025",
+      "page": 44,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1027",
+      "sku": "PIX-PN-1027",
+      "page": 44,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1028",
+      "sku": "PIX-PN-1028",
+      "page": 45,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1029",
+      "sku": "PIX-PN-1029",
+      "page": 45,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-pn-1030",
+      "sku": "PIX-PN-1030",
+      "page": 45,
+      "warnings": [
+        "Ink refill specifications (ballpoint/rollerball/gel) not explicitly printed in catalog; verified refill specs require company confirmation."
+      ]
+    },
+    {
+      "id": "pix-bmb-01-gloss",
+      "sku": "PIX-BMB-01 (GLOSS)",
+      "page": 52,
+      "warnings": [
+        "Source catalog lists PIX-BMB-01 and PIX-BMB-01 (GLOSS) as separate entries; tracked internally with distinct ID."
+      ]
+    },
+    {
+      "id": "pix-bmb-0506",
+      "sku": "PIX-BMB-05-06",
+      "page": 53,
+      "warnings": [
+        "Normalized compound catalog model code PIX-BMB-05-06 to PIX-BMB-0506."
+      ]
+    }
+  ],
+  "products_requiring_manual_review": [],
+  "blocking_errors": [],
+  "warnings": []
+}
