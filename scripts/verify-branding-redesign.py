@@ -9,11 +9,19 @@ with sync_playwright() as p:
     # Desktop tests
     page = browser.new_page(viewport={'width': 1280, 'height': 850})
     
-    # 1. Dedicated Branding page
+    # 1. Dedicated Branding page Hero
     page.goto('http://localhost:5173/branding', wait_until='networkidle')
     page.wait_for_timeout(500)
     page.screenshot(path='reports/branding-page-desktop.png', full_page=False)
     print('Captured reports/branding-page-desktop.png')
+
+    # 1b. Dedicated Branding page Bento Grid
+    bento_section = page.locator('section:has-text("Four Benchmark Imprint Methods")')
+    if bento_section.count() > 0:
+        bento_section.first.scroll_into_view_if_needed()
+        page.wait_for_timeout(500)
+        bento_section.first.screenshot(path='reports/branding-bento-desktop.png')
+        print('Captured reports/branding-bento-desktop.png')
     
     # 2. Homepage Branding section
     page.goto('http://localhost:5173/', wait_until='networkidle')
