@@ -395,74 +395,286 @@ export function HomePage() {
         }}
       >
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '700px', marginInline: 'auto', marginBottom: 'var(--space-3xl)' }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-2xs)' }}>
-              <span className="badge badge-accent">INDUSTRIAL PRECISION</span>
-              <span className="badge badge-primary">CUSTOM IMPRINT MASTERY</span>
-            </div>
-            <h2 style={{ marginTop: 'var(--space-2xs)', marginBottom: 'var(--space-sm)', letterSpacing: '-0.02em' }}>
-              Commercial Branding & Logo Customization
-            </h2>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '1rem', lineHeight: 1.55 }}>
-              Every item in the master catalog is engineered for high-fidelity corporate brand integration.
-            </p>
-          </div>
-
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: 'var(--space-lg)'
+              backgroundColor: 'var(--color-surface-2)',
+              border: '1px solid var(--color-border)',
+              borderRadius: 'var(--radius-2xl)',
+              padding: 'clamp(28px, 4vw, 48px)',
+              boxShadow: 'var(--shadow-sm)'
             }}
           >
-            {[
-              {
-                title: 'Laser Engraving',
-                badge: 'STAINLESS STEEL & BAMBOO',
-                desc: 'Subtractive fiber laser etching removing coatings or marking natural wood grain. Abrasion-proof and permanent.'
-              },
-              {
-                title: 'Silkscreen Printing',
-                badge: 'PANTONE SPOT COLORS',
-                desc: 'High-opacity spot ink transfers matching exact Pantone Solid Coated corporate formulas on bottles and flat bodies.'
-              },
-              {
-                title: 'UV Digital Flatbed Printing',
-                badge: 'FULL-COLOR GRADIENTS',
-                desc: 'Micro-drop ultraviolet cured printing supporting intricate crests, photographic graphics, and fine multi-color typography.'
-              },
-              {
-                title: 'Blind Debossing',
-                badge: 'PU LEATHER & DIARIES',
-                desc: 'Heated precision metal dies creating deep tactile 3D impressions into 80 GSM notebook covers and portfolios.'
-              }
-            ].map((b, idx) => (
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
+                gap: 'clamp(28px, 4vw, 56px)',
+                alignItems: 'center'
+              }}
+            >
+              {/* Left Column: Low-Text, High-Impact Branding Story */}
+              <div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-2xs)' }}>
+                  <span className="badge badge-accent">CUSTOM BRANDING STUDIO</span>
+                  <span className="badge badge-primary">PRECISION IMPRINT</span>
+                </div>
+
+                <h2
+                  style={{
+                    fontSize: 'clamp(1.9rem, 3.4vw, 2.8rem)',
+                    fontWeight: 800,
+                    letterSpacing: '-0.025em',
+                    color: 'var(--color-primary)',
+                    lineHeight: 1.15,
+                    marginTop: 'var(--space-2xs)',
+                    marginBottom: 'var(--space-xs)'
+                  }}
+                >
+                  Your Identity, Flawlessly Imprinted.
+                </h2>
+
+                <p
+                  style={{
+                    color: 'var(--color-text-muted)',
+                    fontSize: '0.98rem',
+                    lineHeight: 1.55,
+                    marginBottom: 'var(--space-lg)',
+                    maxWidth: '520px'
+                  }}
+                >
+                  Every product features engineered, unobstructed imprint zones for razor-sharp logo fidelity across steel, natural bamboo, and executive PU leather.
+                </p>
+
+                {/* 4 Technique Micro-Cards (2x2 Compact Grid) */}
+                <div
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gap: '12px',
+                    marginBottom: 'var(--space-xl)'
+                  }}
+                >
+                  {/* Technique 1 */}
+                  <div
+                    style={{
+                      backgroundColor: 'var(--color-surface)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 14px',
+                      boxShadow: 'var(--shadow-sm)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '3px' }}>
+                      <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.85rem' }}>✦</span>
+                      <strong style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>Laser Engraving</strong>
+                    </div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: '2px' }}>
+                      Steel &amp; Bamboo
+                    </div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', lineHeight: 1.35 }}>
+                      Permanent, scratch-proof mark.
+                    </div>
+                  </div>
+
+                  {/* Technique 2 */}
+                  <div
+                    style={{
+                      backgroundColor: 'var(--color-surface)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 14px',
+                      boxShadow: 'var(--shadow-sm)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '3px' }}>
+                      <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.85rem' }}>✦</span>
+                      <strong style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>Silkscreen Print</strong>
+                    </div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: '2px' }}>
+                      Pantone Matched
+                    </div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', lineHeight: 1.35 }}>
+                      Exact solid PMS corporate colors.
+                    </div>
+                  </div>
+
+                  {/* Technique 3 */}
+                  <div
+                    style={{
+                      backgroundColor: 'var(--color-surface)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 14px',
+                      boxShadow: 'var(--shadow-sm)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '3px' }}>
+                      <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.85rem' }}>✦</span>
+                      <strong style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>UV Digital Print</strong>
+                    </div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: '2px' }}>
+                      Full-Color &amp; Gradients
+                    </div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', lineHeight: 1.35 }}>
+                      Photographic crests &amp; fine detail.
+                    </div>
+                  </div>
+
+                  {/* Technique 4 */}
+                  <div
+                    style={{
+                      backgroundColor: 'var(--color-surface)',
+                      border: '1px solid var(--color-border)',
+                      borderRadius: 'var(--radius-md)',
+                      padding: '12px 14px',
+                      boxShadow: 'var(--shadow-sm)'
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '3px' }}>
+                      <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.85rem' }}>✦</span>
+                      <strong style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>Blind Debossing</strong>
+                    </div>
+                    <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: '2px' }}>
+                      PU Leather Diaries
+                    </div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--color-text-muted)', lineHeight: 1.35 }}>
+                      Tactile 3D executive impression.
+                    </div>
+                  </div>
+                </div>
+
+                {/* Action CTA & Proof SLA */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+                  <Link
+                    to="/branding"
+                    className="btn-pill-primary"
+                    style={{
+                      textDecoration: 'none',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '12px',
+                      backgroundColor: 'var(--color-primary)',
+                      color: '#FFFFFF',
+                      padding: '10px 14px 10px 22px',
+                      borderRadius: 'var(--radius-full)',
+                      fontWeight: 700,
+                      fontSize: '0.92rem'
+                    }}
+                  >
+                    <span>Branding &amp; Artwork Guide</span>
+                    <span className="btn-pill-circle" aria-hidden="true" style={{ width: '28px', height: '28px', backgroundColor: 'var(--color-accent)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </span>
+                  </Link>
+
+                  <span style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" strokeWidth="2.5">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    Digital 2D proof within 4 hours
+                  </span>
+                </div>
+              </div>
+
+              {/* Right Column: Hero Gift Set Image with Ambient Studio Glow */}
               <div
-                key={idx}
                 style={{
-                  backgroundColor: 'var(--color-warm-ivory)',
+                  position: 'relative',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: 'var(--color-surface)',
                   border: '1px solid var(--color-border)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: 'var(--space-lg)'
+                  borderRadius: 'var(--radius-xl)',
+                  padding: 'clamp(20px, 3.5vw, 36px)',
+                  overflow: 'hidden',
+                  boxShadow: 'var(--shadow-sm)'
                 }}
               >
-                <div style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', marginBottom: '6px' }}>
-                  {b.badge}
-                </div>
-                <h4 style={{ fontSize: '1.1rem', color: 'var(--color-primary)', marginBottom: 'var(--space-2xs)' }}>
-                  {b.title}
-                </h4>
-                <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', lineHeight: 1.55 }}>
-                  {b.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+                {/* Soft ambient green radial glow */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: '5%',
+                    background: 'radial-gradient(circle, rgba(169, 200, 117, 0.28) 0%, rgba(21, 61, 37, 0.06) 65%, transparent 80%)',
+                    filter: 'blur(35px)',
+                    pointerEvents: 'none'
+                  }}
+                />
 
-          <div style={{ textAlign: 'center', marginTop: 'var(--space-2xl)' }}>
-            <Link to="/branding" className="btn btn-outline">
-              Read Complete Branding & Artwork Guide →
-            </Link>
+                {/* Floating Top Badge */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '16px',
+                    left: '16px',
+                    backgroundColor: 'rgba(255, 255, 255, 0.94)',
+                    backdropFilter: 'blur(8px)',
+                    border: '1px solid var(--color-border)',
+                    borderRadius: 'var(--radius-full)',
+                    padding: '5px 14px',
+                    fontSize: '0.74rem',
+                    fontWeight: 800,
+                    color: 'var(--color-primary)',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    boxShadow: 'var(--shadow-sm)',
+                    zIndex: 2
+                  }}
+                >
+                  <span style={{ color: 'var(--color-accent)' }}>●</span> Green Eco-Friendly Suite
+                </div>
+
+                {/* Hero Showcase Image */}
+                <img
+                  src="/images/green-eco-friendly-corporate-gift-set.png"
+                  alt="AV Corporate giftings & events Green Eco-Friendly Corporate Gift Set with Custom Imprint"
+                  loading="lazy"
+                  style={{
+                    position: 'relative',
+                    zIndex: 1,
+                    width: '100%',
+                    maxHeight: '380px',
+                    objectFit: 'contain',
+                    filter: 'drop-shadow(0 16px 28px rgba(21, 61, 37, 0.12))',
+                    transition: 'transform var(--transition-normal)'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.025)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
+                  }}
+                />
+
+                {/* Floating Bottom Badge */}
+                <div
+                  style={{
+                    position: 'absolute',
+                    bottom: '16px',
+                    right: '16px',
+                    backgroundColor: 'rgba(21, 61, 37, 0.94)',
+                    color: '#FFFFFF',
+                    borderRadius: 'var(--radius-full)',
+                    padding: '5px 14px',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.04em',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    boxShadow: 'var(--shadow-md)',
+                    zIndex: 2
+                  }}
+                >
+                  <span>SUS 304 • Bamboo • 80 GSM PU</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
