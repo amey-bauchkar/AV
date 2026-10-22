@@ -19,9 +19,9 @@ with sync_playwright() as p:
     page.goto('http://localhost:5173/', wait_until='networkidle')
     page.wait_for_timeout(500)
     # Locate Section D
-    branding_heading = page.locator('text=Your Identity, Flawlessly Imprinted.')
+    branding_heading = page.locator('text=Precision Imprinted.')
     if branding_heading.count() > 0:
-        branding_heading.scroll_into_view_if_needed()
+        branding_heading.first.scroll_into_view_if_needed()
         page.wait_for_timeout(500)
         page.screenshot(path='reports/home-branding-desktop.png')
         print('Captured reports/home-branding-desktop.png')
@@ -38,9 +38,9 @@ with sync_playwright() as p:
     # 4. Homepage Branding section mobile
     mobile_page.goto('http://localhost:5173/', wait_until='networkidle')
     mobile_page.wait_for_timeout(500)
-    branding_mobile = mobile_page.locator('text=Your Identity, Flawlessly Imprinted.')
+    branding_mobile = mobile_page.locator('text=Precision Imprinted.')
     if branding_mobile.count() > 0:
-        branding_mobile.scroll_into_view_if_needed()
+        branding_mobile.first.scroll_into_view_if_needed()
         mobile_page.wait_for_timeout(500)
         mobile_page.screenshot(path='reports/home-branding-mobile.png')
         print('Captured reports/home-branding-mobile.png')
