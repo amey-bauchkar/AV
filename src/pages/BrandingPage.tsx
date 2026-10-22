@@ -97,7 +97,7 @@ export function BrandingPage() {
       </nav>
 
       {/* ========================================================
-          HERO SHOWCASE BANNER — LOW TEXT, HIGH-IMPACT STUDIO CARD
+          HERO SHOWCASE BANNER — CENTER IMAGE, LEFT & RIGHT GREEN/RED TEXT
          ======================================================== */}
       <section
         style={{
@@ -109,200 +109,144 @@ export function BrandingPage() {
           boxShadow: 'var(--shadow-sm)'
         }}
       >
+        {/* Centered Header */}
+        <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto var(--space-2xl) auto' }}>
+          <div style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-2xs)' }}>
+            <span className="badge badge-accent">BRANDING STUDIO</span>
+            <span className="badge badge-primary">IMPRINT MASTERY</span>
+          </div>
+
+          <h1
+            style={{
+              fontSize: 'clamp(2.1rem, 3.8vw, 3.2rem)',
+              fontWeight: 800,
+              letterSpacing: '-0.025em',
+              lineHeight: 1.15,
+              marginTop: 'var(--space-2xs)',
+              marginBottom: 'var(--space-xs)'
+            }}
+          >
+            <span style={{ color: 'var(--color-primary)' }}>Your Brand, </span>
+            <span style={{ color: 'var(--color-accent)' }}>Precision Imprinted.</span>
+          </h1>
+
+          <p
+            style={{
+              color: 'var(--color-text-muted)',
+              fontSize: '1rem',
+              lineHeight: 1.55,
+              margin: '0 auto'
+            }}
+          >
+            Every catalog model is engineered with flat, unobstructed imprint zones. Sub-millimeter precision across food-grade stainless steel, natural bamboo, and executive PU leather.
+          </p>
+        </div>
+
+        {/* 3-Column Layout: Left (Green & Red) — Center (Hero Image) — Right (Green & Red) */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 460px), 1fr))',
-            gap: 'clamp(28px, 4vw, 56px)',
-            alignItems: 'center'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: 'clamp(20px, 2.5vw, 32px)',
+            alignItems: 'center',
+            marginBottom: 'var(--space-2xl)'
           }}
         >
-          {/* Left Column: Headline & Scannable Highlights */}
-          <div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-2xs)' }}>
-              <span className="badge badge-accent">BRANDING STUDIO</span>
-              <span className="badge badge-primary">IMPRINT MASTERY</span>
-            </div>
-
-            <h1
-              style={{
-                fontSize: 'clamp(2.1rem, 3.8vw, 3.2rem)',
-                fontWeight: 800,
-                letterSpacing: '-0.025em',
-                color: 'var(--color-primary)',
-                lineHeight: 1.15,
-                marginTop: 'var(--space-2xs)',
-                marginBottom: 'var(--space-xs)'
-              }}
-            >
-              Your Brand, Precision Imprinted.
-            </h1>
-
-            <p
-              style={{
-                color: 'var(--color-text-muted)',
-                fontSize: '1rem',
-                lineHeight: 1.55,
-                marginBottom: 'var(--space-lg)',
-                maxWidth: '520px'
-              }}
-            >
-              Every catalog model is engineered with flat, unobstructed imprint zones. Sub-millimeter precision across food-grade stainless steel, natural bamboo, and executive PU leather.
-            </p>
-
-            {/* Scannable Metric Badges */}
+          {/* LEFT COLUMN: Features & Metrics in Green & Red */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {/* Metric Box 1 */}
             <div
               style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
-                gap: '10px',
-                marginBottom: 'var(--space-xl)'
+                backgroundColor: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                borderLeft: '4px solid var(--color-primary)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '16px 18px',
+                boxShadow: 'var(--shadow-sm)'
               }}
             >
-              <div
-                style={{
-                  backgroundColor: 'var(--color-surface)',
-                  border: '1px solid var(--color-border)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '10px 14px',
-                  boxShadow: 'var(--shadow-sm)'
-                }}
-              >
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.2 }}>
-                  4
-                </div>
-                <div style={{ fontSize: '0.74rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
-                  Imprint Technologies
-                </div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+                <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  ● Permanent Mark
+                </span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-primary)', backgroundColor: 'rgba(21, 61, 37, 0.08)', padding: '2px 8px', borderRadius: 'var(--radius-full)' }}>
+                  0.1mm Detail
+                </span>
               </div>
-
-              <div
-                style={{
-                  backgroundColor: 'var(--color-surface)',
-                  border: '1px solid var(--color-border)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '10px 14px',
-                  boxShadow: 'var(--shadow-sm)'
-                }}
-              >
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-accent)', lineHeight: 1.2 }}>
-                  4 Hrs
-                </div>
-                <div style={{ fontSize: '0.74rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
-                  Scaled 2D Proof SLA
-                </div>
-              </div>
-
-              <div
-                style={{
-                  backgroundColor: 'var(--color-surface)',
-                  border: '1px solid var(--color-border)',
-                  borderRadius: 'var(--radius-md)',
-                  padding: '10px 14px',
-                  boxShadow: 'var(--shadow-sm)'
-                }}
-              >
-                <div style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', lineHeight: 1.2 }}>
-                  100%
-                </div>
-                <div style={{ fontSize: '0.74rem', color: 'var(--color-text-muted)', fontWeight: 600 }}>
-                  PMS Spot Match
-                </div>
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-primary)', marginBottom: '4px' }}>
+                Fiber Laser Engraving
+              </h3>
+              <p style={{ color: 'var(--color-text-body)', fontSize: '0.84rem', lineHeight: 1.45, margin: 0 }}>
+                <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Clean micro-sublimation: </span>
+                Reveals polished surgical steel or rich natural bamboo grain without inks or fading.
+              </p>
+              <div style={{ marginTop: '6px', fontSize: '0.76rem', color: 'var(--color-accent)', fontWeight: 700 }}>
+                ✓ Indelible, scratch-proof &amp; wash-safe
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-              <Link
-                to="/products"
-                className="btn-pill-primary"
-                style={{
-                  textDecoration: 'none',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '12px',
-                  backgroundColor: 'var(--color-primary)',
-                  color: '#FFFFFF',
-                  padding: '10px 14px 10px 22px',
-                  borderRadius: 'var(--radius-full)',
-                  fontWeight: 700,
-                  fontSize: '0.92rem'
-                }}
-              >
-                <span>Browse Products For Branding</span>
-                <span
-                  className="btn-pill-circle"
-                  aria-hidden="true"
-                  style={{
-                    width: '28px',
-                    height: '28px',
-                    backgroundColor: 'var(--color-accent)',
-                    borderRadius: '50%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
-                >
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
+            {/* Metric Box 2 */}
+            <div
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                borderLeft: '4px solid var(--color-accent)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '16px 18px',
+                boxShadow: 'var(--shadow-sm)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+                <span style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  ● Multicolor &amp; Texture
                 </span>
-              </Link>
-
-              <Link
-                to="/contact"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '6px',
-                  padding: '10px 18px',
-                  borderRadius: 'var(--radius-full)',
-                  border: '1.5px solid var(--color-primary)',
-                  color: 'var(--color-primary)',
-                  textDecoration: 'none',
-                  fontWeight: 700,
-                  fontSize: '0.88rem'
-                }}
-              >
-                Request Digital Proof →
-              </Link>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', backgroundColor: 'var(--color-accent-soft)', padding: '2px 8px', borderRadius: 'var(--radius-full)' }}>
+                  1200+ DPI
+                </span>
+              </div>
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-accent)', marginBottom: '4px' }}>
+                UV Digital Flatbed
+              </h3>
+              <p style={{ color: 'var(--color-text-body)', fontSize: '0.84rem', lineHeight: 1.45, margin: 0 }}>
+                <span style={{ color: 'var(--color-accent)', fontWeight: 700 }}>Photographic fidelity: </span>
+                Instant UV curing with smooth gradients and optional embossed clear-coat varnish.
+              </p>
+              <div style={{ marginTop: '6px', fontSize: '0.76rem', color: 'var(--color-primary)', fontWeight: 700 }}>
+                ✓ Zero dot gain for fine intricate crests
+              </div>
             </div>
           </div>
 
-          {/* Right Column: Hero Gift Set Showcase Image */}
+          {/* CENTER COLUMN: Hero Gift Set Image Seamlessly on Section Background */}
           <div
             style={{
               position: 'relative',
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: 'var(--color-surface)',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-xl)',
-              padding: 'clamp(20px, 3.5vw, 36px)',
-              overflow: 'hidden',
-              boxShadow: 'var(--shadow-sm)'
+              padding: 'clamp(10px, 2vw, 24px)',
+              minHeight: '380px'
             }}
           >
             {/* Soft ambient green radial glow */}
             <div
               style={{
                 position: 'absolute',
-                inset: '5%',
-                background: 'radial-gradient(circle, rgba(169, 200, 117, 0.32) 0%, rgba(21, 61, 37, 0.08) 65%, transparent 80%)',
-                filter: 'blur(35px)',
+                inset: '-10%',
+                background: 'radial-gradient(circle, rgba(169, 200, 117, 0.42) 0%, rgba(21, 61, 37, 0.10) 55%, transparent 75%)',
+                filter: 'blur(36px)',
                 pointerEvents: 'none'
               }}
             />
 
-            {/* Top Floating Badge */}
+            {/* Top Floating Badge (Green & Red) */}
             <div
               style={{
-                position: 'absolute',
-                top: '16px',
-                left: '16px',
-                backgroundColor: 'rgba(255, 255, 255, 0.94)',
+                position: 'relative',
+                zIndex: 2,
+                marginBottom: '12px',
+                backgroundColor: 'rgba(255, 255, 255, 0.95)',
                 backdropFilter: 'blur(8px)',
                 border: '1px solid var(--color-border)',
                 borderRadius: 'var(--radius-full)',
@@ -313,8 +257,7 @@ export function BrandingPage() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '6px',
-                boxShadow: 'var(--shadow-sm)',
-                zIndex: 2
+                boxShadow: 'var(--shadow-sm)'
               }}
             >
               <span style={{ color: 'var(--color-accent)' }}>●</span> Green Eco-Friendly Suite
@@ -328,42 +271,181 @@ export function BrandingPage() {
                 position: 'relative',
                 zIndex: 1,
                 width: '100%',
-                maxHeight: '380px',
+                maxHeight: '390px',
                 objectFit: 'contain',
-                filter: 'drop-shadow(0 16px 28px rgba(21, 61, 37, 0.12))',
+                filter: 'drop-shadow(0 22px 36px rgba(21, 61, 37, 0.16))',
                 transition: 'transform var(--transition-normal)'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'scale(1.025)';
+                e.currentTarget.style.transform = 'scale(1.04)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'scale(1)';
               }}
             />
 
-            {/* Bottom Floating Badge */}
+            {/* Bottom Floating Badge (Green & Red) */}
             <div
               style={{
-                position: 'absolute',
-                bottom: '16px',
-                right: '16px',
-                backgroundColor: 'rgba(21, 61, 37, 0.94)',
+                position: 'relative',
+                zIndex: 2,
+                marginTop: '12px',
+                backgroundColor: 'rgba(21, 61, 37, 0.95)',
                 color: '#FFFFFF',
                 borderRadius: 'var(--radius-full)',
-                padding: '5px 14px',
+                padding: '5px 16px',
                 fontSize: '0.72rem',
                 fontWeight: 700,
                 letterSpacing: '0.04em',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '6px',
-                boxShadow: 'var(--shadow-md)',
-                zIndex: 2
+                boxShadow: 'var(--shadow-md)'
               }}
             >
+              <span style={{ color: 'var(--color-accent-light)' }}>✦</span>
               <span>SUS 304 • Natural Bamboo • 80 GSM PU</span>
             </div>
           </div>
+
+          {/* RIGHT COLUMN: Features & Metrics in Green & Red */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {/* Metric Box 3 */}
+            <div
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                borderLeft: '4px solid var(--color-primary)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '16px 18px',
+                boxShadow: 'var(--shadow-sm)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+                <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  ● Pantone Matched (PMS)
+                </span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-primary)', backgroundColor: 'rgba(21, 61, 37, 0.08)', padding: '2px 8px', borderRadius: 'var(--radius-full)' }}>
+                  100% Match
+                </span>
+              </div>
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-primary)', marginBottom: '4px' }}>
+                High-Opacity Silkscreen
+              </h3>
+              <p style={{ color: 'var(--color-text-body)', fontSize: '0.84rem', lineHeight: 1.45, margin: 0 }}>
+                <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Corporate color match: </span>
+                Industrial polyurethane inks deliver maximum pigment density and total opacity.
+              </p>
+              <div style={{ marginTop: '6px', fontSize: '0.76rem', color: 'var(--color-accent)', fontWeight: 700 }}>
+                ✓ Formulated strictly to PMS Solid Coated standards
+              </div>
+            </div>
+
+            {/* Metric Box 4 */}
+            <div
+              style={{
+                backgroundColor: 'var(--color-surface)',
+                border: '1px solid var(--color-border)',
+                borderLeft: '4px solid var(--color-accent)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '16px 18px',
+                boxShadow: 'var(--shadow-sm)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '4px' }}>
+                <span style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                  ● Boardroom Elegance
+                </span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-accent)', backgroundColor: 'var(--color-accent-soft)', padding: '2px 8px', borderRadius: 'var(--radius-full)' }}>
+                  Luxury 3D
+                </span>
+              </div>
+              <h3 style={{ fontSize: '1.15rem', color: 'var(--color-accent)', marginBottom: '4px' }}>
+                Blind Debossing &amp; Foil
+              </h3>
+              <p style={{ color: 'var(--color-text-body)', fontSize: '0.84rem', lineHeight: 1.45, margin: 0 }}>
+                <span style={{ color: 'var(--color-accent)', fontWeight: 700 }}>Tactile indentation: </span>
+                CNC brass dies stamp deep 3D relief into thermal PU leather diaries and gift sets.
+              </p>
+              <div style={{ marginTop: '6px', fontSize: '0.76rem', color: 'var(--color-primary)', fontWeight: 700 }}>
+                ✓ Executive standard for VIP corporate summits
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Action Buttons & SLA Assurance */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '20px',
+            flexWrap: 'wrap',
+            paddingTop: 'var(--space-md)',
+            borderTop: '1px solid var(--color-border)'
+          }}
+        >
+          <Link
+            to="/products"
+            className="btn-pill-primary"
+            style={{
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '12px',
+              backgroundColor: 'var(--color-primary)',
+              color: '#FFFFFF',
+              padding: '10px 14px 10px 22px',
+              borderRadius: 'var(--radius-full)',
+              fontWeight: 700,
+              fontSize: '0.92rem'
+            }}
+          >
+            <span>Browse Products For Branding</span>
+            <span
+              className="btn-pill-circle"
+              aria-hidden="true"
+              style={{
+                width: '28px',
+                height: '28px',
+                backgroundColor: 'var(--color-accent)',
+                borderRadius: '50%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </span>
+          </Link>
+
+          <span style={{ fontSize: '0.88rem', color: 'var(--color-primary)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '1rem' }}>✓</span>
+            4-Hour Digital Scaled Proof SLA
+          </span>
+
+          <Link
+            to="/contact"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '10px 18px',
+              borderRadius: 'var(--radius-full)',
+              border: '1.5px solid var(--color-accent)',
+              color: 'var(--color-accent)',
+              textDecoration: 'none',
+              fontWeight: 700,
+              fontSize: '0.88rem'
+            }}
+          >
+            <span>Request Digital Proof</span>
+            <span>→</span>
+          </Link>
         </div>
       </section>
 
