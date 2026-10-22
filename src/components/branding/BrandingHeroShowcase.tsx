@@ -10,11 +10,9 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
     <div
       style={{
         position: 'relative',
-        backgroundColor: '#F5F4EE',
-        border: '1px solid var(--color-border)',
-        borderRadius: 'var(--radius-2xl)',
-        overflow: 'hidden',
-        boxShadow: 'var(--shadow-sm)'
+        backgroundColor: 'transparent',
+        border: 'none',
+        overflow: 'hidden'
       }}
     >
       {/* ========================================================
@@ -499,9 +497,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
             justifyContent: 'center',
             gap: '24px',
             flexWrap: 'wrap',
-            padding: '16px clamp(16px, 3vw, 32px)',
-            borderTop: '1px solid rgba(21, 61, 37, 0.08)',
-            backgroundColor: 'rgba(255, 255, 255, 0.55)',
+            padding: '24px clamp(16px, 3vw, 32px) 8px clamp(16px, 3vw, 32px)',
             position: 'relative',
             zIndex: 4
           }}

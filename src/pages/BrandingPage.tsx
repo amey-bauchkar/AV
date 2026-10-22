@@ -85,18 +85,7 @@ export function BrandingPage() {
   ];
 
   return (
-    <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
-        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none', margin: 0, padding: 0 }}>
-          <li>
-            <Link to="/" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>Home</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>Branding &amp; Imprint Studio</li>
-        </ol>
-      </nav>
-
+    <div className="container" style={{ paddingTop: 'var(--space-lg)', paddingBottom: 'var(--space-2xl)' }}>
       {/* ========================================================
           HERO SHOWCASE BANNER — INFOGRAPHIC SHOWCASE MATCHING SPEC
          ======================================================== */}
