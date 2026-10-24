@@ -7,7 +7,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
     
     # Desktop tests
-    page = browser.new_page(viewport={'width': 1280, 'height': 850})
+    page = browser.new_page(viewport={'width': 1280, 'height': 950})
     
     # 1. Dedicated Branding page Hero
     page.goto('http://localhost:5173/branding', wait_until='networkidle')
@@ -19,8 +19,10 @@ with sync_playwright() as p:
     bento_section = page.locator('section:has-text("Four Benchmark Imprint Methods")')
     if bento_section.count() > 0:
         bento_section.first.scroll_into_view_if_needed()
-        page.wait_for_timeout(500)
-        bento_section.first.screenshot(path='reports/branding-bento-desktop.png')
+        page.wait_for_timeout(300)
+        page.evaluate('window.scrollBy(0, 100)')
+        page.wait_for_timeout(300)
+        page.screenshot(path='reports/branding-bento-desktop.png')
         print('Captured reports/branding-bento-desktop.png')
     
     # 2. Homepage Branding section
@@ -40,6 +42,10 @@ with sync_playwright() as p:
     # 3. Dedicated Branding page mobile
     mobile_page.goto('http://localhost:5173/branding', wait_until='networkidle')
     mobile_page.wait_for_timeout(500)
+    mobile_cards = mobile_page.locator('section:has-text("Four Benchmark Imprint Methods")')
+    if mobile_cards.count() > 0:
+        mobile_cards.first.scroll_into_view_if_needed()
+        mobile_page.wait_for_timeout(300)
     mobile_page.screenshot(path='reports/branding-page-mobile.png', full_page=False)
     print('Captured reports/branding-page-mobile.png')
 

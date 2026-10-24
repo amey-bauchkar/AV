@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { AboutShowcaseSection } from '../components/about/AboutShowcaseSection';
+import { ManufacturingBenchmarkCards } from '../components/about/ManufacturingBenchmarkCards';
 
 export function AboutPage() {
   return (
@@ -14,164 +16,17 @@ export function AboutPage() {
         </ol>
       </nav>
 
-      {/* Header Banner - Matching Product Section Style */}
-      <div
-        style={{
-          backgroundColor: 'var(--color-surface-2)',
-          border: '1px solid var(--color-border)',
-          borderRadius: 'var(--radius-xl)',
-          padding: 'clamp(var(--space-xl), 3vw, var(--space-2xl))',
-          marginBottom: 'var(--space-xl)'
-        }}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
-          <span className="badge badge-accent">CORPORATE PROFILE</span>
-          <span className="badge badge-primary">MASTER CATALOG 2024–2025</span>
-        </div>
-        <h1 style={{ marginBottom: 'var(--space-2xs)' }}>About AV Corporate giftings & events</h1>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '1.02rem', maxWidth: '780px', lineHeight: 1.5 }}>
-          AV Corporate giftings & events is a dedicated business-to-business manufacturer and direct enterprise supplier specializing in certified SUS 304 thermal drinkware, 80 GSM executive stationery, precision-engineered metal pens, and curated corporate gift sets.
-        </p>
+      {/* ========================================================
+          MASTER ABOUT SHOWCASE CARD — MATCHING SPEC DESIGN
+         ======================================================== */}
+      <div style={{ marginBottom: 'var(--space-3xl)' }}>
+        <AboutShowcaseSection isHomePage={false} />
       </div>
 
-      {/* Core Principles Grid */}
       <section style={{ paddingTop: 'var(--space-md)' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: 'var(--space-xl)',
-            marginBottom: 'var(--space-3xl)'
-          }}
-        >
-          <div
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-xl)',
-              padding: 'clamp(24px, 3.5vw, 36px)',
-              boxShadow: 'var(--shadow-sm)'
-            }}
-          >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-accent)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
-              159
-            </div>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
-              Curated Master Models
-            </h2>
-            <p style={{ color: 'var(--color-text-body)', fontSize: '0.92rem', lineHeight: 1.6 }}>
-              Our 2024–2025 master collection spans 159 certified product models across 9 specialized categories, engineered to fulfill every corporate gifting requirement from enterprise trade events to executive boardroom onboarding.
-            </p>
-          </div>
 
-          <div
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-xl)',
-              padding: 'clamp(24px, 3.5vw, 36px)',
-              boxShadow: 'var(--shadow-sm)'
-            }}
-          >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
-              SUS 304
-            </div>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
-              Certified Material Standards
-            </h2>
-            <p style={{ color: 'var(--color-text-body)', fontSize: '0.92rem', lineHeight: 1.6 }}>
-              We enforce strict metallurgical standards: food-grade SUS 304 stainless steel with double-wall vacuum copper lining, 80 GSM bleed-resistant executive paper, and sustainably harvested bamboo desk accessories.
-            </p>
-          </div>
-
-          <div
-            style={{
-              backgroundColor: '#FFFFFF',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-xl)',
-              padding: 'clamp(24px, 3.5vw, 36px)',
-              boxShadow: 'var(--shadow-sm)'
-            }}
-          >
-            <div style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '8px', color: 'var(--color-primary)', fontFamily: 'var(--font-heading)', letterSpacing: '-0.03em' }}>
-              DIRECT B2B
-            </div>
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '10px' }}>
-              Institutional Quotation Model
-            </h2>
-            <p style={{ color: 'var(--color-text-body)', fontSize: '0.92rem', lineHeight: 1.6 }}>
-              Built specifically for HR teams, procurement officers, brand managers, and corporate gift distributors. Receive transparent tiered volume pricing, certified batch testing, and guaranteed dispatch schedules.
-            </p>
-          </div>
-        </div>
-
-        {/* Quality Benchmarks Grid */}
-        <div
-          style={{
-            backgroundColor: '#FFFFFF',
-            border: '1px solid var(--color-border)',
-            borderRadius: 'var(--radius-2xl)',
-            padding: 'clamp(28px, 4vw, 48px)',
-            marginBottom: 'var(--space-3xl)',
-            boxShadow: 'var(--shadow-sm)'
-          }}
-        >
-          <div style={{ maxWidth: '780px', marginBottom: 'var(--space-xl)' }}>
-            <div style={{ color: 'var(--color-accent)', fontWeight: 800, fontSize: '0.78rem', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '6px' }}>
-              ● RIGID QUALITY PROTOCOLS
-            </div>
-            <h3 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', color: 'var(--color-primary)', fontWeight: 800, marginBottom: '10px' }}>
-              Our Four Manufacturing Benchmarks
-            </h3>
-            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>
-              Every product batch undergoes 100% QA inspection before custom branding and final packing.
-            </p>
-          </div>
-
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: 'var(--space-lg)'
-            }}
-          >
-            <div style={{ backgroundColor: 'var(--color-warm-ivory)', padding: '22px', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border)' }}>
-              <div style={{ fontWeight: 800, color: 'var(--color-primary)', fontSize: '1rem', marginBottom: '8px' }}>
-                Thermal Drinkware Retention
-              </div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.86rem', lineHeight: 1.5, margin: 0 }}>
-                12-hour hot and 24-hour cold temperature retention guaranteed by vacuum-sealed double-wall 18/8 stainless steel chambers.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--color-warm-ivory)', padding: '22px', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border)' }}>
-              <div style={{ fontWeight: 800, color: 'var(--color-primary)', fontSize: '1rem', marginBottom: '8px' }}>
-                Executive Binding & Paper
-              </div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.86rem', lineHeight: 1.5, margin: 0 }}>
-                80 GSM acid-free ivory sheets bound in flexible thermal PU covers with magnetic metal clasp plates engineered for debossing.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--color-warm-ivory)', padding: '22px', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border)' }}>
-              <div style={{ fontWeight: 800, color: 'var(--color-primary)', fontSize: '1rem', marginBottom: '8px' }}>
-                Renewable Natural Bamboo
-              </div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.86rem', lineHeight: 1.5, margin: 0 }}>
-                Organic grain selected bamboo finished with eco-friendly protective coats, combining natural aesthetics with high durability.
-              </p>
-            </div>
-
-            <div style={{ backgroundColor: 'var(--color-warm-ivory)', padding: '22px', borderRadius: 'var(--radius-md)', border: '1px solid var(--color-border)' }}>
-              <div style={{ fontWeight: 800, color: 'var(--color-primary)', fontSize: '1rem', marginBottom: '8px' }}>
-                Uniform Logo Adhesion
-              </div>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '0.86rem', lineHeight: 1.5, margin: 0 }}>
-                Cross-hatch tape adhesion tested across fiber laser engraving, silkscreen inks, and UV flatbed curing for lifelong wear resistance.
-              </p>
-            </div>
-          </div>
-        </div>
+        {/* Manufacturing Benchmarks Glowing Gradient Cards */}
+        <ManufacturingBenchmarkCards />
 
         {/* CTA Section */}
         <div style={{ textAlign: 'center', padding: 'var(--space-2xl) 0' }}>

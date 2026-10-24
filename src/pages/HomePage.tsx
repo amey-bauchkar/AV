@@ -6,6 +6,7 @@ import { ProductCard } from '../components/products/ProductCard';
 import { useRfqCart } from '../components/rfq/useRfqCart';
 import { ScrollHero } from '../components/hero/ScrollHero';
 import { BrandingHeroShowcase } from '../components/branding/BrandingHeroShowcase';
+import { AboutShowcaseSection } from '../components/about/AboutShowcaseSection';
 
 const allProducts = productsData as unknown as Product[];
 const allCategories = categoriesData as Category[];
@@ -254,6 +255,15 @@ export function HomePage() {
               <ProductCard key={p.id} product={p} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ========================================================
+          ABOUT SHOWCASE SECTION — BRAND COMMITMENT & CORE CAPABILITIES
+         ======================================================== */}
+      <section style={{ padding: 'clamp(48px, 6vw, 84px) 0' }}>
+        <div className="container">
+          <AboutShowcaseSection isHomePage={true} />
         </div>
       </section>
 
