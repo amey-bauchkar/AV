@@ -259,10 +259,10 @@ export function ManufacturingBenchmarkCards() {
           width: 100%;
         }
 
-        /* Atmospheric Glowing Card Matching Reference Design */
+        /* Atmospheric Glowing Card Matching PNZ FAS Copper & Archival Charcoal */
         .benchmark-grad-card {
           position: relative;
-          border-radius: 32px;
+          border-radius: 28px;
           padding: 26px 22px 22px;
           min-height: 480px;
           display: flex;
@@ -271,15 +271,15 @@ export function ManufacturingBenchmarkCards() {
           overflow: hidden;
           box-sizing: border-box;
           
-          /* Website signature Deep Forest Green Gradient with radiant ambient glow */
+          /* PNZ FAS signature Copper Obsidian Gradient with radiant ambient warmth */
           background: 
-            radial-gradient(circle at 24% 24%, rgba(52, 158, 94, 0.96) 0%, rgba(21, 61, 37, 0.82) 38%, rgba(10, 32, 19, 0.44) 66%, transparent 82%),
-            radial-gradient(circle at 14% 18%, rgba(169, 200, 117, 0.46) 0%, transparent 42%),
-            linear-gradient(162deg, #173E27 0%, #0D281A 46%, #05130C 100%);
+            radial-gradient(circle at 24% 20%, rgba(197, 90, 62, 0.94) 0%, rgba(163, 77, 51, 0.72) 34%, rgba(41, 41, 35, 0.5) 64%, transparent 84%),
+            radial-gradient(circle at 14% 16%, rgba(244, 162, 138, 0.45) 0%, transparent 42%),
+            linear-gradient(162deg, #2E2723 0%, #1E1A17 46%, #100E0D 100%);
           
           border: 1px solid rgba(255, 255, 255, 0.16);
           box-shadow: 
-            0 20px 44px -10px rgba(6, 17, 11, 0.45),
+            0 20px 44px -10px rgba(16, 14, 13, 0.5),
             inset 0 1px 1px rgba(255, 255, 255, 0.28);
           transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
           cursor: pointer;
@@ -287,10 +287,10 @@ export function ManufacturingBenchmarkCards() {
 
         .benchmark-grad-card:hover {
           transform: translateY(-8px);
-          border-color: rgba(255, 255, 255, 0.32);
+          border-color: rgba(244, 162, 138, 0.45);
           box-shadow: 
-            0 32px 64px -12px rgba(6, 17, 11, 0.65),
-            0 0 35px rgba(52, 158, 94, 0.35),
+            0 32px 64px -12px rgba(16, 14, 13, 0.75),
+            0 0 40px rgba(197, 90, 62, 0.38),
             inset 0 1px 2px rgba(255, 255, 255, 0.4);
         }
 
@@ -417,18 +417,20 @@ export function ManufacturingBenchmarkCards() {
         }
 
         .card-bold-headline {
+          font-family: var(--font-heading);
           color: #FFFFFF;
           font-size: 1.05rem;
-          font-weight: 800;
+          font-weight: 500;
           line-height: 1.32;
           margin: 0 0 8px 0;
-          letter-spacing: -0.01em;
+          letter-spacing: -0.025em;
         }
 
         .card-desc-text {
-          color: rgba(255, 255, 255, 0.72);
-          font-size: 0.84rem;
-          line-height: 1.54;
+          font-family: var(--font-body);
+          color: rgba(255, 255, 255, 0.76);
+          font-size: 0.86rem;
+          line-height: 1.55;
           margin: 0;
           font-weight: 400;
         }

@@ -48,44 +48,44 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
           <path
             d="M 328 214 L 352 214 L 372 278"
             fill="none"
-            stroke="#E01E10"
+            stroke="#D53B3B"
             strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <circle cx="372" cy="278" r="4" fill="#E01E10" />
+          <circle cx="372" cy="278" r="4" fill="#D53B3B" />
 
           {/* Line 2 (Bottom Left: UV Digital -> Ceramic Mug) */}
           <path
             d="M 292 384 L 336 384"
             fill="none"
-            stroke="#E01E10"
+            stroke="#D53B3B"
             strokeWidth="1.8"
             strokeLinecap="round"
           />
-          <circle cx="336" cy="384" r="4" fill="#E01E10" />
+          <circle cx="336" cy="384" r="4" fill="#D53B3B" />
 
           {/* Line 3 (Top Right: Silkscreen -> Green Bottle) Starts at icon left border, points to bottle */}
           <path
             d="M 694 180 L 665 180 L 636 265"
             fill="none"
-            stroke="#E01E10"
+            stroke="#D53B3B"
             strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <circle cx="636" cy="265" r="4" fill="#E01E10" />
+          <circle cx="636" cy="265" r="4" fill="#D53B3B" />
 
           {/* Line 4 (Bottom Right: Blind Debossing -> Bamboo Stand) */}
           <path
             d="M 724 358 L 696 358 L 676 418"
             fill="none"
-            stroke="#E01E10"
+            stroke="#D53B3B"
             strokeWidth="1.8"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <circle cx="676" cy="418" r="4" fill="#E01E10" />
+          <circle cx="676" cy="418" r="4" fill="#D53B3B" />
         </svg>
 
         {/* 1. Header Block (Top Left) */}
@@ -102,14 +102,14 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
           <h2
             style={{
               fontSize: 'clamp(28px, 3.8cqw, 48px)',
-              fontWeight: 900,
-              letterSpacing: '-0.025em',
+              fontWeight: 500,
+              letterSpacing: '-0.055em',
               lineHeight: 1.05,
               margin: '0 0 10px 0'
             }}
           >
-            <span style={{ color: '#153D25', display: 'block' }}>Your Brand,</span>
-            <span style={{ color: '#E01E10', display: 'block' }}>Precision Imprinted.</span>
+            <span style={{ color: '#292923', display: 'block' }}>Your Brand,</span>
+            <em style={{ color: '#A34D33', display: 'block', fontFamily: 'var(--font-serif)', fontStyle: 'italic', fontWeight: 400, letterSpacing: '-0.035em' }}>Precision Imprinted.</em>
           </h2>
 
           {/* Subtitle with Attached Red Accent Framing Bracket */}
@@ -124,7 +124,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
           >
             <p
               style={{
-                color: '#3A483D',
+                color: '#66645A',
                 fontSize: 'clamp(12px, 1.45cqw, 16.5px)',
                 lineHeight: 1.4,
                 fontWeight: 500,
@@ -142,8 +142,8 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
                 right: 0,
                 width: '110px',
                 height: '20px',
-                borderBottom: '2px solid #E01E10',
-                borderRight: '2px solid #E01E10',
+                borderBottom: '2px solid #D53B3B',
+                borderRight: '2px solid #D53B3B',
                 borderBottomRightRadius: '8px',
                 pointerEvents: 'none'
               }}
@@ -171,7 +171,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               width: 'clamp(42px, 4.6cqw, 52px)',
               height: 'clamp(42px, 4.6cqw, 52px)',
               minWidth: 'clamp(42px, 4.6cqw, 52px)',
-              backgroundColor: '#E01E10',
+              backgroundColor: '#D53B3B',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -194,24 +194,24 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
 
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-              <span style={{ color: '#E01E10', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#D53B3B', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
                 ● PERMANENT MARK
               </span>
-              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#3A483D', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
+              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#66645A', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
                 0.1MM DETAIL
               </span>
             </div>
 
-            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#153D25', margin: '0 0 4px 0', lineHeight: 1.15 }}>
+            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#292923', margin: '0 0 4px 0', lineHeight: 1.15 }}>
               Fiber Laser Engraving
             </h3>
 
-            <p style={{ color: '#2B382D', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
+            <p style={{ color: '#292923', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
               Permanent micro-etch for polished steel and natural bamboo grain.
             </p>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#153D25', fontWeight: 700 }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#153D25">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#292923', fontWeight: 700 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#292923">
                 <circle cx="12" cy="12" r="10" />
                 <path d="m9 12 2 2 4-4" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -240,7 +240,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               width: 'clamp(42px, 4.6cqw, 52px)',
               height: 'clamp(42px, 4.6cqw, 52px)',
               minWidth: 'clamp(42px, 4.6cqw, 52px)',
-              backgroundColor: '#E01E10',
+              backgroundColor: '#D53B3B',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -251,31 +251,31 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2">
               <path d="M6 9V4h12v5" strokeLinecap="round" strokeLinejoin="round" />
               <rect x="4" y="9" width="16" height="8" rx="2" />
-              <path d="M6 14h12v6H6z" fill="#E01E10" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M6 14h12v6H6z" fill="#D53B3B" strokeLinecap="round" strokeLinejoin="round" />
               <circle cx="16" cy="12" r="1" fill="#FFFFFF" />
             </svg>
           </div>
 
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-              <span style={{ color: '#E01E10', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#D53B3B', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
                 ● MULTICOLOR
               </span>
-              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#3A483D', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
+              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#66645A', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
                 1200+ DPI
               </span>
             </div>
 
-            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#153D25', margin: '0 0 4px 0', lineHeight: 1.15 }}>
+            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#292923', margin: '0 0 4px 0', lineHeight: 1.15 }}>
               UV Digital Flatbed
             </h3>
 
-            <p style={{ color: '#2B382D', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
+            <p style={{ color: '#292923', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
               Vibrant full-color with optional raised clear-coat gloss.
             </p>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#153D25', fontWeight: 700 }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#153D25">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#292923', fontWeight: 700 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#292923">
                 <circle cx="12" cy="12" r="10" />
                 <path d="m9 12 2 2 4-4" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -333,7 +333,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               width: 'clamp(42px, 4.6cqw, 52px)',
               height: 'clamp(42px, 4.6cqw, 52px)',
               minWidth: 'clamp(42px, 4.6cqw, 52px)',
-              backgroundColor: '#E01E10',
+              backgroundColor: '#D53B3B',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -355,24 +355,24 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
 
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-              <span style={{ color: '#E01E10', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#D53B3B', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
                 ● PANTONE MATCHED
               </span>
-              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#3A483D', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
+              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#66645A', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
                 100% PMS
               </span>
             </div>
 
-            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#153D25', margin: '0 0 4px 0', lineHeight: 1.15 }}>
+            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#292923', margin: '0 0 4px 0', lineHeight: 1.15 }}>
               High-Opacity Silkscreen
             </h3>
 
-            <p style={{ color: '#2B382D', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
+            <p style={{ color: '#292923', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
               Dense industrial inks for curved surfaces and bottles.
             </p>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#153D25', fontWeight: 700 }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#153D25">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#292923', fontWeight: 700 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#292923">
                 <circle cx="12" cy="12" r="10" />
                 <path d="m9 12 2 2 4-4" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -401,7 +401,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               width: 'clamp(42px, 4.6cqw, 52px)',
               height: 'clamp(42px, 4.6cqw, 52px)',
               minWidth: 'clamp(42px, 4.6cqw, 52px)',
-              backgroundColor: '#E01E10',
+              backgroundColor: '#D53B3B',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -418,24 +418,24 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
 
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-              <span style={{ color: '#E01E10', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
+              <span style={{ color: '#D53B3B', fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase', whiteSpace: 'nowrap' }}>
                 ● BOARDROOM LUXURY
               </span>
-              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#3A483D', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
+              <span style={{ fontSize: 'clamp(9.5px, 1.1cqw, 13px)', fontWeight: 800, color: '#66645A', letterSpacing: '0.04em', whiteSpace: 'nowrap' }}>
                 3D RELIEF
               </span>
             </div>
 
-            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#153D25', margin: '0 0 4px 0', lineHeight: 1.15 }}>
+            <h3 style={{ fontSize: 'clamp(17px, 2.1cqw, 24px)', fontWeight: 800, color: '#292923', margin: '0 0 4px 0', lineHeight: 1.15 }}>
               Blind Debossing &amp; Foil
             </h3>
 
-            <p style={{ color: '#2B382D', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
+            <p style={{ color: '#292923', fontSize: 'clamp(11.5px, 1.35cqw, 15px)', lineHeight: 1.35, fontWeight: 500, margin: '0 0 6px 0', maxWidth: '240px' }}>
               Deep tactile impressions in rich executive leather.
             </p>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#153D25', fontWeight: 700 }}>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="#153D25">
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: 'clamp(11px, 1.25cqw, 14px)', color: '#292923', fontWeight: 700 }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="#292923">
                 <circle cx="12" cy="12" r="10" />
                 <path d="m9 12 2 2 4-4" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -469,7 +469,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               display: 'inline-flex',
               alignItems: 'center',
               gap: '12px',
-              backgroundColor: '#153D25',
+              backgroundColor: '#292923',
               color: '#FFFFFF',
               padding: '9px 14px 9px 20px',
               borderRadius: 'var(--radius-full)',
@@ -484,7 +484,7 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
               style={{
                 width: '26px',
                 height: '26px',
-                backgroundColor: '#E01E10',
+                backgroundColor: '#D53B3B',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -498,15 +498,15 @@ export const BrandingHeroShowcase: React.FC<BrandingHeroShowcaseProps> = ({ show
             </span>
           </Link>
 
-          <span style={{ fontSize: '0.86rem', color: '#153D25', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ color: '#E01E10', fontWeight: 800, fontSize: '0.96rem' }}>✓</span>
+          <span style={{ fontSize: '0.86rem', color: '#292923', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ color: '#D53B3B', fontWeight: 800, fontSize: '0.96rem' }}>✓</span>
             Digital 2D proof within 4 business hours
           </span>
 
           <Link
             to="/contact"
             style={{
-              color: '#E01E10',
+              color: '#D53B3B',
               fontWeight: 700,
               fontSize: '0.86rem',
               textDecoration: 'none',

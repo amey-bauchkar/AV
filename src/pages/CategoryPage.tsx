@@ -309,21 +309,6 @@ export function CategoryPage() {
 
   return (
     <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
-      {/* Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
-        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none' }}>
-          <li>
-            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li>
-            <Link to="/products" style={{ color: 'var(--color-text-muted)' }}>Catalog</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>{category.name}</li>
-        </ol>
-      </nav>
-
       {/* Category Header Banner */}
       <div
         style={{
@@ -334,15 +319,66 @@ export function CategoryPage() {
           marginBottom: 'var(--space-xl)'
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-sm)' }}>
           <span className="badge badge-accent">CATALOG CATEGORY</span>
           <span className="badge badge-primary">{category.itemCount} VERIFIED MODELS</span>
           <span className="badge" style={{ backgroundColor: 'rgba(15, 23, 42, 0.08)' }}>
             PAGES {category.startPage}–{category.endPage}
           </span>
         </div>
-        <h1 style={{ marginBottom: 'var(--space-2xs)' }}>{category.name}</h1>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', maxWidth: '780px', lineHeight: 1.5 }}>
+        <h1
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(2.75rem, 5.6vw, 4.75rem)',
+            fontWeight: 400,
+            lineHeight: 1.04,
+            letterSpacing: '-0.04em',
+            color: 'var(--color-primary-dark, #292923)',
+            margin: '0 0 var(--space-md) 0'
+          }}
+        >
+          {category.name.includes(' ') ? (
+            <>
+              {category.name.substring(0, category.name.lastIndexOf(' '))}{' '}
+              <em
+                style={{
+                  fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)',
+                  fontStyle: 'italic',
+                  fontWeight: 400,
+                  color: 'var(--color-accent, #A34D33)',
+                  letterSpacing: '-0.025em'
+                }}
+              >
+                {category.name.substring(category.name.lastIndexOf(' ') + 1)}.
+              </em>
+            </>
+          ) : (
+            <>
+              {category.name}{' '}
+              <em
+                style={{
+                  fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)',
+                  fontStyle: 'italic',
+                  fontWeight: 400,
+                  color: 'var(--color-accent, #A34D33)',
+                  letterSpacing: '-0.025em'
+                }}
+              >
+                Collection.
+              </em>
+            </>
+          )}
+        </h1>
+        <p
+          style={{
+            fontFamily: 'var(--font-body)',
+            color: 'var(--color-text-muted, #66645A)',
+            fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
+            maxWidth: '780px',
+            lineHeight: 1.55,
+            margin: 0
+          }}
+        >
           {category.description}
         </p>
 

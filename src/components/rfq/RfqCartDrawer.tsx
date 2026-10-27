@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useRfqCart } from './useRfqCart';
 import { RfqRequestModal } from './RfqRequestModal';
+import { BrandLogo } from '../common/BrandLogo';
 import type { BrandingMethod } from '../../types/product';
 
 const AVAILABLE_BRANDING_OPTIONS: (BrandingMethod | 'None / Standard')[] = [
@@ -107,6 +108,7 @@ export function RfqCartDrawer() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+            <BrandLogo variant="mark-only" height={28} />
             <h2 id="rfq-drawer-title" style={{ fontSize: '1.25rem', fontWeight: 700 }}>
               Quotation Basket
             </h2>

@@ -8,12 +8,32 @@ export function LegalPage() {
     <div className="container" style={{ paddingBlock: 'var(--space-2xl)', maxWidth: '840px' }}>
       {/* Header */}
       <div style={{ marginBottom: 'var(--space-2xl)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-xs)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-sm)' }}>
           <span className="badge badge-accent">LEGAL DOCUMENTATION</span>
           <span className="badge badge-primary">AV CORPORATE GIFTINGS & EVENTS</span>
         </div>
-        <h1>{isPrivacy ? 'Privacy Policy' : 'Terms of Commercial Supply'}</h1>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '0.95rem', marginTop: 'var(--space-xs)' }}>
+        <h1
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(2.75rem, 5.6vw, 4.75rem)',
+            fontWeight: 400,
+            lineHeight: 1.04,
+            letterSpacing: '-0.04em',
+            color: 'var(--color-primary-dark, #292923)',
+            margin: '0 0 var(--space-xs) 0'
+          }}
+        >
+          {isPrivacy ? (
+            <>
+              Corporate <em style={{ fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)', fontStyle: 'italic', fontWeight: 400, color: 'var(--color-accent, #A34D33)', letterSpacing: '-0.025em' }}>Privacy Policy.</em>
+            </>
+          ) : (
+            <>
+              Terms of <em style={{ fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)', fontStyle: 'italic', fontWeight: 400, color: 'var(--color-accent, #A34D33)', letterSpacing: '-0.025em' }}>Commercial Supply.</em>
+            </>
+          )}
+        </h1>
+        <p style={{ fontFamily: 'var(--font-body)', color: 'var(--color-text-muted)', fontSize: '1rem', marginTop: 'var(--space-xs)' }}>
           Last Updated: 2024–2025 Catalog Cycle
         </p>
       </div>

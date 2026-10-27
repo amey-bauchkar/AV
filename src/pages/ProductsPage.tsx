@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import productsData from '../data/products.json';
 import categoriesData from '../data/categories.json';
 import type { Product, Category } from '../types/product';
@@ -312,17 +312,6 @@ export function ProductsPage() {
 
   return (
     <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
-        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none' }}>
-          <li>
-            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>Catalog</li>
-        </ol>
-      </nav>
-
       {/* Catalog Header Banner */}
       <div
         style={{
@@ -333,12 +322,44 @@ export function ProductsPage() {
           marginBottom: 'var(--space-xl)'
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-sm)' }}>
           <span className="badge badge-accent">MASTER PRODUCT DIRECTORY</span>
           <span className="badge badge-primary">{allProducts.length} VERIFIED CATALOG MODELS</span>
         </div>
-        <h1 style={{ marginBottom: 'var(--space-2xs)' }}>All Products Catalog</h1>
-        <p style={{ color: 'var(--color-text-muted)', fontSize: '1.02rem', maxWidth: '780px', lineHeight: 1.5 }}>
+        <h1
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(2.75rem, 5.6vw, 4.75rem)',
+            fontWeight: 400,
+            lineHeight: 1.04,
+            letterSpacing: '-0.04em',
+            color: 'var(--color-primary-dark, #292923)',
+            margin: '0 0 var(--space-md) 0'
+          }}
+        >
+          All Products<br />
+          <em
+            style={{
+              fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)',
+              fontStyle: 'italic',
+              fontWeight: 400,
+              color: 'var(--color-accent, #A34D33)',
+              letterSpacing: '-0.025em'
+            }}
+          >
+            Master Catalog.
+          </em>
+        </h1>
+        <p
+          style={{
+            fontFamily: 'var(--font-body)',
+            color: 'var(--color-text-muted, #66645A)',
+            fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
+            maxWidth: '780px',
+            lineHeight: 1.55,
+            margin: 0
+          }}
+        >
           Explore AV Corporate giftings &amp; events&apos; complete 2024–2025 promotional merchandise catalog. Filter by category, food-grade materials, volume capacities, and custom branding techniques.
         </p>
 

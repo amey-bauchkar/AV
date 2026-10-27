@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import categoriesData from '../../data/categories.json';
+import { BrandLogo } from '../common/BrandLogo';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,31 +27,8 @@ export function Footer() {
         >
           {/* Col 1: Brand & Overview */}
           <div>
-            <div style={{ display: 'flex', flexDirection: 'column', marginBottom: 'var(--space-md)' }}>
-              <span
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontSize: '2.2rem',
-                  fontWeight: 900,
-                  color: '#FFFFFF',
-                  lineHeight: 0.9,
-                  letterSpacing: '0.02em'
-                }}
-              >
-                AV
-              </span>
-              <span
-                style={{
-                  fontSize: '0.58rem',
-                  fontWeight: 800,
-                  color: 'var(--color-accent)',
-                  letterSpacing: '0.14em',
-                  textTransform: 'uppercase',
-                  marginTop: '4px'
-                }}
-              >
-                CORPORATE GIFTINGS & EVENTS
-              </span>
+            <div style={{ marginBottom: 'var(--space-md)' }}>
+              <BrandLogo variant="light" height={52} href="/" />
             </div>
             <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: 'var(--space-md)' }}>
               Premier B2B manufacturer, importer and bulk supplier of executive corporate gifts, thermal drinkware, 80 GSM notebooks, precision writing instruments, and sustainable bamboo desk utilities.

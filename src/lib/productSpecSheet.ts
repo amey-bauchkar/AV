@@ -34,6 +34,34 @@ async function getBase64ImageFromUrl(url: string): Promise<{ dataUrl: string; wi
   });
 }
 
+async function getBase64PngFromUrl(url: string): Promise<{ dataUrl: string; width: number; height: number } | null> {
+  if (typeof window === 'undefined') return null;
+
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.crossOrigin = 'Anonymous';
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = img.naturalWidth || 400;
+        canvas.height = img.naturalHeight || 400;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) {
+          resolve(null);
+          return;
+        }
+        ctx.drawImage(img, 0, 0);
+        const dataUrl = canvas.toDataURL('image/png');
+        resolve({ dataUrl, width: canvas.width, height: canvas.height });
+      } catch {
+        resolve(null);
+      }
+    };
+    img.onerror = () => resolve(null);
+    img.src = url;
+  });
+}
+
 /**
  * Generates and downloads a clean, professional PDF Product Specification & Enquiry Sheet
  * using verified catalog data for AV Corporate giftings & events.
@@ -54,8 +82,8 @@ export async function generateProductSpecSheet(product: Product): Promise<void> 
   const contentWidth = pageWidth - margin * 2;
 
   // Colors based on official AV Brand Tokens
-  const colorPrimary = [21, 61, 37];     // #153D25 Deep Forest Green
-  const colorAccent = [241, 45, 24];     // #F12D18 Vivid Vermilion Red
+  const colorPrimary = [41, 41, 35];     // #292923 PNZ Archival Ink
+  const colorAccent = [163, 77, 51];     // #A34D33 PNZ Burnt Copper
   const colorMuted = [102, 112, 100];    // #667064 Muted Green-Gray
   const colorBgLight = [244, 245, 235];  // #F4F5EB Warm Ivory
   const colorBorder = [220, 224, 206];   // #DCE0CE Warm Border
@@ -64,16 +92,32 @@ export async function generateProductSpecSheet(product: Product): Promise<void> 
   doc.setFillColor(colorPrimary[0], colorPrimary[1], colorPrimary[2]);
   doc.rect(0, 0, pageWidth, 28, 'F');
 
-  // Brand Name
-  doc.setTextColor(255, 255, 255);
-  doc.setFont('helvetica', 'bold');
-  doc.setFontSize(14);
-  doc.text('AV CORPORATE GIFTINGS & EVENTS', margin, 12);
+  // Embed Brand Logo
+  let logoRendered = false;
+  try {
+    const logoRes = await getBase64PngFromUrl('/images/logo/logo-light.png');
+    if (logoRes) {
+      const logoH = 18;
+      const logoW = (logoRes.width / logoRes.height) * logoH;
+      doc.addImage(logoRes.dataUrl, 'PNG', margin, 5, logoW, logoH);
+      logoRendered = true;
+    }
+  } catch {
+    logoRendered = false;
+  }
 
-  doc.setFont('helvetica', 'normal');
-  doc.setFontSize(8.5);
-  doc.setTextColor(217, 119, 6); // Amber accent
-  doc.text('B2B CORPORATE MERCHANDISE & GIFTING SOLUTIONS', margin, 17);
+  if (!logoRendered) {
+    // Brand Name Fallback
+    doc.setTextColor(255, 255, 255);
+    doc.setFont('helvetica', 'bold');
+    doc.setFontSize(14);
+    doc.text('AV CORPORATE GIFTINGS & EVENTS', margin, 12);
+
+    doc.setFont('helvetica', 'normal');
+    doc.setFontSize(8.5);
+    doc.setTextColor(217, 119, 6); // Amber accent
+    doc.text('B2B CORPORATE MERCHANDISE & GIFTING SOLUTIONS', margin, 17);
+  }
 
   // Document Type & Catalog reference on right
   doc.setTextColor(255, 255, 255);

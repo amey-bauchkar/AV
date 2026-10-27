@@ -1,47 +1,70 @@
 /**
- * AV Corporate giftings & events Design Tokens — Phase 5
- * Refined, editorial corporate gifting aesthetic based on the official brand identity.
+ * AV Corporate giftings & events Design Tokens
+ * Re-engineered to the aesthetic of PNZ Fine Art Logistics (https://www.pnzfas.com/edition/index.html)
+ * Architectural, high-end editorial gallery style with DM Sans, Instrument Serif, and refined archival palette.
  */
 
 :root {
-  /* Brand Core Palette */
-  --color-primary: #153D25;        /* Deep Forest Green */
-  --color-primary-light: #1E4E32;  /* Medium Forest Green */
-  --color-primary-dark: #0E2A1A;   /* Darkest Forest Green */
+  /* PNZ FAS Core Architectural Palette */
+  --paper: #FAF9F5;              /* Archival Fine Paper / Warm Linen */
+  --paper-light: #FCFBF8;        /* Pristine Gallery Bone / Off-White */
+  --ink: #292923;                /* Carbon Ink / Charcoal Black */
+  --ink-secondary: #29312B;      /* Deep Slate Charcoal */
+  --muted: #66645A;              /* Warm Stone / Taupe Muted */
+  --muted-light: #8A867A;        /* Subtle Caption Gray */
+  --copper: #A34D33;             /* Signature Burnt Copper / Terracotta */
+  --copper-light: #C05A3E;       /* Warm Copper Accent */
+  --copper-soft: rgba(163, 77, 51, 0.09);
+  --brand-surface: #D53B3B;      /* Gallery Vermilion Red Accent */
+  --brand-hover: #BD3030;        /* Hover Red */
+  --brand-red: #F14545;          /* Vibrant Notification Red */
+  --line: #D6D3C8;               /* Hairline Border / Sand Line */
+  --line-light: #EEEBE3;         /* Subtle Divider */
+  --line-dark: #A69B89;          /* Framed Outline Line */
+  --sage: #747D6B;               /* Muted Herb / Sage Accent */
 
-  --color-accent: #F12D18;         /* Vivid Vermilion Red Accent */
-  --color-accent-light: #FF4532;   /* Bright Coral Red */
-  --color-accent-soft: rgba(241, 45, 24, 0.12);
+  /* Aliased AV Project Brand Core Palette (Seamless backwards compatibility) */
+  --color-primary: var(--ink);           /* #292923 Carbon Ink */
+  --color-primary-light: #3D3D35;        /* Medium Charcoal */
+  --color-primary-dark: #191916;         /* Obsidian Ink */
 
-  --color-leaf: #A9C875;           /* Fresh Leaf / Sage Green */
-  --color-leaf-soft: rgba(169, 200, 117, 0.22);
+  --color-accent: var(--copper);         /* #A34D33 Burnt Copper */
+  --color-accent-light: var(--copper-light);
+  --color-accent-soft: var(--copper-soft);
+  --color-brand-red: var(--brand-surface);
 
-  --color-warm-ivory: #F4F5EB;     /* Editorial Warm Cream / Ivory */
-  --color-warm-ivory-dark: #E8EAD9;
+  --color-leaf: var(--sage);             /* #747D6B Sage */
+  --color-leaf-soft: rgba(116, 125, 107, 0.15);
+  --color-eco: var(--sage);
+
+  --color-warm-ivory: var(--paper);      /* #FAF9F5 */
+  --color-warm-ivory-dark: var(--line-light); /* #EEEBE3 */
 
   /* Surface & Background */
-  --color-surface: #FFFFFF;        /* Pure White */
-  --color-surface-2: #F4F5EB;      /* Warm Ivory Canvas */
-  --color-surface-3: #ECEEDF;      /* Secondary Warm Neutral */
-  --color-surface-dark: #153D25;   /* Deep Forest Surface */
+  --color-surface: #FFFFFF;              /* Pure White */
+  --color-surface-2: var(--paper);       /* Archival Paper Canvas */
+  --color-surface-3: #F2EFE7;            /* Soft Neutral Layer */
+  --color-surface-dark: var(--ink);      /* Deep Ink Surface */
+  --color-surface-night: #101B22;        /* Museum Night Dark */
 
   /* Typography Colors */
-  --color-text-main: #153D25;      /* Deep Forest Green Headings */
-  --color-text-body: #2B382D;      /* High-readability Dark Body Copy */
-  --color-text-muted: #667064;     /* Muted Earthy Green-Gray */
-  --color-text-inverse: #FFFFFF;   /* Text on dark surfaces */
+  --color-text-main: var(--ink);         /* Primary Headings & Titles */
+  --color-text-body: var(--ink);         /* Body Copy */
+  --color-text-muted: var(--muted);      /* Descriptions & Metadata */
+  --color-text-inverse: #FCFAF2;        /* Inverted Light on Dark */
 
   /* Borders & Dividers */
-  --color-border: #DCE0CE;
-  --color-border-dark: rgba(255, 255, 255, 0.16);
-  --color-focus: #153D25;
+  --color-border: var(--line);           /* Hairline Warm Gray */
+  --color-border-dark: rgba(255, 255, 255, 0.18);
+  --color-focus: var(--copper);
 
-  /* Typography Tokens */
-  --font-display: 'Impact', 'Anton', 'Oswald', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-script: 'Brush Script MT', 'Caveat', 'Segoe Script', cursive;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  /* Typography Tokens (PNZ FAS Spec: DM Sans + Instrument Serif) */
+  --font-display: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'DM Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-script: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
 
   /* Spacing Scale */
   --space-2xs: 4px;
@@ -54,24 +77,25 @@
   --space-3xl: 64px;
   --space-4xl: 96px;
 
-  /* Border Radius */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  /* Architectural Clean Radii */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
   --radius-full: 9999px;
 
-  /* Elevation Shadows */
-  --shadow-sm: 0 1px 3px rgba(21, 61, 37, 0.05), 0 1px 2px rgba(21, 61, 37, 0.03);
-  --shadow-md: 0 4px 6px -1px rgba(21, 61, 37, 0.08), 0 2px 4px -2px rgba(21, 61, 37, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(21, 61, 37, 0.1), 0 4px 6px -4px rgba(21, 61, 37, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(21, 61, 37, 0.12), 0 8px 10px -6px rgba(21, 61, 37, 0.04);
+  /* Refined Gallery Elevation Shadows */
+  --shadow-sm: 0 1px 3px rgba(41, 41, 35, 0.04), 0 1px 2px rgba(41, 41, 35, 0.02);
+  --shadow-md: 0 4px 10px -2px rgba(41, 41, 35, 0.06), 0 2px 4px -1px rgba(41, 41, 35, 0.03);
+  --shadow-lg: 0 12px 20px -4px rgba(41, 41, 35, 0.08), 0 4px 6px -2px rgba(41, 41, 35, 0.04);
+  --shadow-xl: 0 20px 30px -6px rgba(41, 41, 35, 0.1), 0 8px 12px -4px rgba(41, 41, 35, 0.05);
 
   /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
 
   /* Layout */
-  --container-max: 1320px;
+  --container-max: 1360px;
 }

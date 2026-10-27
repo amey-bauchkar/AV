@@ -68,56 +68,64 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                   maxWidth: '580px',
                 }}
               >
-                {/* Reference Tagline */}
+                {/* Reference Tagline / Eyebrow */}
                 <div style={{ marginBottom: 'clamp(8px, 1.5vw, 14px)' }}>
                   <span
+                    className="eyebrow"
                     style={{
                       backgroundColor: 'transparent',
-                      color: 'var(--color-primary, #153D25)',
+                      color: 'var(--color-accent, #A34D33)',
                       padding: 0,
-                      fontSize: '0.78rem',
-                      fontWeight: 800,
-                      letterSpacing: '0.12em',
+                      fontSize: '11px',
+                      fontWeight: 600,
+                      letterSpacing: '0.09em',
                       textTransform: 'uppercase',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
                     }}
                   >
-                    <span style={{ color: 'var(--color-accent, #F12D18)' }}>●</span>{' '}
-                    {scene.overlay.badge}
+                    <span>●</span> {scene.overlay.badge}
                   </span>
                 </div>
 
-                {/* Bold Condensed Display Headline (Line 1 Vermilion, Line 2 Forest Green) */}
+                {/* Editorial Display Headline (PNZ FAS Style: Line 1 Sans 500, Line 2 Italic Instrument Serif) */}
                 <h1
                   className="display-headline"
                   style={{
                     margin: 0,
                     marginBottom: 'clamp(8px, 1.2vw, 14px)',
-                    fontSize: 'clamp(2.1rem, 6.5vw, 4.4rem)',
-                    fontWeight: 900,
-                    lineHeight: 1.05,
-                    letterSpacing: '0.035em',
-                    textTransform: 'uppercase',
+                    fontSize: 'clamp(2.4rem, 6.2vw, 4.6rem)',
+                    fontWeight: 500,
+                    lineHeight: 1.04,
+                    letterSpacing: '-0.055em',
                   }}
                 >
-                  <span style={{ color: 'var(--color-accent, #F12D18)', display: 'block' }}>
+                  <span style={{ color: 'var(--color-primary, #292923)', display: 'block' }}>
                     {scene.overlay.headlineLine1}
                   </span>
-                  <span style={{ color: 'var(--color-primary, #153D25)', display: 'block' }}>
+                  <em
+                    style={{
+                      color: 'var(--color-accent, #A34D33)',
+                      display: 'block',
+                      fontFamily: 'var(--font-serif)',
+                      fontStyle: 'italic',
+                      fontWeight: 400,
+                      letterSpacing: '-0.035em',
+                    }}
+                  >
                     {scene.overlay.headlineLine2}
-                  </span>
+                  </em>
                 </h1>
 
                 {/* Supporting Editorial Subtitle */}
                 <p
                   style={{
                     fontSize: 'clamp(0.95rem, 1.35vw, 1.15rem)',
-                    color: 'var(--color-text-body, #2A362E)',
-                    lineHeight: 1.55,
+                    color: 'var(--color-text-body, #292923)',
+                    lineHeight: 1.6,
                     marginBottom: 'clamp(18px, 2.5vw, 28px)',
-                    fontWeight: 500,
+                    fontWeight: 400,
                   }}
                 >
                   {scene.overlay.subtitle}
@@ -141,13 +149,14 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '12px',
-                        backgroundColor: 'var(--color-primary, #153D25)',
+                        backgroundColor: 'var(--brand-surface, #D53B3B)',
                         color: '#FFFFFF',
                         padding: '10px 14px 10px 22px',
                         borderRadius: 'var(--radius-full, 9999px)',
-                        fontWeight: 700,
-                        fontSize: '0.95rem',
-                        boxShadow: '0 4px 14px rgba(21, 61, 37, 0.25)',
+                        fontWeight: 500,
+                        fontSize: '0.92rem',
+                        boxShadow: 'var(--shadow-sm)',
+                        transition: 'all 0.2s ease',
                       }}
                     >
                       <span>{scene.overlay.ctaPrimary.label}</span>
@@ -155,9 +164,10 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                         className="btn-pill-circle"
                         aria-hidden="true"
                         style={{
-                          width: '32px',
-                          height: '32px',
-                          backgroundColor: 'var(--color-accent, #F12D18)',
+                          width: '30px',
+                          height: '30px',
+                          backgroundColor: '#FFFFFF',
+                          color: 'var(--brand-surface, #D53B3B)',
                           borderRadius: '50%',
                           display: 'flex',
                           alignItems: 'center',
@@ -170,7 +180,7 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
-                          strokeWidth="2.5"
+                          strokeWidth="2"
                         >
                           <line x1="5" y1="12" x2="19" y2="12" />
                           <polyline points="12 5 19 12 12 19" />
@@ -187,31 +197,33 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                       alignItems: 'center',
                       gap: '12px',
                       backgroundColor: 'transparent',
-                      color: 'var(--color-primary, #153D25)',
+                      color: 'var(--color-primary, #292923)',
                       padding: '10px 14px 10px 22px',
                       borderRadius: 'var(--radius-full, 9999px)',
-                      border: '1.5px solid var(--color-primary, #153D25)',
+                      border: '1px solid var(--line, #D6D3C8)',
                       fontFamily: 'inherit',
-                      fontWeight: 700,
-                      fontSize: '0.95rem',
+                      fontWeight: 500,
+                      fontSize: '0.92rem',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = 'rgba(21, 61, 37, 0.06)';
-                      e.currentTarget.style.transform = 'translateY(-2px)';
+                      e.currentTarget.style.backgroundColor = 'var(--paper-light, #FCFBF8)';
+                      e.currentTarget.style.borderColor = 'var(--ink, #292923)';
+                      e.currentTarget.style.transform = 'translateY(-1px)';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.borderColor = 'var(--line, #D6D3C8)';
                       e.currentTarget.style.transform = 'translateY(0)';
                     }}
                   >
                     <span>{scene.overlay.ctaSecondary.label}</span>
                     <span
                       style={{
-                        width: '32px',
-                        height: '32px',
-                        backgroundColor: 'var(--color-primary, #153D25)',
+                        width: '30px',
+                        height: '30px',
+                        backgroundColor: 'var(--color-primary, #292923)',
                         color: '#FFFFFF',
                         borderRadius: 'var(--radius-full, 9999px)',
                         display: 'flex',
@@ -227,7 +239,7 @@ export const HeroTextOverlays: React.FC<HeroTextOverlaysProps> = ({
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        strokeWidth="2.5"
+                        strokeWidth="2"
                       >
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <polyline points="12 5 19 12 12 19" />

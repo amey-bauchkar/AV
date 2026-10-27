@@ -6,6 +6,7 @@
  */
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import { BrandLogo } from '../components/common/BrandLogo';
 import {
   isAdminAuthenticated,
   loginAdmin,
@@ -259,24 +260,8 @@ export function AdminPage() {
           }}
         >
           {/* Lock Crest Icon */}
-          <div
-            style={{
-              width: '64px',
-              height: '64px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--color-primary-light, #1A4D2E)',
-              color: '#FFFFFF',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              margin: '0 auto var(--space-lg) auto',
-              boxShadow: '0 8px 16px rgba(21, 61, 37, 0.2)'
-            }}
-          >
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 'var(--space-md)' }}>
+            <BrandLogo variant="dark" height={56} />
           </div>
 
           <span
@@ -285,7 +270,7 @@ export function AdminPage() {
               fontWeight: 800,
               letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              color: 'var(--color-accent, #F12D18)',
+              color: 'var(--color-accent, #D53B3B)',
               display: 'block',
               marginBottom: '6px'
             }}
@@ -298,7 +283,7 @@ export function AdminPage() {
               fontSize: '1.6rem',
               fontWeight: 800,
               letterSpacing: '-0.02em',
-              color: 'var(--color-primary-dark, #0D2617)',
+              color: 'var(--color-primary-dark, #191916)',
               marginBottom: '8px'
             }}
           >
@@ -345,7 +330,7 @@ export function AdminPage() {
                     width: '100%',
                     padding: '12px 42px 12px 14px',
                     fontSize: '0.95rem',
-                    border: loginError ? '2px solid #F12D18' : '1px solid var(--color-border)',
+                    border: loginError ? '2px solid #D53B3B' : '1px solid var(--color-border)',
                     borderRadius: '8px',
                     backgroundColor: '#FFFFFF',
                     color: 'var(--color-text)',
@@ -410,7 +395,7 @@ export function AdminPage() {
                 fontSize: '0.92rem',
                 fontWeight: 700,
                 color: '#FFFFFF',
-                backgroundColor: 'var(--color-primary, #153D25)',
+                backgroundColor: 'var(--color-primary, #292923)',
                 border: 'none',
                 borderRadius: '8px',
                 cursor: 'pointer',
@@ -419,11 +404,11 @@ export function AdminPage() {
                 marginTop: '4px'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'var(--color-primary-dark, #0D2617)';
+                e.currentTarget.style.backgroundColor = 'var(--color-primary-dark, #191916)';
                 e.currentTarget.style.transform = 'translateY(-1px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'var(--color-primary, #153D25)';
+                e.currentTarget.style.backgroundColor = 'var(--color-primary, #292923)';
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
@@ -468,7 +453,7 @@ export function AdminPage() {
             position: 'fixed',
             bottom: '24px',
             right: '24px',
-            backgroundColor: 'var(--color-primary-dark, #0D2617)',
+            backgroundColor: 'var(--color-primary-dark, #191916)',
             color: '#FFFFFF',
             padding: '12px 20px',
             borderRadius: '8px',
@@ -500,21 +485,10 @@ export function AdminPage() {
       >
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
           {/* Brand & Subtitle */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <span
-              style={{
-                backgroundColor: 'var(--color-primary, #153D25)',
-                color: '#fff',
-                fontWeight: 900,
-                fontSize: '0.85rem',
-                padding: '4px 8px',
-                borderRadius: '4px'
-              }}
-            >
-              AV
-            </span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <BrandLogo variant="mark-only" height={38} href="/" />
             <div>
-              <h1 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--color-primary-dark, #0D2617)' }}>
+              <h1 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0, color: 'var(--color-primary-dark, #191916)' }}>
                 AV Corporate giftings & events Commercial Desk
               </h1>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '2px' }}>
@@ -1118,7 +1092,7 @@ export function AdminPage() {
                                 fontSize: '0.78rem',
                                 fontWeight: 700,
                                 color: '#FFFFFF',
-                                backgroundColor: 'var(--color-primary, #153D25)',
+                                backgroundColor: 'var(--color-primary, #292923)',
                                 border: 'none',
                                 borderRadius: '6px',
                                 cursor: 'pointer',

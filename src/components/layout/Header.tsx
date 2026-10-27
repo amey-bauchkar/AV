@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useRfqCart } from '../rfq/useRfqCart';
+import { BrandLogo } from '../common/BrandLogo';
 
 type HeaderProps = {
   onOpenSearch: () => void;
@@ -10,29 +11,17 @@ type HeaderProps = {
 export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
   const { totalUnitsCount, totalItemCount, openCart } = useRfqCart();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isPastHero, setIsPastHero] = useState(false);
   const location = useLocation();
-
-  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-
-      if (isHomePage) {
-        // Pinned hero is 750vh (~7.5 * window.innerHeight)
-        // Disappear when user finishes scrubbing the sequence and enters catalog
-        const heroThreshold = window.innerHeight * 7.2;
-        setIsPastHero(window.scrollY > heroThreshold);
-      } else {
-        setIsPastHero(false);
-      }
+      setIsScrolled(window.scrollY > 15);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isHomePage]);
+  }, []);
 
   // Keyboard shortcut listener (/ or Ctrl+K opens search)
   useEffect(() => {
@@ -60,25 +49,20 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
   return (
     <header
       style={{
-        position: isHomePage ? 'fixed' : 'sticky',
+        position: 'sticky',
         top: 0,
         left: 0,
         right: 0,
         width: '100%',
         zIndex: 500,
-        backgroundColor: isHomePage
-          ? 'transparent'
-          : isScrolled
-          ? 'rgba(244, 245, 235, 0.98)'
-          : 'var(--color-warm-ivory)',
-        backdropFilter: isHomePage ? 'none' : 'blur(12px)',
-        WebkitBackdropFilter: isHomePage ? 'none' : 'blur(12px)',
-        borderBottom: isHomePage ? 'none' : '1px solid rgba(21, 61, 37, 0.1)',
-        transform: isHomePage && isPastHero ? 'translateY(-100%)' : 'translateY(0)',
-        opacity: isHomePage && isPastHero ? 0 : 1,
-        pointerEvents: isHomePage && isPastHero ? 'none' : 'auto',
-        transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease',
-        boxShadow: isHomePage ? 'none' : isScrolled ? '0 2px 10px rgba(0, 0, 0, 0.05)' : 'none'
+        backgroundColor: isScrolled
+          ? 'rgba(250, 249, 245, 0.96)'
+          : 'var(--paper, #FAF9F5)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        borderBottom: '1px solid var(--line, #D6D3C8)',
+        transition: 'background-color 0.2s ease, box-shadow 0.2s ease',
+        boxShadow: isScrolled ? '0 2px 10px rgba(41, 41, 35, 0.04)' : 'none'
       }}
     >
       <div
@@ -87,47 +71,13 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          height: '76px'
+          height: 'clamp(62px, 8vw, 76px)'
         }}
       >
-        {/* Left: Brand Identity matching reference */}
-        <Link
-          to="/"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 'var(--space-xs)',
-            textDecoration: 'none'
-          }}
-          aria-label="AV Corporate giftings & events Home"
-        >
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: '2rem',
-                fontWeight: 900,
-                color: 'var(--color-primary)',
-                lineHeight: 0.9,
-                letterSpacing: '0.02em'
-              }}
-            >
-              AV
-            </span>
-            <span
-              style={{
-                fontSize: '0.58rem',
-                fontWeight: 800,
-                color: 'var(--color-primary)',
-                letterSpacing: '0.14em',
-                textTransform: 'uppercase',
-                marginTop: '3px'
-              }}
-            >
-              CORPORATE GIFTINGS & EVENTS
-            </span>
-          </div>
-        </Link>
+        {/* Left: Official Brand Identity Logo */}
+        <div className="header-brand-logo">
+          <BrandLogo href="/" height={46} priority={true} />
+        </div>
 
         {/* Center: Elegant Pill Navigation Menu */}
         <nav
@@ -179,8 +129,8 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
               alignItems: 'center',
               justifyContent: 'center',
               gap: '6px',
-              minWidth: '40px',
-              height: '40px',
+              minWidth: '44px',
+              height: '44px',
               padding: '8px 12px',
               borderRadius: 'var(--radius-full)',
               border: '1px solid rgba(21, 61, 37, 0.15)',
@@ -197,7 +147,7 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
               e.currentTarget.style.backgroundColor = 'transparent';
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
             </svg>
@@ -230,9 +180,9 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
               alignItems: 'center',
               justifyContent: 'center',
               gap: '6px',
-              minWidth: '40px',
-              height: '40px',
-              padding: totalUnitsCount > 0 ? '6px 12px' : '8px 10px',
+              minWidth: '44px',
+              height: '44px',
+              padding: totalUnitsCount > 0 ? '6px 14px' : '8px 12px',
               borderRadius: 'var(--radius-full)',
               backgroundColor: totalUnitsCount > 0 ? 'var(--color-primary)' : 'transparent',
               color: totalUnitsCount > 0 ? '#FFFFFF' : 'var(--color-primary)',
@@ -253,7 +203,7 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
               }
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
               <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
               <line x1="3" y1="6" x2="21" y2="6" />
               <path d="M16 10a4 4 0 0 1-8 0" />
@@ -302,8 +252,8 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              width: '40px',
-              height: '40px',
+              width: '44px',
+              height: '44px',
               padding: '8px',
               borderRadius: 'var(--radius-full)',
               border: '1px solid rgba(21, 61, 37, 0.15)',
@@ -320,6 +270,14 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
           </button>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .header-brand-logo img {
+            height: 38px !important;
+          }
+        }
+      `}</style>
     </header>
   );
 }

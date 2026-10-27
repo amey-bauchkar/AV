@@ -179,27 +179,6 @@ export function ProductDetailPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
       />
 
-      {/* Breadcrumb Navigation */}
-      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-xl)', fontSize: '0.85rem' }}>
-        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none', flexWrap: 'wrap' }}>
-          <li>
-            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li>
-            <Link to="/products" style={{ color: 'var(--color-text-muted)' }}>Catalog</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li>
-            <Link to={`/category/${product.categorySlug}`} style={{ color: 'var(--color-text-muted)' }}>
-              {product.category}
-            </Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>{product.sku}</li>
-        </ol>
-      </nav>
-
       {/* Main PDP Grid (Images on Left, Buy/RFQ Box on Right) */}
       <div
         style={{

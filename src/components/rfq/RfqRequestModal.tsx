@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useRfqCart } from './useRfqCart';
 import { submitQuoteRequest, formatQuoteSummaryText } from '../../lib/leadCapture';
 import type { QuoteBuyerInfo, QuoteSubmissionResult } from '../../types/rfq';
+import { BrandLogo } from '../common/BrandLogo';
 
 type RfqRequestModalProps = {
   isOpen: boolean;
@@ -122,6 +123,7 @@ export function RfqRequestModal({ isOpen, onClose }: RfqRequestModalProps) {
         >
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-2xs)' }}>
+              <BrandLogo variant="mark-only" height={24} />
               <span className="badge badge-accent">B2B QUOTATION ENGINE</span>
               <span className="badge badge-primary">STEP {step} OF 2</span>
             </div>

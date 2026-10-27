@@ -38,19 +38,21 @@ export const HeroScrollProgress: React.FC<HeroScrollProgressProps> = ({
         gap: '6px',
       }}
     >
-      {/* Chapter Indicator */}
+      {/* Chapter Indicator (PNZ FAS style: tabular numbers, muted tone, hairline border) */}
       <div
         style={{
           display: 'flex',
           alignItems: 'center',
           gap: '8px',
-          backgroundColor: 'transparent',
-          padding: '4px 10px',
+          backgroundColor: 'var(--paper-light, #FCFBF8)',
+          padding: '4px 12px',
           borderRadius: 'var(--radius-full, 9999px)',
-          border: '1px solid rgba(21, 61, 37, 0.15)',
-          fontSize: '0.75rem',
-          fontWeight: 700,
-          color: 'var(--color-primary, #153D25)',
+          border: '1px solid var(--line, #D6D3C8)',
+          fontSize: '11px',
+          fontVariantNumeric: 'tabular-nums',
+          fontFamily: 'var(--font-body)',
+          fontWeight: 500,
+          color: 'var(--muted, #66645A)',
           letterSpacing: '0.04em',
         }}
       >
@@ -63,9 +65,9 @@ export const HeroScrollProgress: React.FC<HeroScrollProgressProps> = ({
       <div
         style={{
           width: '140px',
-          height: '3px',
-          backgroundColor: 'rgba(21, 61, 37, 0.12)',
-          borderRadius: '3px',
+          height: '2px',
+          backgroundColor: 'var(--line-light, #EEEBE3)',
+          borderRadius: '1px',
           overflow: 'hidden',
           position: 'relative',
         }}
@@ -77,7 +79,7 @@ export const HeroScrollProgress: React.FC<HeroScrollProgressProps> = ({
             left: 0,
             height: '100%',
             width: `${percent}%`,
-            backgroundColor: 'var(--color-accent, #F12D18)',
+            backgroundColor: 'var(--copper, #A34D33)',
             transition: 'width 0.05s linear',
           }}
         />

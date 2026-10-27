@@ -4,7 +4,7 @@ import categoriesData from '../data/categories.json';
 import type { Product, Category } from '../types/product';
 import { ProductCard } from '../components/products/ProductCard';
 import { useRfqCart } from '../components/rfq/useRfqCart';
-import { ScrollHero } from '../components/hero/ScrollHero';
+import { ProfessionalHero } from '../components/hero/ProfessionalHero';
 import { BrandingHeroShowcase } from '../components/branding/BrandingHeroShowcase';
 import { AboutShowcaseSection } from '../components/about/AboutShowcaseSection';
 
@@ -33,9 +33,9 @@ export function HomePage() {
   return (
     <div style={{ backgroundColor: 'var(--color-warm-ivory)' }}>
       {/* ========================================================
-          1. MASTER SCROLL-CONTROLLED CINEMATIC HERO (AV Brand)
+          1. MASTER PROFESSIONAL EDITORIAL HERO (AV Corporate Brand)
          ======================================================== */}
-      <ScrollHero onOpenRfqModal={openRequestModal} />
+      <ProfessionalHero onOpenRfqModal={openRequestModal} />
 
       {/* ========================================================
           TRUST & QUALITY METRIC BAR
@@ -49,35 +49,28 @@ export function HomePage() {
         }}
       >
         <div className="container">
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-              gap: 'var(--space-lg)',
-              textAlign: 'center'
-            }}
-          >
-            <div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>159</div>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+          <div className="metric-bar-grid">
+            <div className="metric-item">
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>159</div>
+              <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                 Verified Catalog Models
               </div>
             </div>
-            <div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>9</div>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            <div className="metric-item">
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>9</div>
+              <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                 Specialized Categories
               </div>
             </div>
-            <div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>SUS 304</div>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            <div className="metric-item">
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>SUS 304</div>
+              <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                 Food-Grade Stainless Steel
               </div>
             </div>
-            <div>
-              <div style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>100%</div>
-              <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            <div className="metric-item">
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>100%</div>
+              <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                 Commercial B2B Quotations
               </div>
             </div>

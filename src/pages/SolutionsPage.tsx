@@ -52,19 +52,42 @@ export function SolutionsPage() {
           <span className="badge badge-accent">B2B CORPORATE SOLUTIONS</span>
           <span className="badge badge-primary">BULK CUSTOMIZATION</span>
         </div>
-        <h1 style={{ marginBottom: 'var(--space-sm)' }}>
-          Tailored Corporate Gifting & Merchandise Kits
+        <h1
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: 'clamp(2.75rem, 5.6vw, 4.75rem)',
+            fontWeight: 400,
+            lineHeight: 1.04,
+            letterSpacing: '-0.04em',
+            color: 'var(--color-primary-dark, #292923)',
+            margin: '0 0 var(--space-md) 0'
+          }}
+        >
+          Tailored Corporate Gifting<br />
+          <em
+            style={{
+              fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)',
+              fontStyle: 'italic',
+              fontWeight: 400,
+              color: 'var(--color-accent, #A34D33)',
+              letterSpacing: '-0.025em'
+            }}
+          >
+            & Merchandise Kits.
+          </em>
         </h1>
         <p
           style={{
-            color: 'var(--color-text-muted)',
-            fontSize: '1.1rem',
-            maxWidth: '720px',
+            fontFamily: 'var(--font-body)',
+            color: 'var(--color-text-muted, #66645A)',
+            fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
+            maxWidth: '740px',
             marginInline: 'auto',
-            lineHeight: 1.6
+            lineHeight: 1.55,
+            margin: 0
           }}
         >
-          From premium new-hire starter kits to large-scale festive hampers, AV Corporate giftings & events provides complete kit curation, customized branding, and direct dispatch for businesses across India.
+          From premium new-hire starter kits to large-scale festive hampers, AV Corporate giftings &amp; events provides complete kit curation, customized branding, and direct dispatch for businesses across India.
         </p>
 
         <div style={{ display: 'flex', gap: 'var(--space-md)', justifyContent: 'center', marginTop: 'var(--space-xl)', flexWrap: 'wrap' }}>

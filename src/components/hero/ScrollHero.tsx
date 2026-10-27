@@ -178,22 +178,21 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
             <div>
               <div style={{ marginBottom: '16px' }}>
                 <span
+                  className="eyebrow"
                   style={{
-                    backgroundColor: 'rgba(21, 61, 37, 0.08)',
-                    color: 'var(--color-primary, #153D25)',
-                    padding: '6px 14px',
-                    borderRadius: 'var(--radius-full, 9999px)',
-                    fontSize: '0.8rem',
-                    fontWeight: 800,
-                    letterSpacing: '0.06em',
+                    backgroundColor: 'transparent',
+                    color: 'var(--color-accent, #A34D33)',
+                    padding: 0,
+                    fontSize: '11px',
+                    fontWeight: 600,
+                    letterSpacing: '0.09em',
                     textTransform: 'uppercase',
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
                   }}
                 >
-                  <span style={{ color: 'var(--color-accent, #F12D18)' }}>●</span> Master Catalog
-                  2024–2025
+                  <span>●</span> Master Catalog 2024–2025
                 </span>
               </div>
 
@@ -202,19 +201,27 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                 style={{
                   margin: 0,
                   marginBottom: '16px',
-                  fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
-                  fontWeight: 900,
-                  lineHeight: 1.05,
-                  letterSpacing: '0.035em',
-                  textTransform: 'uppercase',
+                  fontSize: 'clamp(2.4rem, 5.2vw, 4.4rem)',
+                  fontWeight: 500,
+                  lineHeight: 1.04,
+                  letterSpacing: '-0.055em',
                 }}
               >
-                <span style={{ color: 'var(--color-accent, #F12D18)', display: 'block' }}>
-                  GIFTS THAT
+                <span style={{ color: 'var(--color-primary, #292923)', display: 'block' }}>
+                  Gifts designed for
                 </span>
-                <span style={{ color: 'var(--color-primary, #153D25)', display: 'block' }}>
-                  MAKE AN IMPACT
-                </span>
+                <em
+                  style={{
+                    color: 'var(--color-accent, #A34D33)',
+                    display: 'block',
+                    fontFamily: 'var(--font-serif)',
+                    fontStyle: 'italic',
+                    fontWeight: 400,
+                    letterSpacing: '-0.035em',
+                  }}
+                >
+                  lasting impression.
+                </em>
               </h1>
 
               <p
@@ -239,12 +246,14 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '12px',
-                    backgroundColor: 'var(--color-primary, #153D25)',
+                    backgroundColor: 'var(--brand-surface, #D53B3B)',
                     color: '#FFFFFF',
                     padding: '10px 14px 10px 22px',
                     borderRadius: 'var(--radius-full, 9999px)',
-                    fontWeight: 700,
-                    fontSize: '0.95rem',
+                    fontWeight: 500,
+                    fontSize: '0.92rem',
+                    boxShadow: 'var(--shadow-sm)',
+                    transition: 'all 0.2s ease',
                   }}
                 >
                   <span>Explore Catalog</span>
@@ -252,9 +261,10 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                     className="btn-pill-circle"
                     aria-hidden="true"
                     style={{
-                      width: '32px',
-                      height: '32px',
-                      backgroundColor: 'var(--color-accent, #F12D18)',
+                      width: '30px',
+                      height: '30px',
+                      backgroundColor: '#FFFFFF',
+                      color: 'var(--brand-surface, #D53B3B)',
                       borderRadius: '50%',
                       display: 'flex',
                       alignItems: 'center',
@@ -267,7 +277,7 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2.5"
+                      strokeWidth="2"
                     >
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
@@ -283,22 +293,23 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                     alignItems: 'center',
                     gap: '12px',
                     backgroundColor: 'transparent',
-                    color: 'var(--color-primary, #153D25)',
+                    color: 'var(--color-primary, #292923)',
                     padding: '10px 14px 10px 22px',
                     borderRadius: 'var(--radius-full, 9999px)',
-                    border: '1.5px solid var(--color-primary, #153D25)',
+                    border: '1px solid var(--line, #D6D3C8)',
                     fontFamily: 'inherit',
-                    fontWeight: 700,
-                    fontSize: '0.95rem',
+                    fontWeight: 500,
+                    fontSize: '0.92rem',
                     cursor: 'pointer',
+                    transition: 'all 0.2s ease',
                   }}
                 >
                   <span>Request a Quote</span>
                   <span
                     style={{
-                      width: '32px',
-                      height: '32px',
-                      backgroundColor: 'var(--color-primary, #153D25)',
+                      width: '30px',
+                      height: '30px',
+                      backgroundColor: 'var(--color-primary, #292923)',
                       color: '#FFFFFF',
                       borderRadius: 'var(--radius-full, 9999px)',
                       display: 'flex',
@@ -313,7 +324,7 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      strokeWidth="2.5"
+                      strokeWidth="2"
                     >
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
@@ -330,9 +341,9 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
                 style={{
                   width: '100%',
                   height: 'auto',
-                  borderRadius: 'var(--radius-2xl, 24px)',
-                  boxShadow: '0 20px 40px -15px rgba(21, 61, 37, 0.25)',
-                  border: '1px solid rgba(21, 61, 37, 0.08)',
+                  borderRadius: 'var(--radius-lg, 12px)',
+                  boxShadow: 'var(--shadow-lg)',
+                  border: '1px solid var(--line, #D6D3C8)',
                   display: 'block',
                 }}
               />
@@ -352,7 +363,7 @@ export const ScrollHero: React.FC<ScrollHeroProps> = ({ onOpenRfqModal }) => {
       style={{
         position: 'relative',
         height: manifest.scrollPinnedHeight || '750vh',
-        backgroundColor: 'var(--color-warm-ivory, #F4F5EB)',
+        backgroundColor: 'var(--color-warm-ivory, #FAF9F5)',
       }}
       aria-label="Interactive cinematic product showcase"
     >

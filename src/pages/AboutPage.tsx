@@ -5,17 +5,6 @@ import { ManufacturingBenchmarkCards } from '../components/about/ManufacturingBe
 export function AboutPage() {
   return (
     <div className="container" style={{ paddingBlock: 'var(--space-2xl)' }}>
-      {/* Breadcrumbs */}
-      <nav aria-label="Breadcrumb" style={{ marginBottom: 'var(--space-lg)', fontSize: '0.85rem' }}>
-        <ol style={{ display: 'flex', alignItems: 'center', gap: '8px', listStyle: 'none' }}>
-          <li>
-            <Link to="/" style={{ color: 'var(--color-text-muted)' }}>Home</Link>
-          </li>
-          <li style={{ color: 'var(--color-text-muted)' }}>/</li>
-          <li style={{ fontWeight: 600, color: 'var(--color-text-main)' }}>About Us</li>
-        </ol>
-      </nav>
-
       {/* ========================================================
           MASTER ABOUT SHOWCASE CARD — MATCHING SPEC DESIGN
          ======================================================== */}

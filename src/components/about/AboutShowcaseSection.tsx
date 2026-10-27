@@ -1,27 +1,35 @@
+/**
+ * src/components/about/AboutShowcaseSection.tsx
+ * Master Brand & About Section matching the PNZ FAS editorial fine art aesthetic.
+ * DM Sans, Instrument Serif em italics, hairline borders, and archival paper palette.
+ */
+
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface AboutShowcaseSectionProps {
   isHomePage?: boolean;
 }
 
-export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHomePage = false }) => {
+export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHomePage: propIsHomePage }) => {
+  const location = useLocation();
+  const isHomePage = propIsHomePage !== undefined ? propIsHomePage : location.pathname === '/';
+
   return (
     <section className="about-showcase-section" aria-label="About AV Corporate giftings & events">
       <div className="about-frame-wrapper">
         {/* Top Story & Consultation Grid */}
         <div className="about-top-grid">
           <div className="about-top-content">
-            <div className="about-badge-pill">About us</div>
+            <div className="about-badge-pill">About our practice</div>
             
-            <h2 className="about-main-title">
-              COMMITTED TO<br />
-              YOUR BRAND AND<br />
-              EXCELLENCE
-            </h2>
+            <h1 className="about-main-title">
+              Committed to your brand<br />
+              and <em>every detail.</em>
+            </h1>
 
             <p className="about-desc-p">
-              We strive to be a trusted leader in enterprise merchandise, providing precision-crafted corporate gift solutions that promote lasting executive relationships and empower teams to celebrate milestones.
+              We provide precision-crafted corporate gifts and custom merchandise designed around your brand identity, material integrity, and lasting executive relationships.
             </p>
 
             <div className="about-btn-group">
@@ -57,7 +65,7 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           <div className="about-card card-sage">
             <div className="card-body-wrap">
               <h3 className="card-headline">
-                CURATED<br />CATALOG
+                Curated<br /><em>Catalog</em>
               </h3>
               <p className="card-description">
                 Over 159 certified product models across 9 specialized categories, engineered for corporate utility and retention.
@@ -77,7 +85,7 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           <div className="about-card card-terracotta">
             <div className="card-body-wrap">
               <h3 className="card-headline">
-                PRECISION<br />IMPRINTING
+                Precision<br /><em>Imprinting</em>
               </h3>
               <p className="card-description">
                 Sub-millimeter fiber laser etch, 100% Pantone silkscreen, and photographic UV flatbed calibrated for every substrate.
@@ -97,7 +105,7 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           <div className="about-card card-sage">
             <div className="card-body-wrap">
               <h3 className="card-headline">
-                DIRECT B2B<br />DISPATCH
+                Direct B2B<br /><em>Dispatch</em>
               </h3>
               <p className="card-description">
                 Volume-tiered institutional quotes, digital mockup proofs, certified batch testing, and guaranteed pan-India dispatch.
@@ -121,13 +129,13 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           box-sizing: border-box;
         }
 
-        /* Master Framed Container Matching Reference */
+        /* Master Framed Container Matching PNZ FAS Gallery Border */
         .about-frame-wrapper {
-          background: #FAF9F5;
-          border: 10px solid #153D25;
-          border-radius: 40px;
+          background: var(--paper, #FAF9F5);
+          border: 1px solid var(--line, #D6D3C8);
+          border-radius: var(--radius-lg, 12px);
           overflow: hidden;
-          box-shadow: 0 24px 60px -15px rgba(21, 61, 37, 0.22);
+          box-shadow: var(--shadow-sm);
           display: flex;
           flex-direction: column;
         }
@@ -137,9 +145,9 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           display: grid;
           grid-template-columns: 1.15fr 1fr;
           gap: 40px;
-          padding: 44px 44px 36px 44px;
+          padding: 48px 48px 40px 48px;
           align-items: center;
-          background: #FAF9F5;
+          background: var(--paper, #FAF9F5);
         }
 
         .about-top-content {
@@ -150,34 +158,43 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
 
         .about-badge-pill {
           display: inline-block;
-          border: 1.5px solid rgba(21, 61, 37, 0.4);
-          border-radius: 9999px;
-          padding: 5px 16px;
-          font-size: 0.8rem;
-          font-weight: 700;
-          color: #153D25;
+          border: 1px solid var(--line, #D6D3C8);
+          border-radius: var(--radius-full, 9999px);
+          padding: 4px 14px;
+          font-size: 11px;
+          font-weight: 600;
+          color: var(--copper, #A34D33);
           margin-bottom: 20px;
-          letter-spacing: 0.02em;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          background: var(--paper-light, #FCFBF8);
         }
 
         .about-main-title {
           font-family: var(--font-heading);
-          font-size: clamp(2rem, 3.4vw, 3.1rem);
-          font-weight: 900;
-          line-height: 1.08;
-          color: #153D25;
-          letter-spacing: -0.025em;
-          text-transform: uppercase;
+          font-size: clamp(2.75rem, 5.6vw, 4.75rem);
+          font-weight: 400;
+          line-height: 1.04;
+          color: var(--ink, #292923);
+          letter-spacing: -0.04em;
           margin: 0 0 20px 0;
+        }
+
+        .about-main-title em {
+          font-family: var(--font-serif);
+          font-style: italic;
+          font-weight: 400;
+          color: var(--copper, #A34D33);
+          letter-spacing: -0.025em;
         }
 
         .about-desc-p {
           font-family: var(--font-body);
-          color: #526155;
-          font-size: clamp(0.92rem, 1.1vw, 1rem);
-          line-height: 1.6;
+          color: var(--muted, #66645A);
+          font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+          line-height: 1.55;
           margin: 0 0 32px 0;
-          max-width: 500px;
+          max-width: 580px;
         }
 
         .about-btn-group {
@@ -187,44 +204,44 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
         }
 
         .about-pill-btn {
-          background: #8DB37B;
-          color: #0E2918;
-          border: none;
-          border-radius: 12px;
-          padding: 13px 26px;
-          font-size: 0.95rem;
-          font-weight: 800;
+          background: var(--ink, #292923);
+          color: #FFFFFF;
+          border: 1px solid transparent;
+          border-radius: var(--radius-sm, 4px);
+          padding: 12px 24px;
+          font-size: 0.92rem;
+          font-weight: 500;
           text-decoration: none;
           cursor: pointer;
           letter-spacing: -0.01em;
           display: inline-flex;
           align-items: center;
-          transition: transform 0.2s ease, background 0.2s ease;
+          transition: background-color 0.2s ease, transform 0.2s ease;
         }
         .about-pill-btn:hover {
-          background: #7DA869;
-          transform: translateY(-2px);
+          background: var(--brand-surface, #D53B3B);
+          transform: translateY(-1px);
         }
 
         .about-arrow-btn {
-          width: 48px;
-          height: 48px;
-          border-radius: 12px;
-          background: #8DB37B;
-          color: #0E2918;
-          border: none;
+          width: 44px;
+          height: 44px;
+          border-radius: var(--radius-sm, 4px);
+          background: var(--ink, #292923);
+          color: #FFFFFF;
+          border: 1px solid transparent;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 1.25rem;
-          font-weight: 800;
+          font-size: 1.15rem;
+          font-weight: 500;
           text-decoration: none;
           cursor: pointer;
-          transition: transform 0.2s ease, background 0.2s ease;
+          transition: background-color 0.2s ease, transform 0.2s ease;
         }
         .about-arrow-btn:hover {
-          background: #7DA869;
-          transform: translateY(-2px);
+          background: var(--brand-surface, #D53B3B);
+          transform: translateY(-1px);
         }
 
         .about-photo-wrap {
@@ -232,9 +249,9 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           height: 100%;
           min-height: 380px;
           max-height: 430px;
-          border-radius: 24px;
+          border-radius: var(--radius-md, 6px);
           overflow: hidden;
-          box-shadow: 0 12px 28px -6px rgba(21, 61, 37, 0.14);
+          border: 1px solid var(--line, #D6D3C8);
         }
 
         .about-photo-wrap img {
@@ -246,16 +263,16 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           transition: transform 0.5s ease;
         }
         .about-photo-wrap:hover img {
-          transform: scale(1.03);
+          transform: scale(1.02);
         }
 
-        /* Bottom 3-Card Row */
+        /* Bottom 3-Card Row with PNZ Hairline Grid Layout */
         .about-bottom-row {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          background: #153D25;
-          gap: 10px;
-          border-top: 10px solid #153D25;
+          background: var(--line, #D6D3C8);
+          gap: 1px;
+          border-top: 1px solid var(--line, #D6D3C8);
         }
 
         .about-card {
@@ -265,22 +282,25 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           justify-content: space-between;
           min-height: 250px;
           box-sizing: border-box;
-          transition: transform 0.25s ease;
-        }
-        .about-card:hover {
-          filter: brightness(1.03);
+          transition: background-color 0.2s ease;
         }
 
-        /* Card 1 & Card 3: Brand Sage Green */
+        /* Card 1 & Card 3: Light Archival Paper */
         .card-sage {
-          background: #8DB37B;
-          color: #0E2918;
+          background: var(--paper-light, #FCFBF8);
+          color: var(--ink, #292923);
+        }
+        .card-sage:hover {
+          background: #FFFFFF;
         }
 
-        /* Card 2: Brand Warm Terracotta */
+        /* Card 2: Warm Subtle Terracotta/Linen */
         .card-terracotta {
-          background: #E07A52;
-          color: #1A0D08;
+          background: #F7F3EC;
+          color: var(--ink, #292923);
+        }
+        .card-terracotta:hover {
+          background: #FAF6EF;
         }
 
         .card-body-wrap {
@@ -289,58 +309,70 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
 
         .card-headline {
           font-family: var(--font-heading);
-          font-size: clamp(1.75rem, 2.2vw, 2.1rem);
-          font-weight: 900;
+          font-size: clamp(1.6rem, 2vw, 1.95rem);
+          font-weight: 500;
           line-height: 1.08;
-          letter-spacing: -0.025em;
-          text-transform: uppercase;
+          letter-spacing: -0.04em;
           margin: 0 0 14px 0;
-          color: inherit;
+          color: var(--ink, #292923);
+        }
+
+        .card-headline em {
+          font-family: var(--font-serif);
+          font-style: italic;
+          font-weight: 400;
+          letter-spacing: -0.03em;
+          color: var(--copper, #A34D33);
         }
 
         .card-description {
           font-family: var(--font-body);
-          font-size: 0.9rem;
-          line-height: 1.5;
+          font-size: 0.92rem;
+          line-height: 1.6;
           margin: 0;
-          opacity: 0.9;
-          font-weight: 500;
-          color: inherit;
+          color: var(--muted, #66645A);
         }
 
         .card-footer {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          padding-top: 16px;
+          border-top: 1px solid var(--line-light, #EEEBE3);
         }
 
         .card-view-link {
-          font-size: 0.9rem;
-          font-weight: 700;
-          text-decoration: underline;
-          color: inherit;
+          font-size: 0.88rem;
+          font-weight: 500;
+          color: var(--ink, #292923);
           cursor: pointer;
+          letter-spacing: -0.01em;
+          transition: color 0.2s ease;
+        }
+        .card-view-link:hover {
+          color: var(--copper, #A34D33);
         }
 
         .card-arrow-box {
-          width: 44px;
-          height: 44px;
-          border-radius: 12px;
-          background: #FFFFFF;
-          color: #0E2918;
+          width: 36px;
+          height: 36px;
+          border-radius: var(--radius-sm, 4px);
+          background: var(--paper, #FAF9F5);
+          border: 1px solid var(--line, #D6D3C8);
+          color: var(--ink, #292923);
           display: flex;
           align-items: center;
           justify-content: center;
-          font-size: 1.15rem;
-          font-weight: 800;
+          font-size: 1rem;
+          font-weight: 500;
           text-decoration: none;
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
           cursor: pointer;
-          transition: transform 0.2s ease, background 0.2s ease;
+          transition: all 0.2s ease;
         }
         .card-arrow-box:hover {
-          transform: scale(1.1);
-          background: #FAF9F5;
+          background: var(--ink, #292923);
+          color: #FFFFFF;
+          border-color: var(--ink, #292923);
         }
 
         /* Responsive */
@@ -356,28 +388,23 @@ export const AboutShowcaseSection: React.FC<AboutShowcaseSectionProps> = ({ isHo
           }
           .about-bottom-row {
             grid-template-columns: 1fr;
-            gap: 8px;
-            border-top: 8px solid #153D25;
+            gap: 1px;
           }
           .about-card {
             padding: 28px 24px;
             min-height: auto;
           }
-          .card-headline {
-            font-size: 1.7rem;
-          }
         }
 
         @media (max-width: 640px) {
           .about-frame-wrapper {
-            border-width: 7px;
-            border-radius: 28px;
+            border-radius: var(--radius-md, 6px);
           }
           .about-top-grid {
             padding: 24px 18px 20px 18px;
           }
           .about-main-title {
-            font-size: 1.9rem;
+            font-size: clamp(2.2rem, 7vw, 3.2rem);
           }
           .about-card {
             padding: 24px 18px;

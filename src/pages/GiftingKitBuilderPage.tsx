@@ -32,9 +32,9 @@ export type KitItem = {
 
 type OccasionPreset = {
   id: string;
+  index: string;
   title: string;
   badge: string;
-  icon: string;
   tagline: string;
   description: string;
   skus: string[];
@@ -43,9 +43,9 @@ type OccasionPreset = {
 const OCCASION_PRESETS: OccasionPreset[] = [
   {
     id: 'onboarding',
+    index: '01',
     title: 'Employee Welcome & Onboarding',
     badge: 'NEW HIRE STARTER KIT',
-    icon: '🎓',
     tagline: 'Make an unforgettable first impression on day one.',
     description:
       'Curated executive gear designed to welcome new hires with durable hydration, 80 GSM bound note-taking, precision pens, and desk accessories.',
@@ -53,9 +53,9 @@ const OCCASION_PRESETS: OccasionPreset[] = [
   },
   {
     id: 'client',
+    index: '02',
     title: 'Client Appreciation & Boardroom',
     badge: 'STRATEGIC RELATIONSHIPS',
-    icon: '💼',
     tagline: 'Prestige corporate gifts for strategic partners and leadership.',
     description:
       'Executive drinkware, leatherette accessories, and metal writing instruments engineered for high perceived value and prolonged desk presence.',
@@ -63,9 +63,9 @@ const OCCASION_PRESETS: OccasionPreset[] = [
   },
   {
     id: 'events',
+    index: '03',
     title: 'Conferences & Large Event Swag',
     badge: 'BULK EVENT MERCHANDISE',
-    icon: '🎪',
     tagline: 'High-utility conference merch that attendees keep and use daily.',
     description:
       'Functional sports bottles, lightweight presentation notebooks, and stylus roller pens optimized for rapid branding and large batch logistics.',
@@ -73,9 +73,9 @@ const OCCASION_PRESETS: OccasionPreset[] = [
   },
   {
     id: 'eco',
+    index: '04',
     title: 'Sustainable Bamboo Collection',
     badge: 'NATURAL & ECO-CONSCIOUS',
-    icon: '🌿',
     tagline: 'Align your corporate brand with natural, sustainable materials.',
     description:
       'Crafted from responsibly harvested natural bamboo, wheat straw composites, and certified food-grade SUS 304 stainless steel.',
@@ -83,9 +83,9 @@ const OCCASION_PRESETS: OccasionPreset[] = [
   },
   {
     id: 'custom',
+    index: '05',
     title: 'Custom Bespoke Kit',
     badge: 'BUILD YOUR OWN',
-    icon: '🛠️',
     tagline: 'Create your unique corporate gift box from all 159 catalog items.',
     description:
       'Select any combination of thermal bottles, mugs, notebooks, card cases, and pens tailored to your specific campaign requirements.',
@@ -336,49 +336,109 @@ export function GiftingKitBuilderPage() {
   const currentOccasion = OCCASION_PRESETS.find((p) => p.id === activeOccasionId);
 
   return (
-    <div style={{ backgroundColor: 'var(--color-warm-ivory)', minHeight: '100vh', paddingBottom: 'var(--space-4xl)' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '100vh', paddingBottom: 'var(--space-4xl)' }}>
       {/* ========================================================
-          PAGE HEADER
+          PAGE HEADER (HERO LEVEL MAGNITUDE)
          ======================================================== */}
       <div
         style={{
           borderBottom: '1px solid var(--color-border)',
-          backgroundColor: 'var(--color-surface)',
-          paddingTop: 'clamp(24px, 4vw, 44px)',
-          paddingBottom: 'clamp(24px, 4vw, 40px)'
+          backgroundColor: '#FFFFFF',
+          paddingTop: 'clamp(36px, 5vw, 60px)',
+          paddingBottom: 'clamp(36px, 5vw, 56px)'
         }}
       >
         <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-xs)', marginBottom: 'var(--space-xs)' }}>
-            <Link to="/" style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem' }}>
-              Home
-            </Link>
-            <span style={{ color: 'var(--color-border)' }}>/</span>
-            <span style={{ color: 'var(--color-accent)', fontSize: '0.85rem', fontWeight: 700 }}>
-              Corporate Gifting Kit Builder
-            </span>
-          </div>
-
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 'var(--space-md)' }}>
-            <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '6px' }}>
-                <span className="badge badge-accent">Interactive Kit Builder</span>
-                <span className="badge badge-primary">Direct Factory B2B</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 'var(--space-xl)' }}>
+            <div style={{ maxWidth: '880px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: 'var(--space-md)' }}>
+                <span
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '0.74rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.12em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-accent, #A34D33)',
+                    backgroundColor: 'rgba(163, 77, 51, 0.08)',
+                    padding: '4px 12px',
+                    borderRadius: 'var(--radius-full, 9999px)',
+                    border: '1px solid rgba(163, 77, 51, 0.2)'
+                  }}
+                >
+                  Interactive Kit Builder
+                </span>
+                <span
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '0.74rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.12em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-primary-dark, #292923)',
+                    backgroundColor: 'var(--color-surface-2, #FAF9F5)',
+                    padding: '4px 12px',
+                    borderRadius: 'var(--radius-full, 9999px)',
+                    border: '1px solid var(--color-border, #E5E2D9)'
+                  }}
+                >
+                  Direct Factory B2B
+                </span>
               </div>
-              <h1 style={{ fontSize: 'clamp(1.8rem, 3.2vw, 2.75rem)', letterSpacing: '-0.02em', marginBottom: '8px' }}>
-                Custom Corporate Gifting & Welcome Kits
+
+              <h1
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(2.75rem, 5.6vw, 4.75rem)',
+                  fontWeight: 400,
+                  lineHeight: 1.04,
+                  letterSpacing: '-0.04em',
+                  color: 'var(--color-primary-dark, #292923)',
+                  margin: '0 0 var(--space-md) 0'
+                }}
+              >
+                Custom Corporate Gifting<br />
+                <em
+                  style={{
+                    fontFamily: 'var(--font-display, "Instrument Serif", Georgia, serif)',
+                    fontStyle: 'italic',
+                    fontWeight: 400,
+                    color: 'var(--color-accent, #A34D33)',
+                    letterSpacing: '-0.025em'
+                  }}
+                >
+                  & Welcome Kits.
+                </em>
               </h1>
-              <p style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', maxWidth: '720px', lineHeight: 1.5 }}>
+
+              <p
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  color: 'var(--color-text-muted, #66645A)',
+                  fontSize: 'clamp(1.05rem, 1.4vw, 1.25rem)',
+                  maxWidth: '740px',
+                  lineHeight: 1.55,
+                  margin: 0
+                }}
+              >
                 Curate custom hampers and welcome sets from our 159 master catalog products. Select branding methods, customize quantities, and receive formal volume tier quotes.
               </p>
             </div>
 
-            <div style={{ display: 'flex', gap: 'var(--space-sm)', flexWrap: 'wrap', alignSelf: 'center' }}>
+            <div style={{ display: 'flex', gap: 'var(--space-sm)', flexWrap: 'wrap', alignSelf: 'flex-end', marginBottom: '8px' }}>
               <button
                 type="button"
                 onClick={() => handleAddKitToRfqCart(true)}
                 className="btn btn-outline"
-                style={{ fontSize: '0.9rem' }}
+                style={{
+                  fontSize: '0.95rem',
+                  padding: '12px 24px',
+                  borderRadius: 'var(--radius-full)',
+                  border: '1px solid var(--color-border, #D6D3C8)',
+                  backgroundColor: '#FFFFFF',
+                  color: 'var(--color-primary-dark, #292923)',
+                  fontWeight: 600
+                }}
                 disabled={kitItems.length === 0}
               >
                 Add Kit to RFQ Basket
@@ -387,7 +447,15 @@ export function GiftingKitBuilderPage() {
                 type="button"
                 onClick={handleProceedToFormalQuote}
                 className="btn btn-primary"
-                style={{ fontSize: '0.9rem' }}
+                style={{
+                  fontSize: '0.95rem',
+                  padding: '12px 26px',
+                  borderRadius: 'var(--radius-full)',
+                  backgroundColor: 'var(--color-accent, #D53B3B)',
+                  borderColor: 'var(--color-accent, #D53B3B)',
+                  fontWeight: 600,
+                  boxShadow: '0 4px 14px rgba(213, 59, 59, 0.25)'
+                }}
                 disabled={kitItems.length === 0}
               >
                 Request Formal Quote →
@@ -419,7 +487,7 @@ export function GiftingKitBuilderPage() {
             animation: 'fadeInUp 0.25s ease'
           }}
         >
-          <span style={{ fontSize: '1.2rem' }}>✨</span>
+          <span style={{ fontSize: '1rem', color: 'var(--color-accent)' }}>✓</span>
           <span>{addedAlert}</span>
         </div>
       )}
@@ -431,14 +499,38 @@ export function GiftingKitBuilderPage() {
         <div style={{ marginBottom: 'var(--space-2xl)' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 'var(--space-md)', flexWrap: 'wrap', gap: 'var(--space-xs)' }}>
             <div>
-              <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-accent)' }}>
+              <span
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '0.78rem',
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  color: 'var(--color-accent)'
+                }}
+              >
                 Step 1 of 3
               </span>
-              <h2 style={{ fontSize: '1.35rem', marginTop: '2px' }}>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(1.35rem, 2.2vw, 1.75rem)',
+                  fontWeight: 700,
+                  letterSpacing: '-0.02em',
+                  color: 'var(--color-primary-dark, #292923)',
+                  marginTop: '2px'
+                }}
+              >
                 Select Your Gifting Occasion or Theme
               </h2>
             </div>
-            <span style={{ fontSize: '0.82rem', color: 'var(--color-text-muted)' }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: '0.84rem',
+                color: 'var(--color-text-muted)'
+              }}
+            >
               Loads curated starter selections from verified catalog models
             </span>
           </div>
@@ -458,61 +550,131 @@ export function GiftingKitBuilderPage() {
                   type="button"
                   onClick={() => loadPreset(preset.id)}
                   style={{
-                    backgroundColor: isActive ? 'var(--color-primary)' : 'var(--color-surface)',
-                    color: isActive ? '#FFFFFF' : 'var(--color-text-main)',
-                    border: isActive ? '1px solid var(--color-primary)' : '1px solid var(--color-border)',
+                    backgroundColor: '#FFFFFF',
+                    color: 'var(--color-text-main, #292923)',
+                    border: isActive
+                      ? '1.5px solid var(--color-accent, #A34D33)'
+                      : '1px solid var(--color-border, #E5E2D9)',
                     borderRadius: 'var(--radius-xl)',
                     padding: 'var(--space-lg)',
                     textAlign: 'left',
                     cursor: 'pointer',
-                    boxShadow: isActive ? 'var(--shadow-md)' : 'var(--shadow-sm)',
+                    boxShadow: isActive
+                      ? '0 6px 20px rgba(163, 77, 51, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04)'
+                      : '0 1px 3px rgba(0, 0, 0, 0.04)',
                     transition: 'all var(--transition-normal)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    minHeight: '140px'
+                    minHeight: '144px',
+                    position: 'relative'
                   }}
                   onMouseEnter={(e) => {
                     if (!isActive) {
-                      e.currentTarget.style.borderColor = 'var(--color-primary)';
+                      e.currentTarget.style.borderColor = 'var(--color-accent, #A34D33)';
                       e.currentTarget.style.transform = 'translateY(-2px)';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!isActive) {
-                      e.currentTarget.style.borderColor = 'var(--color-border)';
+                      e.currentTarget.style.borderColor = 'var(--color-border, #E5E2D9)';
                       e.currentTarget.style.transform = 'translateY(0)';
                     }
                   }}
                 >
                   <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-xs)' }}>
-                      <span style={{ fontSize: '1.5rem' }}>{preset.icon}</span>
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: '14px'
+                      }}
+                    >
                       <span
                         style={{
-                          fontSize: '0.65rem',
-                          fontWeight: 800,
-                          padding: '2px 8px',
-                          borderRadius: 'var(--radius-full)',
-                          backgroundColor: isActive ? 'rgba(255, 255, 255, 0.2)' : 'rgba(21, 61, 37, 0.08)',
-                          color: isActive ? '#FFFFFF' : 'var(--color-primary)'
+                          fontFamily: 'var(--font-heading)',
+                          fontVariantNumeric: 'tabular-nums',
+                          fontSize: '0.78rem',
+                          fontWeight: 700,
+                          color: isActive ? 'var(--color-accent, #A34D33)' : 'var(--color-text-muted, #66645A)',
+                          letterSpacing: '0.04em'
+                        }}
+                      >
+                        {preset.index}
+                      </span>
+                      <span
+                        style={{
+                          fontFamily: 'var(--font-heading)',
+                          fontSize: '0.64rem',
+                          fontWeight: 700,
+                          letterSpacing: '0.06em',
+                          textTransform: 'uppercase',
+                          padding: '3px 8px',
+                          borderRadius: 'var(--radius-full, 9999px)',
+                          backgroundColor: isActive ? 'rgba(163, 77, 51, 0.08)' : 'var(--color-surface-2, #FAF9F5)',
+                          color: isActive ? 'var(--color-accent, #A34D33)' : 'var(--color-text-muted, #66645A)',
+                          border: isActive
+                            ? '1px solid rgba(163, 77, 51, 0.25)'
+                            : '1px solid var(--color-border, #E5E2D9)'
                         }}
                       >
                         {preset.badge}
                       </span>
                     </div>
-                    <div style={{ fontWeight: 800, fontSize: '1.02rem', lineHeight: 1.25, marginBottom: '4px' }}>
+
+                    <div
+                      style={{
+                        fontFamily: 'var(--font-heading)',
+                        fontWeight: 700,
+                        fontSize: '1.04rem',
+                        lineHeight: 1.3,
+                        color: 'var(--color-text-main, #292923)',
+                        letterSpacing: '-0.015em',
+                        marginBottom: '4px'
+                      }}
+                    >
                       {preset.title}
                     </div>
                   </div>
+
                   <div
                     style={{
-                      fontSize: '0.78rem',
-                      color: isActive ? 'rgba(255, 255, 255, 0.8)' : 'var(--color-text-muted)',
-                      marginTop: 'var(--space-xs)'
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      fontFamily: 'var(--font-body)',
+                      fontSize: '0.8rem',
+                      color: 'var(--color-text-muted, #66645A)',
+                      marginTop: 'var(--space-sm)',
+                      paddingTop: '8px'
                     }}
                   >
-                    {preset.skus.length > 0 ? `${preset.skus.length} Items Preset` : 'Blank Workspace'}
+                    <span>{preset.skus.length > 0 ? `${preset.skus.length} Items Preset` : 'Blank Workspace'}</span>
+                    {isActive && (
+                      <span
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
+                          fontSize: '0.72rem',
+                          fontWeight: 700,
+                          color: 'var(--color-accent, #A34D33)',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.04em'
+                        }}
+                      >
+                        <span
+                          style={{
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            backgroundColor: 'var(--color-accent, #A34D33)'
+                          }}
+                        />
+                        Selected
+                      </span>
+                    )}
                   </div>
                 </button>
               );
@@ -524,21 +686,39 @@ export function GiftingKitBuilderPage() {
               style={{
                 marginTop: 'var(--space-md)',
                 padding: 'var(--space-md) var(--space-lg)',
-                backgroundColor: 'rgba(21, 61, 37, 0.04)',
-                border: '1px solid var(--color-border)',
+                backgroundColor: '#FFFFFF',
+                border: '1px solid var(--color-border, #E5E2D9)',
                 borderRadius: 'var(--radius-lg)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 flexWrap: 'wrap',
-                gap: 'var(--space-md)'
+                gap: 'var(--space-md)',
+                boxShadow: '0 1px 4px rgba(0, 0, 0, 0.03)'
               }}
             >
               <div>
-                <strong style={{ color: 'var(--color-primary)', fontSize: '0.92rem' }}>
+                <strong
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    color: 'var(--color-primary-dark, #292923)',
+                    fontSize: '0.94rem',
+                    fontWeight: 700,
+                    letterSpacing: '-0.01em'
+                  }}
+                >
                   {currentOccasion.tagline}
                 </strong>
-                <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', margin: 0, marginTop: '2px' }}>
+                <p
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.86rem',
+                    color: 'var(--color-text-muted, #66645A)',
+                    margin: 0,
+                    marginTop: '3px',
+                    lineHeight: 1.55
+                  }}
+                >
                   {currentOccasion.description}
                 </p>
               </div>
@@ -547,16 +727,17 @@ export function GiftingKitBuilderPage() {
                   type="button"
                   onClick={() => loadPreset(currentOccasion.id)}
                   style={{
-                    fontSize: '0.8rem',
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '0.82rem',
                     fontWeight: 700,
-                    color: 'var(--color-accent)',
+                    color: 'var(--color-accent, #A34D33)',
                     background: 'none',
                     border: 'none',
                     cursor: 'pointer',
                     textDecoration: 'underline'
                   }}
                 >
-                  Reload Original Preset Items ↺
+                  Reload Original Preset Items
                 </button>
               )}
             </div>
@@ -658,8 +839,14 @@ export function GiftingKitBuilderPage() {
                     backgroundColor: 'var(--color-surface-2)'
                   }}
                 >
-                  <div style={{ fontSize: '2.5rem', marginBottom: 'var(--space-sm)' }}>📦</div>
-                  <h3 style={{ fontSize: '1.2rem', marginBottom: 'var(--space-xs)' }}>
+                  <div style={{ margin: '0 auto var(--space-md) auto', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%', backgroundColor: 'var(--paper-light, #FAF9F5)', border: '1px solid var(--line, #E5E2D9)' }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--muted, #66645A)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+                      <path d="m3.3 7 8.7 5 8.7-5" />
+                      <path d="M12 22V12" />
+                    </svg>
+                  </div>
+                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', marginBottom: 'var(--space-xs)', color: 'var(--color-primary-dark, #292923)' }}>
                     Your Kit Tray is Currently Empty
                   </h3>
                   <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', maxWidth: '400px', marginInline: 'auto', marginBottom: 'var(--space-lg)' }}>
