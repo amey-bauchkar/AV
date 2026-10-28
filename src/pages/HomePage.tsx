@@ -7,6 +7,7 @@ import { useRfqCart } from '../components/rfq/useRfqCart';
 import { ProfessionalHero } from '../components/hero/ProfessionalHero';
 import { BrandingHeroShowcase } from '../components/branding/BrandingHeroShowcase';
 import { AboutShowcaseSection } from '../components/about/AboutShowcaseSection';
+import { CorporateEventsShowcase } from '../components/events/CorporateEventsShowcase';
 
 const allProducts = productsData as unknown as Product[];
 const allCategories = categoriesData as Category[];
@@ -44,34 +45,34 @@ export function HomePage() {
         style={{
           borderTop: '1px solid var(--color-border)',
           borderBottom: '1px solid var(--color-border)',
-          backgroundColor: 'var(--color-surface)',
+          backgroundColor: 'var(--paper, #FAF9F5)',
           padding: 'var(--space-lg) 0'
         }}
       >
         <div className="container">
           <div className="metric-bar-grid">
             <div className="metric-item">
-              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>159</div>
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>159+</div>
               <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                Verified Catalog Models
+                Curated Gift Models
               </div>
             </div>
             <div className="metric-item">
-              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>9</div>
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>End-to-End</div>
               <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                Specialized Categories
+                Event Management
               </div>
             </div>
             <div className="metric-item">
-              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>SUS 304</div>
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>Zero</div>
               <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                Food-Grade Stainless Steel
+                Setup or Plate Fees
               </div>
             </div>
             <div className="metric-item">
-              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>100%</div>
+              <div className="metric-number" style={{ fontSize: '1.75rem', fontWeight: 900, color: 'var(--color-primary)' }}>Pan-India</div>
               <div className="metric-label" style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                Commercial B2B Quotations
+                On-Time Execution
               </div>
             </div>
           </div>
@@ -252,6 +253,11 @@ export function HomePage() {
       </section>
 
       {/* ========================================================
+          CORPORATE EVENTS & BRAND ACTIVATIONS SHOWCASE
+         ======================================================== */}
+      <CorporateEventsShowcase onOpenRfqModal={openRequestModal} />
+
+      {/* ========================================================
           ABOUT SHOWCASE SECTION — BRAND COMMITMENT & CORE CAPABILITIES
          ======================================================== */}
       <section style={{ padding: 'clamp(48px, 6vw, 84px) 0' }}>
@@ -299,7 +305,7 @@ export function HomePage() {
               {
                 title: 'Employee Welcome & Onboarding',
                 badge: 'NEW HIRE STARTER KITS',
-                desc: 'Curated sets featuring insulated thermal bottles, 80 GSM hardbound diaries, and metal executive pens.',
+                desc: 'Curated sets featuring insulated thermal bottles, executive hardbound notebooks, and metal executive pens.',
                 target: '/corporate-gifting?occasion=onboarding'
               },
               {
@@ -480,10 +486,10 @@ export function HomePage() {
           >
             <div style={{ backgroundColor: 'var(--color-surface)', padding: 'var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)' }}>
               <div style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '1.25rem', marginBottom: '4px' }}>
-                SUS 304 Steel
+                Food-Grade Stainless Steel
               </div>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', lineHeight: 1.55 }}>
-                Food-grade austenitic stainless steel providing superior corrosion resistance, double-walled vacuum thermal retention up to 12 hours, and 100% BPA-free operation.
+                High-grade double-walled insulated stainless steel providing superior corrosion resistance, hot and cold thermal retention up to 12 hours, and 100% BPA-free safety.
               </p>
             </div>
 
@@ -498,7 +504,7 @@ export function HomePage() {
 
             <div style={{ backgroundColor: 'var(--color-surface)', padding: 'var(--space-xl)', borderRadius: 'var(--radius-lg)', border: '1px solid var(--color-border)' }}>
               <div style={{ color: 'var(--color-primary)', fontWeight: 800, fontSize: '1.25rem', marginBottom: '4px' }}>
-                80 GSM Paper
+                Executive Writing Journals
               </div>
               <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', lineHeight: 1.55 }}>
                 Premium bleed-resistant undated pages bound in thermo-PU leather covers, ensuring a smooth, tactile writing experience with gel, ballpoint, and rollerball pens.

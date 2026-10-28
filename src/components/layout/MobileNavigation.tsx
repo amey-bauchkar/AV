@@ -49,6 +49,7 @@ export function MobileNavigation({ isOpen, onClose, onOpenSearch }: MobileNaviga
     { label: 'Home', path: '/' },
     { label: 'All Products (159)', path: '/products' },
     { label: 'Corporate Gifting Kits', path: '/corporate-gifting' },
+    { label: 'Corporate Events & Launches', path: '/events' },
     { label: 'Corporate Solutions', path: '/solutions' },
     { label: 'Custom Branding Guide', path: '/branding' },
     { label: 'About AV Corporate giftings & events', path: '/about' },

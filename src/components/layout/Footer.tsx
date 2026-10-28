@@ -31,11 +31,11 @@ export function Footer() {
               <BrandLogo variant="light" height={52} href="/" />
             </div>
             <p style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: 'var(--space-md)' }}>
-              Premier B2B manufacturer, importer and bulk supplier of executive corporate gifts, thermal drinkware, 80 GSM notebooks, precision writing instruments, and sustainable bamboo desk utilities.
+              Premier corporate gifting partner and event production agency in India, delivering bespoke merchandise, curated executive sets, and turnkey event management for conferences, launches, and annual days.
             </p>
             <div style={{ display: 'flex', gap: 'var(--space-xs)', flexWrap: 'wrap' }}>
               <span className="badge" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#fff', fontSize: '0.7rem' }}>
-                SUS 304 STEEL
+                STAINLESS STEEL
               </span>
               <span className="badge" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: '#fff', fontSize: '0.7rem' }}>
                 BPA FREE
@@ -91,6 +91,7 @@ export function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               {[
                 { label: 'Master Catalog (159 Products)', path: '/products' },
+                { label: 'Corporate Events & Launches', path: '/events' },
                 { label: 'Corporate Solutions & Gift Kits', path: '/solutions' },
                 { label: 'Custom Branding Techniques', path: '/branding' },
                 { label: 'About AV Corporate giftings & events', path: '/about' },

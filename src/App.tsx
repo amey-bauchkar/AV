@@ -20,6 +20,9 @@ const ProductDetailPage = lazy(() =>
 const GiftingKitBuilderPage = lazy(() =>
   import('./pages/GiftingKitBuilderPage').then((m) => ({ default: m.GiftingKitBuilderPage }))
 );
+const CorporateEventsPage = lazy(() =>
+  import('./pages/CorporateEventsPage').then((m) => ({ default: m.CorporateEventsPage }))
+);
 const BrandingPage = lazy(() =>
   import('./pages/BrandingPage').then((m) => ({ default: m.BrandingPage }))
 );
@@ -105,6 +108,7 @@ export default function App() {
                 <Route path="/product/:slug" element={<ProductDetailPage />} />
                 <Route path="/corporate-gifting" element={<GiftingKitBuilderPage />} />
                 <Route path="/solutions" element={<GiftingKitBuilderPage />} />
+                <Route path="/events" element={<CorporateEventsPage />} />
                 <Route path="/branding" element={<BrandingPage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />

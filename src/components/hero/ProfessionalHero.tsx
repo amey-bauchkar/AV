@@ -8,28 +8,17 @@ interface ProfessionalHeroProps {
 export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqModal }) => {
   return (
     <section className="professional-hero-section" aria-label="AV Corporate giftings & events Hero">
-      <div className="hero-bg-scrim" aria-hidden="true" />
       <div className="container hero-content-container">
         <div className="hero-content-col">
-          {/* Eyebrow Micro-Badges */}
-          <div className="hero-eyebrow-row">
-            <span className="hero-badge hero-badge-accent">
-              ● Direct Factory B2B
-            </span>
-            <span className="hero-badge hero-badge-neutral">
-              159 Verified Models
-            </span>
-          </div>
-
           {/* Signature Unified Hero Headline */}
           <h1 className="hero-main-headline">
             Precision Corporate Gifts<br />
-            and <em className="hero-headline-italic">Bespoke Merch.</em>
+            and <em className="hero-headline-italic">Event Experiences.</em>
           </h1>
 
           {/* Editorial Lead Paragraph */}
           <p className="hero-lead-text">
-            Direct factory source for curated executive welcome sets, food-grade SUS 304 vacuum insulated drinkware, 80 GSM hardbound journals, and laser-imprinted desk essentials for enterprises and conferences across India.
+            Direct factory source for curated corporate gift sets and end-to-end event management — from product launches to conferences across India.
           </p>
 
           {/* Action CTAs Row */}
@@ -39,7 +28,7 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
               className="hero-btn-primary"
               title="Browse 159 Catalog Products"
             >
-              <span>Explore Master Catalog</span>
+              <span>Explore Catalog</span>
               <span className="hero-btn-arrow-circle" aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <line x1="5" y1="12" x2="19" y2="12" />
@@ -49,11 +38,11 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
             </Link>
 
             <Link
-              to="/corporate-gifting"
+              to="/events"
               className="hero-btn-secondary"
-              title="Assemble Custom Hampers"
+              title="End-to-End Corporate Event Management"
             >
-              Build Custom Kit
+              Corporate Events
             </Link>
 
             <button
@@ -66,19 +55,19 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
             </button>
           </div>
 
-          {/* Trust SLA Row */}
+          {/* Trust Row */}
           <div className="hero-trust-row">
             <div className="hero-trust-item">
               <span className="trust-check">✓</span>
-              <span><strong>4-Hour</strong> Proofing SLA</span>
+              <span><strong>Free</strong> Digital Mockups</span>
             </div>
             <div className="hero-trust-item">
               <span className="trust-check">✓</span>
-              <span><strong>Zero Setup Fee</strong> on Direct Orders</span>
+              <span><strong>Zero</strong> Setup Fees</span>
             </div>
             <div className="hero-trust-item">
               <span className="trust-check">✓</span>
-              <span><strong>Pan-India</strong> Multi-Branch Drops</span>
+              <span><strong>Pan-India</strong> Delivery</span>
             </div>
           </div>
         </div>
@@ -88,32 +77,25 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
         .professional-hero-section {
           position: relative;
           background-color: #FAF8F5;
-          background-image: url('/hero-frames/clip-04-final-frame.png');
+          background-image: url('/hero-frames/hero-banner-products-right.webp');
           background-size: cover;
           background-position: right center;
           background-repeat: no-repeat;
           border-bottom: 1px solid var(--color-border, #E5E2D9);
-          padding-top: clamp(56px, 8vw, 108px);
-          padding-bottom: clamp(56px, 8vw, 108px);
-          min-height: clamp(540px, 74vh, 740px);
+          padding-top: clamp(84px, 10vw, 120px);
+          padding-bottom: clamp(48px, 6vw, 76px);
+          min-height: 100vh;
+          min-height: 100dvh;
           display: flex;
           align-items: center;
           overflow: hidden;
         }
 
-        .hero-bg-scrim {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(
-            90deg,
-            rgba(250, 248, 245, 0.97) 0%,
-            rgba(250, 248, 245, 0.94) 42%,
-            rgba(250, 248, 245, 0.72) 58%,
-            rgba(250, 248, 245, 0.20) 76%,
-            rgba(250, 248, 245, 0) 100%
-          );
-          pointer-events: none;
-          z-index: 1;
+        /* 4K and Retina High-Definition Display Optimization */
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-width: 1700px) {
+          .professional-hero-section {
+            background-image: url('/hero-frames/hero-banner-products-right-4k.webp');
+          }
         }
 
         .hero-content-container {
@@ -127,39 +109,6 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
           flex-direction: column;
           align-items: flex-start;
           max-width: 660px;
-        }
-
-        /* Eyebrows */
-        .hero-eyebrow-row {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          flex-wrap: wrap;
-          margin-bottom: var(--space-md, 16px);
-        }
-
-        .hero-badge {
-          font-family: var(--font-heading);
-          font-size: 0.74rem;
-          font-weight: 700;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          padding: 5px 14px;
-          border-radius: var(--radius-full, 9999px);
-          white-space: nowrap;
-        }
-
-        .hero-badge-accent {
-          color: var(--color-accent, #A34D33);
-          background-color: rgba(163, 77, 51, 0.08);
-          border: 1px solid rgba(163, 77, 51, 0.22);
-        }
-
-        .hero-badge-neutral {
-          color: var(--color-primary-dark, #292923);
-          background-color: rgba(255, 255, 255, 0.85);
-          backdrop-filter: blur(4px);
-          border: 1px solid var(--color-border, #E5E2D9);
         }
 
         /* Headline: Exactly matches established hero typography */
@@ -303,14 +252,6 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
 
         /* Responsive */
         @media (max-width: 992px) {
-          .hero-bg-scrim {
-            background: linear-gradient(
-              180deg,
-              rgba(250, 248, 245, 0.96) 0%,
-              rgba(250, 248, 245, 0.92) 60%,
-              rgba(250, 248, 245, 0.82) 100%
-            );
-          }
           .professional-hero-section {
             background-position: 70% center;
             min-height: auto;
@@ -322,9 +263,10 @@ export const ProfessionalHero: React.FC<ProfessionalHeroProps> = ({ onOpenRfqMod
 
         @media (max-width: 640px) {
           .professional-hero-section {
-            padding-top: 36px;
+            padding-top: clamp(80px, 14vw, 104px);
             padding-bottom: 40px;
             background-position: 78% center;
+            min-height: auto;
           }
           .hero-main-headline {
             font-size: clamp(2.25rem, 8.2vw, 3.2rem);

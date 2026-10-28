@@ -20,7 +20,7 @@ export function BrandingPage() {
       step: '03',
       title: 'Scaled 2D Digital Proof',
       desc: 'Engineered digital mockup illustrating exact millimeter placement, substrate bleed margins, and scale.',
-      chip: '4-Hour SLA'
+      chip: '4-Hour Fast Proof'
     },
     {
       step: '04',
@@ -69,7 +69,7 @@ export function BrandingPage() {
             <span className="eyebrow">Production Assurance</span>
             <h2 id="production-assurance-title" className="assurance-title">
               Artwork guidelines &amp;<br />
-              <em>4-hour proofing SLA.</em>
+              <em>4-hour proofing turnaround.</em>
             </h2>
           </div>
 

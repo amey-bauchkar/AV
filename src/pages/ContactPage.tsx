@@ -130,14 +130,14 @@ export function ContactPage() {
               </div>
             </div>
 
-            {/* Card 3: 4-Hour SLA & Dispatch */}
+            {/* Card 3: 4-Hour Turnaround & Dispatch */}
             <div className="contact-card card-sage">
               <div className="card-body-wrap">
                 <h3 className="card-headline">
-                  Production<br /><em>&amp; Sample SLA</em>
+                  Production<br /><em>&amp; Fast Turnaround</em>
                 </h3>
                 <p className="card-description">
-                  Sub-millimeter proof mockups returned within 4 business hours. Physical samples and pan-India multi-location dispatch.
+                  Digital proof mockups returned within 4 business hours. Quick physical samples and pan-India multi-location dispatch.
                 </p>
               </div>
               <div className="card-footer">

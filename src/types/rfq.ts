@@ -27,6 +27,9 @@ export type QuoteBuyerInfo = {
   deliveryCity?: string;
   targetDeliveryDate?: string;
   notes?: string;
+  inquiryType?: 'gifting' | 'events' | 'both';
+  eventType?: string;
+  estimatedGuests?: string;
 };
 
 export type QuoteSubmissionResult = {

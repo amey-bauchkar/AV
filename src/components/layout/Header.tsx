@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useRfqCart } from '../rfq/useRfqCart';
 import { BrandLogo } from '../common/BrandLogo';
@@ -10,18 +10,7 @@ type HeaderProps = {
 
 export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
   const { totalUnitsCount, totalItemCount, openCart } = useRfqCart();
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15);
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Keyboard shortcut listener (/ or Ctrl+K opens search)
   useEffect(() => {
@@ -41,6 +30,7 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
   const navLinks = [
     { label: 'Products', path: '/products' },
     { label: 'Corporate Gifts', path: '/corporate-gifting' },
+    { label: 'Corporate Events', path: '/events' },
     { label: 'Branding', path: '/branding' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' }
@@ -55,14 +45,9 @@ export function Header({ onOpenSearch, onOpenMobileNav }: HeaderProps) {
         right: 0,
         width: '100%',
         zIndex: 500,
-        backgroundColor: isScrolled
-          ? 'rgba(250, 249, 245, 0.96)'
-          : 'var(--paper, #FAF9F5)',
-        backdropFilter: 'blur(12px)',
-        WebkitBackdropFilter: 'blur(12px)',
-        borderBottom: '1px solid var(--line, #D6D3C8)',
-        transition: 'background-color 0.2s ease, box-shadow 0.2s ease',
-        boxShadow: isScrolled ? '0 2px 10px rgba(41, 41, 35, 0.04)' : 'none'
+        backgroundColor: 'transparent',
+        borderBottom: 'none',
+        marginBottom: location.pathname === '/' ? 'calc(-1 * clamp(62px, 8vw, 76px))' : 0
       }}
     >
       <div

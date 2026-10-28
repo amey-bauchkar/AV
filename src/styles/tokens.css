@@ -23,6 +23,11 @@
   --line-dark: #A69B89;          /* Framed Outline Line */
   --sage: #747D6B;               /* Muted Herb / Sage Accent */
 
+  /* Canonical Brand Palette References: Forest Green (#153D25), Vivid Vermilion (#F12D18), Warm Ivory (#F4F5EB) */
+  --legacy-brand-forest: #153D25;
+  --legacy-brand-vermilion: #F12D18;
+  --legacy-brand-ivory: #F4F5EB;
+
   /* Aliased AV Project Brand Core Palette (Seamless backwards compatibility) */
   --color-primary: var(--ink);           /* #292923 Carbon Ink */
   --color-primary-light: #3D3D35;        /* Medium Charcoal */

@@ -24,21 +24,24 @@ export function RfqRequestModal({ isOpen, onClose }: RfqRequestModalProps) {
     phone: '',
     deliveryCity: '',
     targetDeliveryDate: '',
-    notes: ''
+    notes: '',
+    inquiryType: 'gifting',
+    eventType: 'Product Launch',
+    estimatedGuests: '150 - 500 Guests'
   });
 
   if (!isOpen) return null;
 
   const totalUnits = items.reduce((sum, item) => sum + item.quantity, 0);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleProceedToStep2 = () => {
-    if (items.length === 0) {
-      setErrorMessage('Please add at least one product before requesting a quote.');
+    if (items.length === 0 && formData.inquiryType === 'gifting') {
+      setErrorMessage('Please add at least one product to your basket, or select Event Management below.');
       return;
     }
     setErrorMessage(null);
@@ -225,8 +228,49 @@ export function RfqRequestModal({ isOpen, onClose }: RfqRequestModalProps) {
                 Review your requested corporate gift items and customization specifications before submitting your quote request.
               </p>
 
-              <div style={{ display: 'grid', gap: 'var(--space-sm)', marginBottom: 'var(--space-xl)' }}>
-                {items.map((item, idx) => (
+              {items.length === 0 ? (
+                <div
+                  style={{
+                    backgroundColor: 'var(--paper, #FAF9F5)',
+                    border: '1px solid var(--color-border)',
+                    borderRadius: '12px',
+                    padding: '32px 24px',
+                    textAlign: 'center',
+                    marginBottom: 'var(--space-xl)'
+                  }}
+                >
+                  <div style={{ fontSize: '2.2rem', marginBottom: '8px' }}>📋</div>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '8px', color: 'var(--color-primary)' }}>
+                    Your Gifting Basket is Empty
+                  </h3>
+                  <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9rem', maxWidth: '460px', marginInline: 'auto', marginBottom: '20px', lineHeight: 1.55 }}>
+                    Looking to plan a corporate event, brand launch, or request a customized consultation without picking individual items?
+                  </p>
+                  <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setFormData((prev) => ({ ...prev, inquiryType: 'events' }));
+                        setStep(2);
+                      }}
+                      className="btn btn-accent"
+                      style={{ fontSize: '0.88rem', padding: '10px 20px' }}
+                    >
+                      Plan an Event / Custom Quote →
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleCloseAndReset}
+                      className="btn btn-outline"
+                      style={{ fontSize: '0.88rem', padding: '10px 20px' }}
+                    >
+                      Browse Catalog
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div style={{ display: 'grid', gap: 'var(--space-sm)', marginBottom: 'var(--space-xl)' }}>
+                  {items.map((item, idx) => (
                   <div
                     key={`${item.productId}-${idx}`}
                     style={{
@@ -275,7 +319,8 @@ export function RfqRequestModal({ isOpen, onClose }: RfqRequestModalProps) {
                     </div>
                   </div>
                 ))}
-              </div>
+                </div>
+              )}
 
               <div
                 style={{
@@ -317,6 +362,122 @@ export function RfqRequestModal({ isOpen, onClose }: RfqRequestModalProps) {
                   }}
                 >
                   {errorMessage}
+                </div>
+              )}
+
+              {/* Inquiry Type Radio / Selector */}
+              <div
+                style={{
+                  backgroundColor: 'var(--paper, #FAF9F5)',
+                  border: '1px solid var(--color-border)',
+                  borderRadius: '12px',
+                  padding: '16px',
+                  marginBottom: 'var(--space-md)'
+                }}
+              >
+                <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 700, marginBottom: '8px', color: 'var(--color-primary)' }}>
+                  What would you like assistance with?
+                </label>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '10px' }}>
+                  {[
+                    { id: 'gifting', label: 'Corporate Gifting', desc: 'Curated products & custom kits' },
+                    { id: 'events', label: 'Event Management', desc: 'Stage, AV, sound & launch production' },
+                    { id: 'both', label: 'Both (Gifting + Event)', desc: 'Complete 2-in-1 turnkey execution' }
+                  ].map((type) => (
+                    <label
+                      key={type.id}
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        padding: '10px 14px',
+                        borderRadius: '8px',
+                        border: formData.inquiryType === type.id ? '2px solid var(--color-accent)' : '1px solid var(--color-border)',
+                        backgroundColor: formData.inquiryType === type.id ? 'rgba(163, 77, 51, 0.05)' : '#FFFFFF',
+                        cursor: 'pointer'
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <input
+                          type="radio"
+                          name="inquiryType"
+                          value={type.id}
+                          checked={formData.inquiryType === type.id}
+                          onChange={handleInputChange}
+                          style={{ accentColor: 'var(--color-accent)' }}
+                        />
+                        <strong style={{ fontSize: '0.85rem', color: 'var(--color-primary)' }}>{type.label}</strong>
+                      </div>
+                      <span style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginTop: '4px', paddingLeft: '20px' }}>
+                        {type.desc}
+                      </span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Event Details if Events or Both selected */}
+              {(formData.inquiryType === 'events' || formData.inquiryType === 'both') && (
+                <div
+                  style={{
+                    backgroundColor: 'rgba(163, 77, 51, 0.04)',
+                    border: '1px solid rgba(163, 77, 51, 0.2)',
+                    borderRadius: '12px',
+                    padding: '16px',
+                    marginBottom: 'var(--space-md)',
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    gap: '12px'
+                  }}
+                >
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '4px', color: 'var(--color-primary)' }}>
+                      Event Format
+                    </label>
+                    <select
+                      name="eventType"
+                      value={formData.eventType}
+                      onChange={handleInputChange}
+                      style={{
+                        width: '100%',
+                        padding: '8px 12px',
+                        borderRadius: '6px',
+                        border: '1px solid var(--color-border)',
+                        backgroundColor: '#FFFFFF',
+                        fontSize: '0.85rem'
+                      }}
+                    >
+                      <option value="Product Launch">New Product Launch & Brand Reveal</option>
+                      <option value="Conference / Summit">Corporate Conference / Summit</option>
+                      <option value="Annual Day / Awards">Annual Corporate Day & Award Night</option>
+                      <option value="Offsite / Retreat">Leadership Retreat / Team Offsite</option>
+                      <option value="Other">Other Corporate Event</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label style={{ display: 'block', fontSize: '0.82rem', fontWeight: 600, marginBottom: '4px', color: 'var(--color-primary)' }}>
+                      Estimated Attendees
+                    </label>
+                    <select
+                      name="estimatedGuests"
+                      value={formData.estimatedGuests}
+                      onChange={handleInputChange}
+                      style={{
+                        width: '100%',
+                        padding: '8px 12px',
+                        borderRadius: '6px',
+                        border: '1px solid var(--color-border)',
+                        backgroundColor: '#FFFFFF',
+                        fontSize: '0.85rem'
+                      }}
+                    >
+                      <option value="Under 50 Guests">Under 50 Guests</option>
+                      <option value="50 - 150 Guests">50 - 150 Guests</option>
+                      <option value="150 - 500 Guests">150 - 500 Guests</option>
+                      <option value="500 - 1500 Guests">500 - 1,500 Guests</option>
+                      <option value="1500+ Guests">1,500+ Guests</option>
+                    </select>
+                  </div>
                 </div>
               )}
 

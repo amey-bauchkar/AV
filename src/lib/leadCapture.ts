@@ -76,8 +76,13 @@ export async function submitQuoteRequest(
     throw new Error(firstErr);
   }
 
-  if (!items || items.length === 0) {
-    throw new Error('Cannot submit an empty quotation request. Please select at least one item.');
+  const isEventOrCustom =
+    buyerInfo.inquiryType === 'events' ||
+    buyerInfo.inquiryType === 'both' ||
+    (buyerInfo.notes && buyerInfo.notes.includes('[EVENT'));
+
+  if ((!items || items.length === 0) && !isEventOrCustom) {
+    throw new Error('Cannot submit an empty quotation request. Please select at least one item or choose Event Management.');
   }
 
   const sessionHash = getOrCreateSessionHash();
@@ -102,7 +107,10 @@ export async function submitQuoteRequest(
           total_quantity: totalUnits,
           status: 'new',
           metadata: {
-            source: 'web_portal_rfq',
+            source: isEventOrCustom ? 'web_portal_events' : 'web_portal_rfq',
+            inquiryType: buyerInfo.inquiryType || (isEventOrCustom ? 'events' : 'gifting'),
+            eventType: buyerInfo.eventType || '',
+            estimatedGuests: buyerInfo.estimatedGuests || '',
             userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown'
           }
         })
@@ -186,11 +194,17 @@ export function formatQuoteSummaryText(buyerInfo: QuoteBuyerInfo, items: RfqItem
     `Phone / WhatsApp: ${buyerInfo.phone || 'Not specified'}`,
     `Delivery City / PIN: ${buyerInfo.deliveryCity || 'Not specified'}`,
     `Target Date: ${buyerInfo.targetDeliveryDate || 'Flexible'}`,
+    buyerInfo.inquiryType ? `Inquiry Category: ${buyerInfo.inquiryType === 'both' ? 'Both Gifting & Events' : buyerInfo.inquiryType === 'events' ? 'Corporate Event Management' : 'Corporate Gifting'}` : '',
+    buyerInfo.eventType ? `Event Format: ${buyerInfo.eventType}` : '',
+    buyerInfo.estimatedGuests ? `Estimated Guests: ${buyerInfo.estimatedGuests}` : '',
     buyerInfo.notes ? `Project Notes: ${buyerInfo.notes}` : '',
     '',
     '--- REQUESTED PRODUCTS & SPECIFICATIONS ---'
   ];
 
+  if (items.length === 0) {
+    lines.push('   (No catalog items pre-selected — Event Management & Turnkey Consultation Inquiry)');
+  }
   items.forEach((item, index) => {
     lines.push(
       `${index + 1}. SKU: ${item.sku} | ${item.name}`,
